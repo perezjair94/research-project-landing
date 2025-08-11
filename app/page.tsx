@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -7,7 +8,9 @@ export default function Home() {
       <header className="px-10 py-6 flex gap-10 items-center justify-start">
         <div className="font-semibold text-xl text-black">Logo</div>
         <nav className="py-1 rounded">
-          <span className="text-cv-pink font-bold text-xl">Temas</span>
+          <Link href="/temas" className="text-cv-pink font-bold text-xl hover:text-cv-pink/80 transition-colors">
+            Temas
+          </Link>
         </nav>
       </header>
 

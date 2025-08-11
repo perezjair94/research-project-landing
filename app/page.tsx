@@ -14,7 +14,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-10 py-12">
         <div className="relative">
-          <h1 className="text-5xl font-extrabold text-cv-purple leading-tight">
+          <h1 className="text-5xl font-extrabold text-cv-purple/80 leading-tight">
             Hacer la vida en Ciudad Verde
           </h1>
 
@@ -46,7 +46,7 @@ export default function Home() {
 
       {/* Large Video Section */}
       <section className="px-10 py-12">
-        <div className="relative w-full h-[500px] bg-green-200/30 rounded-lg flex items-center justify-center">
+        <div className="relative w-full h-[500px] bg-cv-green/30 rounded-lg flex items-center justify-center">
           <div className="text-center">
             <div className="text-3xl font-bold text-black mb-4">Video</div>
           </div>
@@ -55,10 +55,10 @@ export default function Home() {
 
       {/* Content Sections */}
       <section className="px-10 py-12">
-        <div className="grid grid-cols-2 gap-20 items-start">
-          <div className="space-y-8">
-            <div className="bg-orange-100/30 inline-block px-6 py-4 rounded">
-              <h3 className="text-2xl font-bold text-purple-600/50 leading-normal">
+        <div className="grid grid-cols-5 gap-20 items-start">
+          <div className="space-y-8 col-span-3 order-2">
+            <div className="bg-orange-100/30 inline-block p-1 rounded">
+              <h3 className="text-2xl font-bold text-cv-purple/50 leading-normal">
                 Conversaciones cívicas que centran la
                 <br />
                 experiencia vivida y la cotidianidad
@@ -77,7 +77,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full">
+          <div className="order-1 col-span-2">
             <div className="w-96 h-96 mx-auto relative">
               <svg viewBox="0 0 346 346" className="w-full h-full">
                 <path

@@ -179,7 +179,7 @@ export default function Home() {
       </section>
 
       {/* Interactive Section */}
-      <section className="relative bg-cv-orange/20 flex items-center">
+      <section className="relative bg-cv-orange/20 flex items-center my-15">
         <div className="flex-1 rounded-lg ">
           {/* Decorative circles */}
           <div className="min-h-[600px]  flex items-center justify-center">
@@ -249,46 +249,48 @@ export default function Home() {
       {/* Questions Section */}
       <section className="px-10 py-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-black/80 leading-tight max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold text-black/80 leading-tight max-w-[795px] mx-auto">
             Los residentes participantes compartieron sus respuestas a las
             siguientes 5 preguntas
           </h2>
         </div>
 
-        <div className="space-y-8 max-w-4xl mx-auto">
-          <div className="bg-green-200/30 p-5 rounded-lg">
-            <p className="text-xl text-black/60">
+        <div className="space-y-7 max-w-4xl mx-auto flex flex-col justify-center text-center items-center">
+          <div className="bg-cv-green/30 p-3 rounded-lg">
+            <p className="text-md text-black/60">
               Una experiencia positiva que hayan tenido en su vida en Ciudad
               Verde que relacionen con elementos de Ciudad Verde que consideres
               que deben resaltarse sobre la urbanización&rdquo;
             </p>
           </div>
 
-          <div className="bg-orange-100/30 p-5 rounded-lg">
-            <p className="text-xl text-black/60">
+          <div className="bg-cv-orange/30 p-3 rounded-lg">
+            <p className="text-md text-black/60">
               &ldquo;Una experiencia difícil, en las que vivir en Ciudad Verde
               haya sido una fuente de tensión, conflicto o malestar.&rdquo;
             </p>
           </div>
 
-          <div className="bg-pink-200/30 p-5 rounded-lg">
-            <p className="text-xl text-black/60">
+          <div className="bg-cv-pink/30 p-3 rounded-lg">
+            <p className="text-md text-black/60">
               Una pregunta que harías sobre el futuro de Ciudad Verde y tu rol
               en ese futuro&rdquo;
             </p>
           </div>
 
-          <div className="bg-yellow-200/30 p-5 rounded-lg">
-            <p className="text-xl text-black/60">
-              &ldquo;¿Qué experiencia compartida por alguien te resonó, y por
-              qué&rdquo;?
-            </p>
-          </div>
+          <div className="flex gap-8 items-center justify-center">
+            <div className="bg-cv-yellow/30 p-3 rounded-lg">
+              <p className="text-md text-black/60">
+                &ldquo;¿Qué experiencia compartida por alguien te resonó, y por
+                qué&rdquo;?
+              </p>
+            </div>
 
-          <div className="bg-blue-200/30 p-5 rounded-lg">
-            <p className="text-xl text-black/60">
-              qué se lleva de esta conversación.
-            </p>
+            <div className="bg-cv-blue/30 p-3 rounded-lg">
+              <p className="text-md text-black/60">
+                qué se lleva de esta conversación.
+              </p>
+            </div>
           </div>
         </div>
       </section>

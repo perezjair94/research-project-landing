@@ -10,13 +10,15 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Ciudad Verde Color Palette */
+  --color-cv-teal: #3db998;
+  --color-cv-purple: #5351f0;
+  --color-cv-green: #daefb7;
+  --color-cv-pink: #f998b7;
+  --color-cv-blue: #97d9f5;
+  --color-cv-yellow: #fdcb52;
+  --color-cv-orange: #fedcc7;
 }
 
 body {

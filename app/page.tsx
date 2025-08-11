@@ -179,71 +179,69 @@ export default function Home() {
       </section>
 
       {/* Interactive Section */}
-      <section className="px-10 py-12">
-        <div className="bg-orange-100/20 w-full rounded-lg p-16 mb-12">
+      <section className="relative bg-cv-orange/20 flex items-center">
+        <div className="flex-1 rounded-lg ">
           {/* Decorative circles */}
-          <div className="relative mb-16">
-            <div className="absolute left-12 top-16 w-36 h-36 bg-teal-500 rounded-full"></div>
-            <div className="absolute left-80 top-0 w-36 h-36 bg-teal-500 rounded-full"></div>
-            <div className="absolute left-52 top-32 w-36 h-36 bg-teal-500 rounded-full"></div>
-            <div className="absolute left-60 top-60 w-36 h-36 bg-teal-500 rounded-full"></div>
-            <div className="absolute right-20 top-12 w-36 h-36 bg-teal-500 rounded-full"></div>
-            <div className="absolute right-12 top-44 w-36 h-36 bg-teal-500 rounded-full"></div>
-            <div className="absolute left-24 bottom-8 w-36 h-36 bg-teal-500 rounded-full"></div>
-            <div className="absolute left-16 bottom-32 w-36 h-36 bg-teal-500 rounded-full"></div>
+          <div className="min-h-[600px]  flex items-center justify-center">
+            Selector
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-20">
-          <div className="space-y-8">
-            <div className="bg-yellow-100/10 inline-block px-6 py-4 rounded">
-              <h3 className="text-2xl font-bold text-purple-600/50">
-                Navegando las voces de los residentes
-              </h3>
-            </div>
+        <div className="flex-1 px-16">
+          <div className=" inline-block">
+            <h3 className="text-2xl font-bold text-cv-purple/50 mb-10">
+              Navegando las voces de los residentes
+            </h3>
+          </div>
 
-            <p className="text-xl text-black/50 leading-relaxed">
-              Este portal interactivo permite navegar los temas que alegran o
-              preocupan a los residentes que participaron, dándole protagonismo
-              a una multiplicidad de experiencias y vivencias, testimonios y
-              anécdotas profundamente personales. ¿Lo más poderoso? podemos
-              escuchar sus voces compartiéndonos sus vivencias.
-            </p>
+          <p className="text-xl text-black/50 leading-relaxed mb-8">
+            Este portal interactivo permite navegar los temas que alegran o
+            preocupan a los residentes que participaron, dándole protagonismo a
+            una multiplicidad de experiencias y vivencias, testimonios y
+            anécdotas profundamente personales. ¿Lo más poderoso? podemos
+            escuchar sus voces compartiéndonos sus vivencias.
+          </p>
 
-            <p className="text-xl text-black/50 leading-relaxed">
-              88 residentes de Ciudad Verde centraron sus experiencias y
-              perspectivas en 8 temas principales.
-            </p>
+          <p className="text-xl text-black/50 leading-relaxed mb-12">
+            88 residentes de Ciudad Verde centraron sus experiencias y
+            perspectivas en 8 temas principales.
+          </p>
 
-            <div className="flex items-center gap-3">
-              <div className="w-7 h-7 bg-white border-2 border-pink-400 rounded flex items-center justify-center">
-                <svg width="19" height="23" viewBox="0 0 19 23" fill="none">
-                  <path
-                    d="M5 2L17 2L17 20L12 15L7 20L7 2L5 2Z"
-                    stroke="#F998B7"
-                    strokeWidth="2.5"
-                  />
-                  <circle cx="16" r="3" fill="#F998B7" />
-                  <circle
-                    cx="9"
-                    cy="18"
-                    r="7"
-                    stroke="#F998B7"
-                    strokeWidth="2.5"
-                    fill="none"
-                  />
-                </svg>
-              </div>
-              <span className="text-2xl font-bold text-pink-400">
-                Escuchar audios
-              </span>
-
-              <div className="w-6 h-6 bg-white border-2 border-pink-400 rounded flex items-center justify-center ml-4">
-                <svg width="4" height="8" viewBox="0 0 4 8" fill="none">
-                  <path d="M1 1L3 4L1 7" stroke="#F998B7" strokeWidth="2" />
-                </svg>
-              </div>
-            </div>
+          <div className="flex items-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-file-audio-icon lucide-file-audio text-cv-pink"
+            >
+              <path d="M17.5 22h.5a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
+              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+              <path d="M2 19a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0v-4a6 6 0 0 1 12 0v4a2 2 0 1 1-4 0v-1a2 2 0 1 1 4 0" />
+            </svg>{" "}
+            <span className="text-xl font-bold text-cv-pink">
+              Escuchar audios
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="lucide lucide-move-right-icon lucide-move-right text-cv-pink"
+            >
+              <path d="M18 8L22 12L18 16" />
+              <path d="M2 12H22" />
+            </svg>
           </div>
         </div>
       </section>

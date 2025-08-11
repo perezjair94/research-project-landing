@@ -57,7 +57,7 @@ export default function Home() {
       <section className="px-10 py-12">
         <div className="grid grid-cols-5 gap-20 items-start">
           <div className="space-y-8 col-span-3 order-2">
-            <div className="bg-orange-100/30 inline-block p-1 rounded">
+            <div className="bg-cv-orange/30 inline-block p-1 rounded">
               <h3 className="text-2xl font-bold text-cv-purple/50 leading-normal">
                 Conversaciones cívicas que centran la
                 <br />
@@ -102,13 +102,7 @@ export default function Home() {
 
       {/* Photo Gallery Section */}
       <section className="px-10 py-12">
-        <div className="bg-orange-100/30 inline-block px-6 py-4 rounded mb-8">
-          <h3 className="text-2xl font-bold text-purple-600/50">
-            Fotografías para contar historias de vida en el territorio
-          </h3>
-        </div>
-
-        <div className="grid grid-cols-1 gap-8 mb-12">
+        <div className="grid grid-cols-2 gap-8 mb-8">
           <div className="w-full h-80 rounded-lg overflow-hidden opacity-70">
             <Image
               src="/images/photo1.jpg"
@@ -117,6 +111,17 @@ export default function Home() {
               height={900}
               className="w-full h-full object-cover"
               style={{ backgroundColor: "rgba(253, 203, 82, 0.2)" }}
+            />
+          </div>
+
+          <div className="w-full h-80 rounded-lg overflow-hidden opacity-70">
+            <Image
+              src="/images/photo5.jpg"
+              alt="Ciudad Verde photo 5"
+              width={2016}
+              height={1512}
+              className="w-full h-full object-cover"
+              style={{ backgroundColor: "rgba(85, 197, 190, 0.2)" }}
             />
           </div>
         </div>
@@ -129,7 +134,6 @@ export default function Home() {
               width={2016}
               height={1134}
               className="w-full h-full object-cover"
-              style={{ backgroundColor: "rgba(249, 152, 183, 0.2)" }}
             />
           </div>
           <div className="h-80 rounded-lg overflow-hidden opacity-80">
@@ -154,30 +158,23 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-20 items-start">
-          <div className="h-80 rounded-lg overflow-hidden opacity-70">
-            <Image
-              src="/images/photo5.jpg"
-              alt="Ciudad Verde photo 5"
-              width={2016}
-              height={1512}
-              className="w-full h-full object-cover"
-              style={{ backgroundColor: "rgba(85, 197, 190, 0.2)" }}
-            />
+        <div className="pt-12">
+          <div className="bg-cv-orange/30 inline-block rounded mb-8">
+            <h3 className="text-2xl font-bold text-cv-purple/50">
+              Fotografías para contar historias de vida en el territorio
+            </h3>
           </div>
 
-          <div className="space-y-6">
-            <p className="text-xl text-black/50 leading-relaxed">
-              A través del método del fotorelato, los residentes investigadores
-              convocaron y guiaron a sus vecinos y amigos a documentar sus
-              experiencias y percepciones de la ciudadela haciendo uso de las
-              cámaras de sus teléfonos celulares. Estos registros, acompañados
-              de las voces de los y las fotógrafas, nos permiten visualizar
-              íntimamente todo aquello de la ciudadela que es significativo para
-              los habitantes a la hora de reflexionar sobre la experiencia de
-              vida que han tenido en Ciudad Verde.
-            </p>
-          </div>
+          <p className="text-xl text-black/50 leading-relaxed">
+            A través del método del fotorelato, los residentes investigadores
+            convocaron y guiaron a sus vecinos y amigos a documentar sus
+            experiencias y percepciones de la ciudadela haciendo uso de las
+            cámaras de sus teléfonos celulares. Estos registros, acompañados de
+            las voces de los y las fotógrafas, nos permiten visualizar
+            íntimamente todo aquello de la ciudadela que es significativo para
+            los habitantes a la hora de reflexionar sobre la experiencia de vida
+            que han tenido en Ciudad Verde.
+          </p>
         </div>
       </section>
 

@@ -5,59 +5,70 @@ export default function Themes() {
   const themes = [
     {
       title: "Convivencia",
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo5.jpg",
-      bgColor: "bg-cv-pink/20"
+      bgColor: "bg-cv-pink/20",
     },
     {
-      title: "Transporte", 
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+      title: "Transporte",
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo1.jpg",
-      bgColor: "bg-cv-green/20"
+      bgColor: "bg-cv-green/20",
     },
     {
       title: "Espacio Público",
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality", 
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo4.jpg",
-      bgColor: "bg-cv-blue/20"
+      bgColor: "bg-cv-blue/20",
     },
     {
       title: "Seguridad",
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
-      image: "/images/photo2.jpg", 
-      bgColor: "bg-cv-purple/10"
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+      image: "/images/photo2.jpg",
+      bgColor: "bg-cv-purple/10",
     },
     {
       title: "Grupos poblacionales",
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo1.jpg",
-      bgColor: "bg-cv-orange/30"
+      bgColor: "bg-cv-orange/30",
     },
     {
       title: "Calidad de Vida",
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo5.jpg",
-      bgColor: "bg-cv-pink/20"
+      bgColor: "bg-cv-pink/20",
     },
     {
-      title: "Gobernanza", 
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+      title: "Gobernanza",
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo4.jpg",
-      bgColor: "bg-cv-teal/20"
+      bgColor: "bg-cv-teal/20",
     },
     {
       title: "Infraestructura",
-      description: "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+      description:
+        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo2.jpg",
-      bgColor: "bg-cv-orange/30"
-    }
+      bgColor: "bg-cv-orange/30",
+    },
   ];
 
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
       <header className="px-10 py-6 flex gap-10 items-center justify-start">
-        <Link href="/" className="font-semibold text-xl text-black hover:text-black/70 transition-colors">
+        <Link
+          href="/"
+          className="font-semibold text-xl text-black hover:text-black/70 transition-colors"
+        >
           Logo
         </Link>
         <nav className="py-1 rounded">
@@ -87,12 +98,14 @@ export default function Themes() {
           </div>
 
           <div className="relative z-10">
-            <h1 className="text-3xl font-bold text-cv-purple/80 mb-6">
-              Temas
-            </h1>
-            
+            <h1 className="text-3xl font-bold text-cv-purple/80 mb-6">Temas</h1>
+
             <p className="text-xl text-black/50 leading-relaxed max-w-[712px]">
-              Este portal interactivo permite navegar los temas que alegran o preocupan a los residentes que iciparon, dándole protagonismo a una multiplicidad de experiencias y vivencias, testimonios y anécdotas profundamente personales. ¿Lo más poderoso? podemos escuchar sus voces compartiéndonos sus vivencias.
+              Este portal interactivo permite navegar los temas que alegran o
+              preocupan a los residentes que iciparon, dándole protagonismo a
+              una multiplicidad de experiencias y vivencias, testimonios y
+              anécdotas profundamente personales. ¿Lo más poderoso? podemos
+              escuchar sus voces compartiéndonos sus vivencias.
             </p>
           </div>
         </div>
@@ -102,28 +115,28 @@ export default function Themes() {
       <section className="px-14 py-12">
         <div className="grid grid-cols-2 gap-8">
           {themes.map((theme, index) => (
-            <div 
+            <div
               key={index}
               className={`${theme.bgColor} rounded-2xl overflow-hidden backdrop-blur-md flex hover:shadow-lg transition-shadow cursor-pointer`}
-              style={{ minHeight: '160px' }}
+              style={{ minHeight: "120px" }}
             >
               {/* Image */}
-              <div className="w-40 h-full relative">
+              <div className="w-[160px] h-full relative">
                 <Image
                   src={theme.image}
                   alt={theme.title}
                   width={160}
-                  height={160}
+                  height={120}
                   className="w-full h-full object-cover rounded-l-2xl"
                 />
               </div>
 
               {/* Content */}
-              <div className="flex-1 p-5 flex flex-col justify-between">
+              <div className="flex-1 p-5 flex flex-col justify-center">
                 <h3 className="text-2xl font-bold text-black/50 mb-2 leading-tight">
                   {theme.title}
                 </h3>
-                <p className="text-sm text-black/50 leading-relaxed">
+                <p className="text-sm text-black/50 leading-relaxed leading-relaxed tracking-tight">
                   {theme.description}
                 </p>
               </div>
@@ -160,3 +173,4 @@ export default function Themes() {
     </main>
   );
 }
+

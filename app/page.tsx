@@ -99,8 +99,8 @@ export default function Home() {
       </section>
 
       {/* Content Sections */}
-      <section className="px-6 lg:px-10 py-12">
-        <div className="grid lg:grid-cols-5 gap-20 items-start">
+      <section className="px-6 lg:px-10 lg:py-12">
+        <div className="grid lg:grid-cols-5 gap-20 items-start mb-12 lg:mb-0">
           <div className="space-y-8 lg:col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">
               <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 leading-tight tracking-tight">
@@ -122,7 +122,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="order-1 lg:col-span-2">
+          <div className="order-1 lg:col-span-2 hidden lg:block">
             <div className="w-96 h-96 mx-auto relative">
               <svg viewBox="0 0 346 346" className="w-full h-full">
                 <path

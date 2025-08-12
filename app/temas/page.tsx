@@ -131,7 +131,7 @@ export default function Themes() {
               style={{ minHeight: "120px" }}
             >
               {/* Image */}
-              <div className="w-full lg:w-[160px] h-full relative">
+              <div className="w-full h-50 lg:w-[160px] lg:h-full relative">
                 <Image
                   src={theme.image}
                   alt={theme.title}

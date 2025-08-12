@@ -149,7 +149,7 @@ export default function Home() {
       {/* Photo Gallery Section */}
       <section className="px-6 lg:px-10 lg:py-12">
         <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="w-full h-80 rounded-lg overflow-hidden opacity-80 relative">
+          <div className="w-full h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo1.jpg"
               alt="Ciudad Verde photo 1"
@@ -160,7 +160,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-cv-yellow/20 rounded-lg"></div>
           </div>
 
-          <div className="w-full h-80 rounded-lg overflow-hidden opacity-80 relative">
+          <div className="w-full h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo4.jpg"
               alt="Ciudad Verde photo 5"
@@ -173,7 +173,7 @@ export default function Home() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          <div className="h-80 rounded-lg overflow-hidden opacity-80 relative">
+          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo2.jpg"
               alt="Ciudad Verde photo 2"
@@ -183,7 +183,7 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-cv-pink/20 rounded-lg"></div>
           </div>
-          <div className="h-80 rounded-lg overflow-hidden opacity-70 relative">
+          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-70 relative">
             <Image
               src="/images/photo1.jpg"
               alt="Ciudad Verde photo 3"
@@ -193,7 +193,7 @@ export default function Home() {
             />
             <div className="absolute inset-0 bg-cv-purple/20 rounded-lg"></div>
           </div>
-          <div className="h-80 rounded-lg overflow-hidden opacity-80 relative">
+          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo5.jpg"
               alt="Ciudad Verde photo 4"

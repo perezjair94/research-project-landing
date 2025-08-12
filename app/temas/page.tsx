@@ -127,20 +127,20 @@ export default function Themes() {
           {themes.map((theme, index) => (
             <div
               key={index}
-              className={`${theme.bgColor} rounded-2xl overflow-hidden backdrop-blur-md flex hover:shadow-lg transition-shadow cursor-pointer`}
+              className={`${theme.bgColor} rounded-2xl overflow-hidden backdrop-blur-md flex flex-col lg:flex-row hover:shadow-lg transition-shadow cursor-pointer`}
               style={{ minHeight: "120px" }}
             >
               {/* Image */}
-              <div className="w-[160px] h-full relative">
+              <div className="w-full lg:w-[160px] h-full relative">
                 <Image
                   src={theme.image}
                   alt={theme.title}
                   width={160}
                   height={120}
-                  className="w-full h-full object-cover rounded-l-2xl saturate-[0] contrast-125 opacity-50"
+                  className="w-full h-full object-cover lg:rounded-l-2xl saturate-[0] contrast-125 opacity-50"
                 />
                 <div
-                  className={`absolute inset-0 ${theme.overlayColor} rounded-l-2xl`}
+                  className={`absolute inset-0 ${theme.overlayColor} lg:rounded-l-2xl`}
                 ></div>
               </div>
 

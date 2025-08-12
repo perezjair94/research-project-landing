@@ -302,7 +302,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="space-y-5 lg:space-y-7 max-w-4xl mx-auto flex flex-col justify-center text-center items-center">
+        <div className="space-y-5 lg:space-y-7 max-w-4xl mx-auto flex flex-col justify-center text-center items-center mb-6 lg:mb-0">
           <div className="bg-cv-green/30 p-2 lg:p-3 rounded-lg">
             <p className="text-sm lg:text-md text-black/60">
               Una experiencia positiva que hayan tenido en su vida en Ciudad

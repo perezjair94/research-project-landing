@@ -1,7 +1,37 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useRef, useEffect } from "react";
 
 export default function Home() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            video.play().catch((error) => {
+              console.log("Auto-play was prevented:", error);
+            });
+          } else {
+            video.pause();
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    observer.observe(video);
+
+    return () => {
+      observer.unobserve(video);
+    };
+  }, []);
+
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
@@ -54,9 +84,11 @@ export default function Home() {
       <section className="px-10 py-12">
         <div className="relative w-full rounded-lg overflow-hidden">
           <video
+            ref={videoRef}
             className="w-full h-[500px] object-cover"
             controls
             preload="metadata"
+            muted
           >
             <source src="/Video CV.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.

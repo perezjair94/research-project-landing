@@ -87,7 +87,7 @@ export default function Home() {
         <div className="relative w-full rounded-lg overflow-hidden">
           <video
             ref={videoRef}
-            className="w-full lg:h-[700px] object-cover"
+            className="w-full lg:aspect-video object-cover"
             controls
             preload="metadata"
             muted

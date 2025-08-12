@@ -8,7 +8,10 @@ export default function Home() {
       <header className="px-10 py-6 flex gap-10 items-center justify-start">
         <div className="font-semibold text-xl text-black">Logo</div>
         <nav className="py-1 rounded">
-          <Link href="/temas" className="text-cv-pink font-bold text-xl hover:text-cv-pink/80 transition-colors">
+          <Link
+            href="/temas"
+            className="text-cv-pink font-bold text-xl hover:text-cv-pink/80 transition-colors"
+          >
             Temas
           </Link>
         </nav>
@@ -17,12 +20,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="px-10 py-12">
         <div className="relative">
-          <h1 className="text-5xl font-extrabold text-cv-purple/80 leading-tight">
+          <h1 className="text-5xl font-extrabold text-cv-purple/80 leading-tight tracking-tight">
             Hacer la vida en Ciudad Verde
           </h1>
 
           <div className="mt-2 bg-cv-orange/30 inline-block px-2 py-1 rounded">
-            <h2 className="text-2xl font-bold text-black/35 leading-normal">
+            <h2 className="text-2xl font-bold text-black/35 leading-normal tracking-tight leading-tight">
               Centrando las voces de los residentes a través
               <br />
               de la investigación participativa
@@ -49,10 +52,15 @@ export default function Home() {
 
       {/* Large Video Section */}
       <section className="px-10 py-12">
-        <div className="relative w-full h-[500px] bg-cv-green/30 rounded-lg flex items-center justify-center">
-          <div className="text-center">
-            <div className="text-3xl font-bold text-black mb-4">Video</div>
-          </div>
+        <div className="relative w-full rounded-lg overflow-hidden">
+          <video
+            className="w-full h-[500px] object-cover"
+            controls
+            preload="metadata"
+          >
+            <source src="/Video CV.mp4" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
         </div>
       </section>
 
@@ -61,7 +69,7 @@ export default function Home() {
         <div className="grid grid-cols-5 gap-20 items-start">
           <div className="space-y-8 col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">
-              <h3 className="text-2xl font-bold text-cv-purple/50 leading-normal">
+              <h3 className="text-2xl font-bold text-cv-purple/50 leading-tight tracking-tight">
                 Conversaciones cívicas que centran la
                 <br />
                 experiencia vivida y la cotidianidad
@@ -163,7 +171,7 @@ export default function Home() {
 
         <div className="pt-12">
           <div className="bg-cv-orange/30 inline-block rounded mb-8">
-            <h3 className="text-2xl font-bold text-cv-purple/50">
+            <h3 className="text-2xl font-bold text-cv-purple/50 tracking-tight">
               Fotografías para contar historias de vida en el territorio
             </h3>
           </div>
@@ -192,7 +200,7 @@ export default function Home() {
 
         <div className="flex-1 px-16">
           <div className=" inline-block">
-            <h3 className="text-2xl font-bold text-cv-purple/50 mb-10">
+            <h3 className="text-2xl font-bold text-cv-purple/50 mb-10 tracking-tight">
               Navegando las voces de los residentes
             </h3>
           </div>
@@ -252,7 +260,7 @@ export default function Home() {
       {/* Questions Section */}
       <section className="px-10 py-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-black/80 leading-tight max-w-[795px] mx-auto">
+          <h2 className="text-4xl font-bold text-black/80 leading-tight tracking-tight max-w-[795px] mx-auto">
             Los residentes participantes compartieron sus respuestas a las
             siguientes 5 preguntas
           </h2>

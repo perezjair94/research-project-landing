@@ -253,7 +253,7 @@ export default function Home() {
             perspectivas en 8 temas principales.
           </p>
 
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-8 lg:mb-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

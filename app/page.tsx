@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
-      <header className="px-6 lg:px-10 py-6 flex gap-10 items-center justify-start">
+      <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
         <div className="font-semibold text-lg lg:text-xl text-black">Logo</div>
         <nav className="py-1 rounded">
           <Link

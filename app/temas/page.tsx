@@ -72,7 +72,7 @@ export default function Themes() {
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
-      <header className="px-6 lg:px-10 py-6 flex gap-10 items-center justify-start">
+      <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
         <Link
           href="/"
           className="font-semibold text-lg lg:text-xl text-black hover:text-black/70 transition-colors"

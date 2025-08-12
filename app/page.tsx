@@ -35,12 +35,12 @@ export default function Home() {
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
-      <header className="px-10 py-6 flex gap-10 items-center justify-start">
-        <div className="font-semibold text-xl text-black">Logo</div>
+      <header className="px-6 lg:px-10 py-6 flex gap-10 items-center justify-start">
+        <div className="font-semibold text-lg lg:text-xl text-black">Logo</div>
         <nav className="py-1 rounded">
           <Link
             href="/temas"
-            className="text-cv-pink font-bold text-xl hover:text-cv-pink/80 transition-colors"
+            className="text-cv-pink font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
           >
             Temas
           </Link>
@@ -48,21 +48,21 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="px-10 py-12">
+      <section className="px-6 lg:px-10 lg:py-12">
         <div className="relative">
-          <h1 className="text-5xl font-extrabold text-cv-purple/80 leading-tight tracking-tight">
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-cv-purple/80 leading-tight tracking-tight">
             Hacer la vida en Ciudad Verde
           </h1>
 
           <div className="mt-2 bg-cv-orange/30 inline-block px-2 py-1 rounded">
-            <h2 className="text-2xl font-bold text-black/35 leading-normal tracking-tight leading-tight">
+            <h2 className="text-xl lg:text-2xl font-bold text-black/35 leading-normal tracking-tight leading-tight">
               Centrando las voces de los residentes a través
-              <br />
+              <br className="hidden md:block" />
               de la investigación participativa
             </h2>
           </div>
 
-          <p className="mt-8 text-xl text-black/50 max-w-xl leading-relaxed">
+          <p className="mt-8 text-md md:text-xl text-black/50 max-w-xl leading-relaxed">
             Basándose en dos premisas: &ldquo;Nada sobre nosotros sin
             nosotros&rdquo; y &ldquo;Nadie se las sabe todas, pero juntos
             sabemos muchas cosas&rdquo;, el grupo de residentes investigadores
@@ -74,18 +74,20 @@ export default function Home() {
           </p>
 
           {/* Decorative elements */}
-          <div className="absolute top-0 right-0 w-40 h-40 bg-gray-300 rounded-sm opacity-40"></div>
-          <div className="absolute top-20 right-20 w-64 h-64 bg-gray-300 rounded-full opacity-40"></div>
-          <div className="absolute top-64 right-10 w-48 h-48 bg-gray-300 rounded-full opacity-40"></div>
+          <div className="hidden lg:block">
+            <div className="absolute top-0 right-0 w-40 h-40 bg-gray-300 rounded-sm opacity-40"></div>
+            <div className="absolute top-20 right-20 w-64 h-64 bg-gray-300 rounded-full opacity-40"></div>
+            <div className="absolute top-64 right-10 w-48 h-48 bg-gray-300 rounded-full opacity-40"></div>
+          </div>
         </div>
       </section>
 
       {/* Large Video Section */}
-      <section className="px-10 py-12">
+      <section className="px-6 lg:px-10 py-12">
         <div className="relative w-full rounded-lg overflow-hidden">
           <video
             ref={videoRef}
-            className="w-full h-[500px] object-cover"
+            className="w-full lg:h-[700px] object-cover"
             controls
             preload="metadata"
             muted
@@ -97,18 +99,18 @@ export default function Home() {
       </section>
 
       {/* Content Sections */}
-      <section className="px-10 py-12">
-        <div className="grid grid-cols-5 gap-20 items-start">
-          <div className="space-y-8 col-span-3 order-2">
+      <section className="px-6 lg:px-10 py-12">
+        <div className="grid lg:grid-cols-5 gap-20 items-start">
+          <div className="space-y-8 lg:col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">
-              <h3 className="text-2xl font-bold text-cv-purple/50 leading-tight tracking-tight">
+              <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 leading-tight tracking-tight">
                 Conversaciones cívicas que centran la
-                <br />
-                experiencia vivida y la cotidianidad
+                <br className="hidden md:block" /> experiencia vivida y la
+                cotidianidad
               </h3>
             </div>
 
-            <p className="text-xl text-black/60 leading-relaxed">
+            <p className="text-md lg:text-xl text-black/60 leading-relaxed">
               Los residentes investigadores convocaron y guiaron conversaciones
               con vecinos y amigos miembros de la comunidad de la ciudadela para
               hablar de sus alegrías, tristezas, esperanzas y miedos con
@@ -120,7 +122,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="order-1 col-span-2">
+          <div className="order-1 lg:col-span-2">
             <div className="w-96 h-96 mx-auto relative">
               <svg viewBox="0 0 346 346" className="w-full h-full">
                 <path
@@ -144,8 +146,8 @@ export default function Home() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="px-10 py-12">
-        <div className="grid grid-cols-2 gap-8 mb-8">
+      <section className="px-6 lg:px-10 lg:py-12">
+        <div className="grid lg:grid-cols-2 gap-8 mb-8">
           <div className="w-full h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo1.jpg"
@@ -169,7 +171,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="grid grid-cols-3 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
           <div className="h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo2.jpg"
@@ -202,14 +204,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="pt-12">
+        <div className="lg:pt-12">
           <div className="bg-cv-orange/30 inline-block rounded mb-8">
-            <h3 className="text-2xl font-bold text-cv-purple/50 tracking-tight">
+            <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 tracking-tight">
               Fotografías para contar historias de vida en el territorio
             </h3>
           </div>
 
-          <p className="text-xl text-black/50 leading-relaxed">
+          <p className="text-md lg:text-xl text-black/50 leading-relaxed">
             A través del método del fotorelato, los residentes investigadores
             convocaron y guiaron a sus vecinos y amigos a documentar sus
             experiencias y percepciones de la ciudadela haciendo uso de las
@@ -223,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* Interactive Section */}
-      <section className="relative bg-cv-orange/20 flex items-center my-15">
+      <section className="relative bg-cv-orange/20 flex flex-col lg:flex-row items-center my-15">
         <div className="flex-1 rounded-lg ">
           {/* Decorative circles */}
           <div className="min-h-[600px]  flex items-center justify-center">
@@ -231,14 +233,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex-1 px-16">
+        <div className="flex-1 px-6 lg:px-16">
           <div className=" inline-block">
-            <h3 className="text-2xl font-bold text-cv-purple/50 mb-10 tracking-tight">
+            <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 mb-6 lg:mb-10 tracking-tight">
               Navegando las voces de los residentes
             </h3>
           </div>
 
-          <p className="text-xl text-black/50 leading-relaxed mb-8">
+          <p className="text-md lg:text-xl text-black/50 leading-relaxed mb-8">
             Este portal interactivo permite navegar los temas que alegran o
             preocupan a los residentes que participaron, dándole protagonismo a
             una multiplicidad de experiencias y vivencias, testimonios y
@@ -246,12 +248,12 @@ export default function Home() {
             escuchar sus voces compartiéndonos sus vivencias.
           </p>
 
-          <p className="text-xl text-black/50 leading-relaxed mb-12">
+          <p className="text-md lg:text-xl text-black/50 leading-relaxed mb-6 lg:mb-12">
             88 residentes de Ciudad Verde centraron sus experiencias y
             perspectivas en 8 temas principales.
           </p>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 mb-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -268,7 +270,7 @@ export default function Home() {
               <path d="M14 2v4a2 2 0 0 0 2 2h4" />
               <path d="M2 19a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0v-4a6 6 0 0 1 12 0v4a2 2 0 1 1-4 0v-1a2 2 0 1 1 4 0" />
             </svg>{" "}
-            <span className="text-xl font-bold text-cv-pink">
+            <span className="text-lg lg:text-xl font-bold text-cv-pink">
               Escuchar audios
             </span>
             <svg
@@ -291,47 +293,47 @@ export default function Home() {
       </section>
 
       {/* Questions Section */}
-      <section className="px-10 py-12">
+      <section className="px-6 lg:px-10 lg:py-12">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-black/80 leading-tight tracking-tight max-w-[795px] mx-auto">
+          <h2 className="text-2xl lg:text-4xl font-bold text-black/80 leading-tight tracking-tight max-w-[795px] mx-auto">
             Los residentes participantes compartieron sus respuestas a las
             siguientes 5 preguntas
           </h2>
         </div>
 
-        <div className="space-y-7 max-w-4xl mx-auto flex flex-col justify-center text-center items-center">
-          <div className="bg-cv-green/30 p-3 rounded-lg">
-            <p className="text-md text-black/60">
+        <div className="space-y-5 lg:space-y-7 max-w-4xl mx-auto flex flex-col justify-center text-center items-center">
+          <div className="bg-cv-green/30 p-2 lg:p-3 rounded-lg">
+            <p className="text-sm lg:text-md text-black/60">
               Una experiencia positiva que hayan tenido en su vida en Ciudad
               Verde que relacionen con elementos de Ciudad Verde que consideres
               que deben resaltarse sobre la urbanización&rdquo;
             </p>
           </div>
 
-          <div className="bg-cv-orange/30 p-3 rounded-lg">
-            <p className="text-md text-black/60">
+          <div className="bg-cv-orange/30 p-2 lg:p-3 rounded-lg">
+            <p className="text-sm lg:text-md text-black/60">
               &ldquo;Una experiencia difícil, en las que vivir en Ciudad Verde
               haya sido una fuente de tensión, conflicto o malestar.&rdquo;
             </p>
           </div>
 
-          <div className="bg-cv-pink/30 p-3 rounded-lg">
-            <p className="text-md text-black/60">
+          <div className="bg-cv-pink/30 p-2 lg:p-3 rounded-lg">
+            <p className="text-sm lg:text-md text-black/60">
               Una pregunta que harías sobre el futuro de Ciudad Verde y tu rol
               en ese futuro&rdquo;
             </p>
           </div>
 
-          <div className="flex gap-8 items-center justify-center">
-            <div className="bg-cv-yellow/30 p-3 rounded-lg">
-              <p className="text-md text-black/60">
+          <div className="flex flex-col lg:flex-row gap-5 lg:gap-8 items-center justify-center">
+            <div className="bg-cv-yellow/30 p-2 lg:p-3 rounded-lg">
+              <p className="text-sm lg:text-md text-black/60">
                 &ldquo;¿Qué experiencia compartida por alguien te resonó, y por
                 qué&rdquo;?
               </p>
             </div>
 
-            <div className="bg-cv-blue/30 p-3 rounded-lg">
-              <p className="text-md text-black/60">
+            <div className="bg-cv-blue/30 p-2 lg:p-3 rounded-lg">
+              <p className="text-sm lg:text-md text-black/60">
                 qué se lleva de esta conversación.
               </p>
             </div>

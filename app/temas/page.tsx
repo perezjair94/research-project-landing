@@ -9,6 +9,7 @@ export default function Themes() {
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo5.jpg",
       bgColor: "bg-cv-pink/20",
+      overlayColor: "bg-cv-pink/20",
     },
     {
       title: "Transporte",
@@ -16,6 +17,7 @@ export default function Themes() {
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo1.jpg",
       bgColor: "bg-cv-green/20",
+      overlayColor: "bg-cv-green/20",
     },
     {
       title: "Espacio Público",
@@ -23,27 +25,31 @@ export default function Themes() {
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo4.jpg",
       bgColor: "bg-cv-blue/20",
+      overlayColor: "bg-cv-blue/20",
     },
     {
       title: "Seguridad",
       description:
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo2.jpg",
-      bgColor: "bg-cv-purple/10",
+      bgColor: "bg-cv-purple/20",
+      overlayColor: "bg-cv-purple/20",
     },
     {
       title: "Grupos poblacionales",
       description:
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo1.jpg",
-      bgColor: "bg-cv-orange/30",
+      bgColor: "bg-cv-orange/20",
+      overlayColor: "bg-cv-orange/20",
     },
     {
       title: "Calidad de Vida",
       description:
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo5.jpg",
-      bgColor: "bg-cv-pink/20",
+      bgColor: "bg-cv-yellow/20",
+      overlayColor: "bg-cv-yellow/20",
     },
     {
       title: "Gobernanza",
@@ -51,13 +57,15 @@ export default function Themes() {
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo4.jpg",
       bgColor: "bg-cv-teal/20",
+      overlayColor: "bg-cv-teal/20",
     },
     {
       title: "Infraestructura",
       description:
         "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
       image: "/images/photo2.jpg",
-      bgColor: "bg-cv-orange/30",
+      bgColor: "bg-gray-400/20",
+      overlayColor: "bg-gray-400/20",
     },
   ];
 
@@ -127,8 +135,11 @@ export default function Themes() {
                   alt={theme.title}
                   width={160}
                   height={120}
-                  className="w-full h-full object-cover rounded-l-2xl"
+                  className="w-full h-full object-cover rounded-l-2xl saturate-[0] contrast-125 opacity-50"
                 />
+                <div
+                  className={`absolute inset-0 ${theme.overlayColor} rounded-l-2xl`}
+                ></div>
               </div>
 
               {/* Content */}
@@ -173,4 +184,3 @@ export default function Themes() {
     </main>
   );
 }
-

@@ -22,7 +22,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     observer.observe(video);
@@ -146,58 +146,59 @@ export default function Home() {
       {/* Photo Gallery Section */}
       <section className="px-10 py-12">
         <div className="grid grid-cols-2 gap-8 mb-8">
-          <div className="w-full h-80 rounded-lg overflow-hidden opacity-70">
+          <div className="w-full h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo1.jpg"
               alt="Ciudad Verde photo 1"
               width={1600}
               height={900}
-              className="w-full h-full object-cover"
-              style={{ backgroundColor: "rgba(253, 203, 82, 0.2)" }}
+              className="w-full h-full object-cover contrast-125 brightness-125"
             />
+            <div className="absolute inset-0 bg-cv-yellow/20 rounded-lg"></div>
           </div>
 
-          <div className="w-full h-80 rounded-lg overflow-hidden opacity-70">
+          <div className="w-full h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
-              src="/images/photo5.jpg"
+              src="/images/photo4.jpg"
               alt="Ciudad Verde photo 5"
               width={2016}
               height={1512}
-              className="w-full h-full object-cover"
-              style={{ backgroundColor: "rgba(85, 197, 190, 0.2)" }}
+              className="w-full h-full object-cover contrast-125 brightness-125"
             />
+            <div className="absolute inset-0 bg-cv-blue/20 rounded-lg"></div>
           </div>
         </div>
 
         <div className="grid grid-cols-3 gap-8 mb-12">
-          <div className="h-80 rounded-lg overflow-hidden opacity-70">
+          <div className="h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/photo2.jpg"
               alt="Ciudad Verde photo 2"
               width={2016}
               height={1134}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover contrast-125 brightness-125"
             />
+            <div className="absolute inset-0 bg-cv-pink/20 rounded-lg"></div>
           </div>
-          <div className="h-80 rounded-lg overflow-hidden opacity-80">
+          <div className="h-80 rounded-lg overflow-hidden opacity-70 relative">
             <Image
               src="/images/photo1.jpg"
               alt="Ciudad Verde photo 3"
               width={1600}
               height={900}
-              className="w-full h-full object-cover"
-              style={{ backgroundColor: "rgba(83, 81, 240, 0.2)" }}
+              className="w-full h-full object-cover contrast-125 brightness-125"
             />
+            <div className="absolute inset-0 bg-cv-purple/20 rounded-lg"></div>
           </div>
-          <div className="h-80 rounded-lg overflow-hidden opacity-80">
+          <div className="h-80 rounded-lg overflow-hidden opacity-80 relative">
             <Image
-              src="/images/photo4.jpg"
+              src="/images/photo5.jpg"
               alt="Ciudad Verde photo 4"
               width={1824}
               height={1368}
-              className="w-full h-full object-cover"
-              style={{ backgroundColor: "rgba(254, 220, 199, 0.2)" }}
+              className="w-full h-full object-cover contrast-125 brightness-125"
             />
+            <div className="absolute inset-0 bg-cv-orange/20 rounded-lg"></div>
           </div>
         </div>
 

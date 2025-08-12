@@ -91,6 +91,7 @@ export default function Home() {
             controls
             preload="metadata"
             muted
+            playsInline
           >
             <source src="/Video CV.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.

@@ -72,23 +72,25 @@ export default function Themes() {
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
-      <header className="px-10 py-6 flex gap-10 items-center justify-start">
+      <header className="px-6 lg:px-10 py-6 flex gap-10 items-center justify-start">
         <Link
           href="/"
-          className="font-semibold text-xl text-black hover:text-black/70 transition-colors"
+          className="font-semibold text-lg lg:text-xl text-black hover:text-black/70 transition-colors"
         >
           Logo
         </Link>
         <nav className="py-1 rounded">
-          <span className="text-cv-pink font-bold text-xl">Temas</span>
+          <span className="text-cv-pink font-bold text-lg lg:text-xl">
+            Temas
+          </span>
         </nav>
       </header>
 
       {/* Hero Section with background */}
       <section className="relative">
-        <div className="bg-cv-teal/10 px-16 py-16">
+        <div className="bg-cv-teal/10 px-6 lg:px-16 py-10 lg:py-16">
           {/* Decorative SVG */}
-          <div className="absolute right-0 top-0 w-[346px] h-[346px]">
+          <div className="absolute right-0 top-0 w-[346px] h-[346px] hidden lg:block">
             <svg viewBox="0 0 346 346" className="w-full h-full">
               <path
                 d="M173 43.25 L288.33 302.75 L57.67 302.75 Z"
@@ -108,7 +110,7 @@ export default function Themes() {
           <div className="relative z-10">
             <h1 className="text-3xl font-bold text-cv-purple/80 mb-6">Temas</h1>
 
-            <p className="text-xl text-black/50 leading-relaxed max-w-[712px]">
+            <p className="text-lg lg:text-xl text-black/50 leading-relaxed max-w-[712px]">
               Este portal interactivo permite navegar los temas que alegran o
               preocupan a los residentes que iciparon, dándole protagonismo a
               una multiplicidad de experiencias y vivencias, testimonios y
@@ -120,8 +122,8 @@ export default function Themes() {
       </section>
 
       {/* Themes Grid */}
-      <section className="px-14 py-12">
-        <div className="grid grid-cols-2 gap-8">
+      <section className="p-6 lg:px-14 lg:py-12">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
           {themes.map((theme, index) => (
             <div
               key={index}
@@ -144,7 +146,7 @@ export default function Themes() {
 
               {/* Content */}
               <div className="flex-1 p-5 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-black/50 mb-2 leading-tight">
+                <h3 className="text-xl lg:text-2xl font-bold text-black/50 mb-2 leading-tight">
                   {theme.title}
                 </h3>
                 <p className="text-sm text-black/50 leading-relaxed leading-relaxed tracking-tight">

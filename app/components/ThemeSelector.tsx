@@ -13,7 +13,7 @@ export default function ThemeSelector() {
       case "medium":
         return "w-24 h-24 sm:w-24 sm:h-24 md:w-24 md:h-24 lg:w-28 lg:h-28";
       case "large":
-        return "w-28 h-28 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36";
+        return "w-32 h-32 sm:w-32 sm:h-32 md:w-32 md:h-32 lg:w-36 lg:h-36";
       default:
         return "w-22 h-22 sm:w-22 sm:h-22 md:w-22 md:h-22 lg:w-24 lg:h-24";
     }
@@ -93,7 +93,7 @@ export default function ThemeSelector() {
           </div>
 
           {/* Subtopics arranged in a circle around the main theme */}
-          <div className="relative w-64 h-64 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
+          <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
             {selectedTheme.subthemes.map((subtheme, index) => {
               const angle =
                 (index / selectedTheme.subthemes.length) * 2 * Math.PI;

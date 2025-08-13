@@ -17,9 +17,9 @@ export const themes: Theme[] = [
   {
     id: "community-life",
     title: "Community Life",
-    color: "bg-cv-orange",
+    color: "bg-cv-orange/80",
     size: "medium",
-    position: { x: -120, y: -80 },
+    position: { x: -160, y: -35 },
     subthemes: [
       { id: "community-events", title: "Community Events", highlights: 45 },
       {
@@ -34,9 +34,9 @@ export const themes: Theme[] = [
   {
     id: "public-health",
     title: "Public Health",
-    color: "bg-cv-blue",
+    color: "bg-cv-blue/50",
     size: "medium",
-    position: { x: 0, y: -100 },
+    position: { x: 0, y: -140 },
     subthemes: [
       { id: "healthcare-access", title: "Healthcare Access", highlights: 52 },
       { id: "health-facilities", title: "Health Facilities", highlights: 41 },
@@ -51,9 +51,9 @@ export const themes: Theme[] = [
   {
     id: "economic-opportunity",
     title: "Economic Opportunity",
-    color: "bg-cv-green",
+    color: "bg-cv-green/80",
     size: "small",
-    position: { x: 120, y: -80 },
+    position: { x: 120, y: -100 },
     subthemes: [
       { id: "job-opportunities", title: "Job Opportunities", highlights: 67 },
       { id: "local-business", title: "Local Business", highlights: 34 },
@@ -64,9 +64,9 @@ export const themes: Theme[] = [
   {
     id: "housing",
     title: "Housing",
-    color: "bg-cv-pink",
+    color: "bg-cv-pink/50",
     size: "large",
-    position: { x: 100, y: 20 },
+    position: { x: 125, y: 20 },
     subthemes: [
       { id: "housing-quality", title: "Housing Quality", highlights: 89 },
       {
@@ -85,9 +85,9 @@ export const themes: Theme[] = [
   {
     id: "safety",
     title: "Safety",
-    color: "bg-cv-teal",
+    color: "bg-cv-teal/50",
     size: "small",
-    position: { x: 140, y: 100 },
+    position: { x: 110, y: 140 },
     subthemes: [
       { id: "crime-prevention", title: "Crime Prevention", highlights: 78 },
       { id: "police-relations", title: "Police Relations", highlights: 56 },
@@ -98,9 +98,9 @@ export const themes: Theme[] = [
   {
     id: "inequality",
     title: "Inequality",
-    color: "bg-cv-purple",
+    color: "bg-cv-purple/50",
     size: "medium",
-    position: { x: 0, y: 80 },
+    position: { x: 0, y: 120 },
     subthemes: [
       { id: "social-inequality", title: "Social Inequality", highlights: 93 },
       { id: "economic-disparity", title: "Economic Disparity", highlights: 71 },
@@ -115,9 +115,9 @@ export const themes: Theme[] = [
   {
     id: "education",
     title: "Education",
-    color: "bg-yellow-600",
+    color: "bg-cv-yellow/50",
     size: "small",
-    position: { x: -80, y: 60 },
+    position: { x: -120, y: 80 },
     subthemes: [
       { id: "school-quality", title: "School Quality", highlights: 84 },
       {
@@ -132,9 +132,9 @@ export const themes: Theme[] = [
   {
     id: "government-institutions",
     title: "Government And Institutions",
-    color: "bg-cv-teal",
+    color: "bg-cv-teal/50",
     size: "large",
-    position: { x: -0, y: 0 },
+    position: { x: -25, y: -10 },
     subthemes: [
       { id: "civic-engagement", title: "Civic Engagement", highlights: 156 },
       {
@@ -155,4 +155,3 @@ export const themes: Theme[] = [
     ],
   },
 ];
-

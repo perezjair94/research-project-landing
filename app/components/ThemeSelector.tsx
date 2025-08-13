@@ -125,12 +125,12 @@ export default function ThemeSelector() {
 
       {/* Theme circles container */}
       <div className="relative z-10">
-        <div className="relative w-96 h-96">
+        <div className="relative w-[500px] h-[400px]">
           {themes.map((theme, index) => (
             <div
               key={theme.id}
               onClick={() => handleThemeClick(theme)}
-              className={`absolute ${theme.color} ${getSizeClass(theme.size)} rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform shadow-lg hover:shadow-xl`}
+              className={`absolute ${theme.color} ${getSizeClass(theme.size)} rounded-full flex items-center justify-center cursor-pointer hover:scale-110 transition-transform`}
               style={{
                 left: "50%",
                 top: "50%",
@@ -138,7 +138,7 @@ export default function ThemeSelector() {
               }}
             >
               <span
-                className={`text-white font-semibold ${getTextSize(theme.size)} text-center px-2`}
+                className={`text-black/30 font-semibold ${getTextSize(theme.size)} text-center px-2`}
               >
                 {theme.title}
               </span>
@@ -159,4 +159,3 @@ export default function ThemeSelector() {
     </div>
   );
 }
-

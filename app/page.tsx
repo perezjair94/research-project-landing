@@ -115,7 +115,7 @@ export default function Home() {
 
       {/* Content Sections */}
       <section className="px-6 lg:px-10 lg:py-12">
-        <div className="grid lg:grid-cols-5 lg:gap-20 items-start mb-12 lg:mb-0">
+        <div className="grid lg:grid-cols-5 lg:gap-20 items-center mb-12 lg:mb-0">
           <div className="space-y-8 lg:col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">
               <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 leading-tight tracking-tight">

@@ -89,18 +89,7 @@ export default function Themes() {
 
       {/* Hero Section with background */}
       <section className="relative">
-        <div className="bg-cv-teal/10 px-6 lg:px-16 py-10 lg:py-16">
-          {/* Decorative Image */}
-          <div className="absolute right-0 top-0 w-[346px] h-[346px] hidden lg:block">
-            <Image
-              src="/images/themes-hero-image.png"
-              alt="Decorative illustration"
-              width={346}
-              height={346}
-              className="w-full h-full object-contain"
-            />
-          </div>
-
+        <div className="bg-cv-teal/10 px-6 lg:px-16 lg:py-2 flex gap-20 items-center justify-between">
           <div className="relative z-10">
             <h1 className="text-3xl font-bold text-cv-purple/80 mb-6">Temas</h1>
 
@@ -111,6 +100,16 @@ export default function Themes() {
               anécdotas profundamente personales. ¿Lo más poderoso? podemos
               escuchar sus voces compartiéndonos sus vivencias.
             </p>
+          </div>
+          {/* Decorative Image */}
+          <div className="w-[346px] h-[346px] hidden lg:block">
+            <Image
+              src="/images/themes-hero-image.png"
+              alt="Decorative illustration"
+              width={346}
+              height={346}
+              className="w-full h-full object-contain"
+            />
           </div>
         </div>
       </section>

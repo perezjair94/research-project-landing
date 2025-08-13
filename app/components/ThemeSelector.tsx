@@ -72,7 +72,7 @@ export default function ThemeSelector() {
         <div className="relative z-10 flex flex-col items-center justify-center">
           {/* Central theme circle */}
           <div
-            className={`${selectedTheme.color}  rounded-full flex items-center justify-center mb-8 shadow-lg`}
+            className={`${selectedTheme.color}  rounded-full flex items-center justify-center mb-8`}
           >
             <h3 className="text-white font-bold text-xl text-center px-4">
               {selectedTheme.title}
@@ -80,18 +80,18 @@ export default function ThemeSelector() {
           </div>
 
           {/* Subtopics arranged in a circle around the main theme */}
-          <div className="relative w-96 h-96">
+          <div className="relative w-80 h-80">
             {selectedTheme.subthemes.map((subtheme, index) => {
               const angle =
                 (index / selectedTheme.subthemes.length) * 2 * Math.PI;
-              const radius = 140;
+              const radius = 100;
               const x = Math.cos(angle) * radius;
               const y = Math.sin(angle) * radius;
 
               return (
                 <div
                   key={subtheme.id}
-                  className="absolute bg-white rounded-full w-28 h-28 flex flex-col items-center justify-center shadow-lg border-2 border-gray-200 hover:shadow-xl transition-shadow cursor-pointer"
+                  className="absolute bg-white rounded-full w-28 h-28 flex flex-col items-center justify-center"
                   style={{
                     left: "50%",
                     top: "50%",

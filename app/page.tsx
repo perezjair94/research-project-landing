@@ -115,7 +115,7 @@ export default function Home() {
 
       {/* Content Sections */}
       <section className="px-6 lg:px-10 lg:py-12">
-        <div className="grid lg:grid-cols-5 gap-20 items-start mb-12 lg:mb-0">
+        <div className="grid lg:grid-cols-5 lg:gap-20 items-start mb-12 lg:mb-0">
           <div className="space-y-8 lg:col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">
               <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 leading-tight tracking-tight">
@@ -125,7 +125,7 @@ export default function Home() {
               </h3>
             </div>
 
-            <p className="text-md lg:text-xl text-black/60 leading-relaxed">
+            <p className="text-md lg:text-lg text-black/60 leading-relaxed">
               Los residentes investigadores convocaron y guiaron conversaciones
               con vecinos y amigos miembros de la comunidad de la ciudadela para
               hablar de sus alegrías, tristezas, esperanzas y miedos con
@@ -137,7 +137,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="order-1 lg:col-span-2 hidden lg:block">
+          <div className="order-1 lg:col-span-2">
             <Image
               src="/images/conversations-image.png"
               alt="Conversaciones cívicas - Ciudad Verde"
@@ -215,7 +215,7 @@ export default function Home() {
             </h3>
           </div>
 
-          <p className="text-md lg:text-xl text-black/50 leading-relaxed">
+          <p className="text-md lg:text-lg text-black/50 leading-relaxed">
             A través del método del fotorelato, los residentes investigadores
             convocaron y guiaron a sus vecinos y amigos a documentar sus
             experiencias y percepciones de la ciudadela haciendo uso de las
@@ -229,19 +229,100 @@ export default function Home() {
       </section>
 
       {/* Interactive Section */}
-      <section className="relative bg-cv-orange/20 flex flex-col gap-8 md:gap-0 lg:flex-row items-center my-15">
-        <div className="flex-1 rounded-lg w-full">
+      <section className="relative bg-cv-orange/20 lg:bg-transparent flex flex-col gap-8 md:gap-0 lg:flex-row items-center my-15 overflow-hidden">
+        {/* Desktop background - only visible on lg screens */}
+        <div className="hidden lg:block absolute inset-0">
+          <div className="relative w-full h-full">
+            {/* Base background */}
+            <div className="absolute inset-0 bg-cv-orange/20"></div>
+
+            {/* Background images positioned exactly as in Figma */}
+            <div
+              className="absolute rounded-full overflow-hidden"
+              style={{
+                left: "900px",
+                bottom: "14px",
+                width: "125px",
+                height: "125px",
+              }}
+            >
+              <Image
+                src="/images/bg-image-4.png"
+                alt="Background decoration"
+                width={125}
+                height={125}
+                className="w-full h-full object-cover opacity-60"
+              />
+            </div>
+
+            <div
+              className="absolute rounded-full overflow-hidden"
+              style={{
+                right: "51px",
+                bottom: "12px",
+                width: "179px",
+                height: "179px",
+              }}
+            >
+              <Image
+                src="/images/bg-image-1.png"
+                alt="Background decoration"
+                width={179}
+                height={179}
+                className="w-full h-full object-cover opacity-60"
+              />
+            </div>
+
+            <div
+              className="absolute rounded-full overflow-hidden"
+              style={{
+                right: "50px",
+                top: "60px",
+                width: "100px",
+                height: "100px",
+              }}
+            >
+              <Image
+                src="/images/bg-image-2.png"
+                alt="Background decoration"
+                width={116}
+                height={116}
+                className="w-full h-full object-cover opacity-60"
+              />
+            </div>
+
+            <div
+              className="absolute rounded-full overflow-hidden"
+              style={{
+                left: "500px",
+                top: "37px",
+                width: "108px",
+                height: "108px",
+              }}
+            >
+              <Image
+                src="/images/bg-image-3.png"
+                alt="Background decoration"
+                width={108}
+                height={108}
+                className="w-full h-full object-cover opacity-60"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex-1 rounded-lg w-full relative z-10">
           <ThemeSelector />
         </div>
 
         <div className="flex-1 px-6 lg:px-16">
           <div className=" inline-block">
-            <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 mb-6 lg:mb-10 tracking-tight">
+            <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 mb-6 lg:mb-8 tracking-tight">
               Navegando las voces de los residentes
             </h3>
           </div>
 
-          <p className="text-md lg:text-xl text-black/50 leading-relaxed mb-8">
+          <p className="text-md lg:text-lg text-black/50 leading-relaxed mb-8">
             Este portal interactivo permite navegar los temas que alegran o
             preocupan a los residentes que participaron, dándole protagonismo a
             una multiplicidad de experiencias y vivencias, testimonios y
@@ -249,7 +330,7 @@ export default function Home() {
             escuchar sus voces compartiéndonos sus vivencias.
           </p>
 
-          <p className="text-md lg:text-xl text-black/50 leading-relaxed mb-6 lg:mb-12">
+          <p className="text-md lg:text-lg text-black/50 leading-relaxed mb-6 lg:mb-12">
             88 residentes de Ciudad Verde centraron sus experiencias y
             perspectivas en 8 temas principales.
           </p>

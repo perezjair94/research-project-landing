@@ -57,7 +57,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-[590px_1fr] gap-8 lg:gap-0 items-start">
             {/* Text Content */}
             <div className="relative order-2 lg:order-1">
-              <h1 className="text-[55px] font-bebas text-cv-purple/80">
+              <h1 className="text-4xl lg:text-[55px] font-bebas text-cv-purple/80">
                 Hacer la vida en Ciudad Verde
               </h1>
 
@@ -118,7 +118,7 @@ export default function Home() {
         <div className="grid lg:grid-cols-5 lg:gap-20 items-center mb-12 lg:mb-0">
           <div className="space-y-6 lg:col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">
-              <h3 className="text-xl lg:text-3xl font-bebas text-cv-purple/50">
+              <h3 className="text-2xl lg:text-3xl font-bebas text-cv-purple/50">
                 Conversaciones cívicas que centran la
                 <br className="hidden md:block" /> experiencia vivida y la
                 cotidianidad
@@ -210,7 +210,7 @@ export default function Home() {
 
         <div className="lg:pt-12">
           <div className="bg-cv-orange/30 inline-block rounded mb-8">
-            <h3 className="text-xl lg:text-3xl font-bebas text-cv-purple/50">
+            <h3 className="text-2xl lg:text-3xl font-bebas text-cv-purple/50">
               Fotografías para contar historias de vida en el territorio
             </h3>
           </div>
@@ -317,7 +317,7 @@ export default function Home() {
 
         <div className="flex-1 px-6 lg:px-16">
           <div className=" inline-block">
-            <h3 className="text-xl lg:text-3xl font-bebas text-cv-purple/50 mb-6 lg:mb-8">
+            <h3 className="text-2xl lg:text-3xl font-bebas text-cv-purple/50 mb-6 lg:mb-8">
               Navegando las voces de los residentes
             </h3>
           </div>
@@ -377,7 +377,7 @@ export default function Home() {
       {/* Questions Section */}
       <section className="px-6 lg:px-10 lg:py-12">
         <div className="text-center mb-16">
-          <h2 className="text-2xl lg:text-5xl font-bebas text-black/80 max-w-[795px] mx-auto">
+          <h2 className="text-3xl lg:text-5xl font-bebas text-black/80 max-w-[795px] mx-auto">
             Los residentes participantes compartieron sus respuestas a las
             siguientes 5 preguntas
           </h2>

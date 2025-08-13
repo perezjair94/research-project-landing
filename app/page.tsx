@@ -57,7 +57,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-[590px_1fr] gap-8 lg:gap-0 items-start">
             {/* Text Content */}
             <div className="relative order-2 lg:order-1">
-              <h1 className="text-4xl lg:text-5xl font-extrabold text-cv-purple/80 leading-tight tracking-tight">
+              <h1 className="text-[55px] leading-[1.2] font-bebas text-cv-purple/80 tracking-normal">
                 Hacer la vida en Ciudad Verde
               </h1>
 

@@ -38,10 +38,13 @@ export default function Home() {
       {/* Header */}
       <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
         <div className="font-semibold text-lg lg:text-xl text-black">Logo</div>
-        <nav className="py-1 rounded">
+        <nav className="py-1 rounded flex gap-6 lg:gap-8">
+          <span className="text-cv-pink font-bold text-lg lg:text-xl border-b-2 border-cv-pink">
+            Inicio
+          </span>
           <Link
             href="/temas"
-            className="text-cv-pink font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
+            className="text-black/30 font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
           >
             Temas
           </Link>

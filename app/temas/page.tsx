@@ -73,14 +73,15 @@ export default function Themes() {
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
       <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
-        <Link
-          href="/"
-          className="font-semibold text-lg lg:text-xl text-black hover:text-black/70 transition-colors"
-        >
-          Logo
-        </Link>
-        <nav className="py-1 rounded">
-          <span className="text-cv-pink font-bold text-lg lg:text-xl">
+        <div className="font-semibold text-lg lg:text-xl text-black">Logo</div>
+        <nav className="py-1 rounded flex gap-6 lg:gap-8">
+          <Link
+            href="/"
+            className="text-black/30 font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
+          >
+            Inicio
+          </Link>
+          <span className="text-cv-pink font-bold text-lg lg:text-xl border-b-2 border-cv-pink">
             Temas
           </span>
         </nav>

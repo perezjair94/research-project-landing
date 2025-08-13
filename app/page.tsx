@@ -53,35 +53,45 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="px-6 lg:px-10 lg:py-12">
-        <div className="relative">
-          <h1 className="text-4xl lg:text-5xl font-extrabold text-cv-purple/80 leading-tight tracking-tight">
-            Hacer la vida en Ciudad Verde
-          </h1>
+        <div className="relative max-w-[1250px] mx-auto">
+          <div className="grid lg:grid-cols-[590px_1fr] gap-8 lg:gap-0 items-start">
+            {/* Text Content */}
+            <div className="relative order-2 lg:order-1">
+              <h1 className="text-4xl lg:text-5xl font-extrabold text-cv-purple/80 leading-tight tracking-tight">
+                Hacer la vida en Ciudad Verde
+              </h1>
 
-          <div className="mt-2 bg-cv-orange/30 inline-block px-2 py-1 rounded">
-            <h2 className="text-xl lg:text-2xl font-bold text-black/35 leading-normal tracking-tight leading-tight">
-              Centrando las voces de los residentes a través
-              <br className="hidden md:block" />
-              de la investigación participativa
-            </h2>
-          </div>
+              <div className="mt-4 bg-cv-orange/30 inline-block px-2 py-1 rounded">
+                <h2 className="text-xl lg:text-2xl font-bold text-black/35 leading-normal tracking-tight leading-tight">
+                  Centrando las voces de los residentes a través
+                  <br className="hidden md:block" />
+                  de la investigación participativa
+                </h2>
+              </div>
 
-          <p className="mt-8 text-md md:text-xl text-black/50 max-w-xl leading-relaxed">
-            Basándose en dos premisas: &ldquo;Nada sobre nosotros sin
-            nosotros&rdquo; y &ldquo;Nadie se las sabe todas, pero juntos
-            sabemos muchas cosas&rdquo;, el grupo de residentes investigadores
-            de Ciudad Verde se reunió en 2023 para diseñar e implementar una
-            investigación que diera luces sobre las alegrías, las tristezas, los
-            sueños y los miedos de los habitantes de Ciudad Verde pasada una
-            década después de la inauguración de este, el macroproyecto de
-            vivienda social más grande del país.
-          </p>
+              <p className="mt-8 text-md md:text-lg text-black/50 max-w-[590px] leading-relaxed">
+                Basándose en dos premisas: &ldquo;Nada sobre nosotros sin
+                nosotros&rdquo; y &ldquo;Nadie se las sabe todas, pero juntos
+                sabemos muchas cosas&rdquo;, el grupo de residentes
+                investigadores de Ciudad Verde se reunió en 2023 para diseñar e
+                implementar una investigación que diera luces sobre las
+                alegrías, las tristezas, los sueños y los miedos de los
+                habitantes de Ciudad Verde pasada una década después de la
+                inauguración de este, el macroproyecto de vivienda social más
+                grande del país.
+              </p>
+            </div>
 
-          {/* Decorative elements */}
-          <div className="hidden lg:block">
-            <div className="absolute top-0 right-0 w-40 h-40 bg-gray-300 rounded-sm opacity-40"></div>
-            <div className="absolute top-20 right-20 w-64 h-64 bg-gray-300 rounded-full opacity-40"></div>
-            <div className="absolute top-64 right-10 w-48 h-48 bg-gray-300 rounded-full opacity-40"></div>
+            {/* Banner Illustration - positioned exactly as in Figma */}
+            <div className="relative order-1 lg:order-2 lg:ml-0">
+              <Image
+                src="/images/banner-group.svg"
+                alt="Ciudad Verde Illustration"
+                width={580}
+                height={493}
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>

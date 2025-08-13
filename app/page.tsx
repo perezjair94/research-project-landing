@@ -57,11 +57,11 @@ export default function Home() {
           <div className="grid lg:grid-cols-[590px_1fr] gap-8 lg:gap-0 items-start">
             {/* Text Content */}
             <div className="relative order-2 lg:order-1">
-              <h1 className="text-[55px] leading-[1.2] font-bebas text-cv-purple/80 tracking-normal">
+              <h1 className="text-[55px] font-bebas text-cv-purple/80">
                 Hacer la vida en Ciudad Verde
               </h1>
 
-              <div className="mt-4 bg-cv-orange/30 inline-block px-2 py-1 rounded">
+              <div className="bg-cv-orange/30 inline-block px-2 py-1 rounded">
                 <h2 className="text-xl lg:text-2xl font-bold text-black/35 leading-normal tracking-tight leading-tight">
                   Centrando las voces de los residentes a través
                   <br className="hidden md:block" />
@@ -116,9 +116,9 @@ export default function Home() {
       {/* Content Sections */}
       <section className="px-6 lg:px-10 lg:py-12">
         <div className="grid lg:grid-cols-5 lg:gap-20 items-center mb-12 lg:mb-0">
-          <div className="space-y-8 lg:col-span-3 order-2">
+          <div className="space-y-6 lg:col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">
-              <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 leading-tight tracking-tight">
+              <h3 className="text-xl lg:text-3xl font-bebas text-cv-purple/50">
                 Conversaciones cívicas que centran la
                 <br className="hidden md:block" /> experiencia vivida y la
                 cotidianidad
@@ -210,7 +210,7 @@ export default function Home() {
 
         <div className="lg:pt-12">
           <div className="bg-cv-orange/30 inline-block rounded mb-8">
-            <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 tracking-tight">
+            <h3 className="text-xl lg:text-3xl font-bebas text-cv-purple/50">
               Fotografías para contar historias de vida en el territorio
             </h3>
           </div>
@@ -276,7 +276,7 @@ export default function Home() {
             <div
               className="absolute rounded-full overflow-hidden"
               style={{
-                right: "50px",
+                right: "80px",
                 top: "60px",
                 width: "100px",
                 height: "100px",
@@ -317,7 +317,7 @@ export default function Home() {
 
         <div className="flex-1 px-6 lg:px-16">
           <div className=" inline-block">
-            <h3 className="text-xl lg:text-2xl font-bold text-cv-purple/50 mb-6 lg:mb-8 tracking-tight">
+            <h3 className="text-xl lg:text-3xl font-bebas text-cv-purple/50 mb-6 lg:mb-8">
               Navegando las voces de los residentes
             </h3>
           </div>
@@ -377,7 +377,7 @@ export default function Home() {
       {/* Questions Section */}
       <section className="px-6 lg:px-10 lg:py-12">
         <div className="text-center mb-16">
-          <h2 className="text-2xl lg:text-4xl font-bold text-black/80 leading-tight tracking-tight max-w-[795px] mx-auto">
+          <h2 className="text-2xl lg:text-5xl font-bebas text-black/80 max-w-[795px] mx-auto">
             Los residentes participantes compartieron sus respuestas a las
             siguientes 5 preguntas
           </h2>

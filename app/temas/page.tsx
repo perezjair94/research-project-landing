@@ -90,22 +90,15 @@ export default function Themes() {
       {/* Hero Section with background */}
       <section className="relative">
         <div className="bg-cv-teal/10 px-6 lg:px-16 py-10 lg:py-16">
-          {/* Decorative SVG */}
+          {/* Decorative Image */}
           <div className="absolute right-0 top-0 w-[346px] h-[346px] hidden lg:block">
-            <svg viewBox="0 0 346 346" className="w-full h-full">
-              <path
-                d="M173 43.25 L288.33 302.75 L57.67 302.75 Z"
-                fill="none"
-                stroke="rgba(85, 197, 190, 0.5)"
-                strokeWidth="5"
-              />
-              <path
-                d="M57.67 115.33 L173 201.83"
-                fill="none"
-                stroke="rgba(85, 197, 190, 0.5)"
-                strokeWidth="5"
-              />
-            </svg>
+            <Image
+              src="/images/themes-hero-image.png"
+              alt="Decorative illustration"
+              width={346}
+              height={346}
+              className="w-full h-full object-contain"
+            />
           </div>
 
           <div className="relative z-10">

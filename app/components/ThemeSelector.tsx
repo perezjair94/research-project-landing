@@ -55,7 +55,7 @@ export default function ThemeSelector() {
 
   if (selectedTheme) {
     return (
-      <div className="md:min-h-[600px] flex items-center justify-center relative overflow-hidden">
+      <div className="min-h-[600px] flex items-center justify-center relative overflow-hidden">
         {/* Background overlay matching the theme color */}
         <div
           className={`absolute inset-0 ${selectedTheme.color} opacity-20`}

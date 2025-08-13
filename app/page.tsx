@@ -227,8 +227,8 @@ export default function Home() {
       </section>
 
       {/* Interactive Section */}
-      <section className="relative bg-cv-orange/20 flex flex-col lg:flex-row items-center my-15">
-        <div className="flex-1 rounded-lg ">
+      <section className="relative bg-cv-orange/20 flex flex-col gap-8 md:gap-0 lg:flex-row items-center my-15">
+        <div className="flex-1 rounded-lg w-full">
           <ThemeSelector />
         </div>
 

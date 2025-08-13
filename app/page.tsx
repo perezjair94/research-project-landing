@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useEffect } from "react";
+import ThemeSelector from "./components/ThemeSelector";
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -228,10 +229,7 @@ export default function Home() {
       {/* Interactive Section */}
       <section className="relative bg-cv-orange/20 flex flex-col lg:flex-row items-center my-15">
         <div className="flex-1 rounded-lg ">
-          {/* Decorative circles */}
-          <div className="min-h-[600px]  flex items-center justify-center">
-            Selector
-          </div>
+          <ThemeSelector />
         </div>
 
         <div className="flex-1 px-6 lg:px-16">

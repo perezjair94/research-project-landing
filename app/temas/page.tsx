@@ -91,7 +91,9 @@ export default function Themes() {
       <section className="relative">
         <div className="bg-cv-teal/10 px-6 py-10 lg:px-16 lg:py-2 flex gap-20 items-center justify-between">
           <div className="relative z-10">
-            <h1 className="text-3xl font-bold text-cv-purple/80 mb-6">Temas</h1>
+            <h1 className="text-4xl lg:text-5xl font-bebas text-cv-purple/80 mb-6">
+              Temas
+            </h1>
 
             <p className="text-lg lg:text-xl text-black/50 leading-relaxed max-w-[712px]">
               Este portal interactivo permite navegar los temas que alegran o
@@ -139,7 +141,7 @@ export default function Themes() {
 
               {/* Content */}
               <div className="flex-1 p-5 flex flex-col justify-center">
-                <h3 className="text-xl lg:text-2xl font-bold text-black/50 mb-2 leading-tight">
+                <h3 className="text-2xl lg:text-3xl font-bebas text-black/50 mb-2">
                   {theme.title}
                 </h3>
                 <p className="text-sm text-black/50 leading-relaxed leading-relaxed tracking-tight">

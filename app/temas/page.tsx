@@ -89,7 +89,7 @@ export default function Themes() {
 
       {/* Hero Section with background */}
       <section className="relative">
-        <div className="bg-cv-teal/10 px-6 lg:px-16 lg:py-2 flex gap-20 items-center justify-between">
+        <div className="bg-cv-teal/10 px-6 py-10 lg:px-16 lg:py-2 flex gap-20 items-center justify-between">
           <div className="relative z-10">
             <h1 className="text-3xl font-bold text-cv-purple/80 mb-6">Temas</h1>
 

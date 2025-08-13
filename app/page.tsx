@@ -138,24 +138,13 @@ export default function Home() {
           </div>
 
           <div className="order-1 lg:col-span-2 hidden lg:block">
-            <div className="w-96 h-96 mx-auto relative">
-              <svg viewBox="0 0 346 346" className="w-full h-full">
-                <path
-                  d="M173 43.25 L288.33 302.75 L57.67 302.75 Z"
-                  fill="none"
-                  stroke="#55C5BE"
-                  strokeWidth="5"
-                  opacity="0.5"
-                />
-                <path
-                  d="M57.67 115.33 L173 201.83"
-                  fill="none"
-                  stroke="#55C5BE"
-                  strokeWidth="5"
-                  opacity="0.5"
-                />
-              </svg>
-            </div>
+            <Image
+              src="/images/conversations-image.png"
+              alt="Conversaciones cívicas - Ciudad Verde"
+              width={320}
+              height={320}
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>

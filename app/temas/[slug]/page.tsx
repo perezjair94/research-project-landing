@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import TestimonialsSection from "./TestimonialsSection";
+import SubthemesSection from "./SubthemesSection";
 
 interface SubTheme {
   id: string;
@@ -538,52 +538,11 @@ export default async function ThemeDetail({ params }: PageProps) {
       </section>
 
       {/* Subtemas Section */}
-      <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
-        <div className="max-w-6xl mx-auto">
-          <div className="space-y-12">
-            {theme.content.subThemes.map((subTheme, index) => (
-              <div key={subTheme.id}>
-                {/* Título en barra naranja */}
-                <div className="bg-cv-orange/30 inline-block rounded px-3 py-1 mb-6">
-                  <h3 className="text-xl lg:text-2xl font-bebas text-cv-purple/60">
-                    {subTheme.title}
-                  </h3>
-                </div>
-
-                {/* Layout principal con texto a la izquierda e imagen/iframe a la derecha */}
-                <div className="grid lg:grid-cols-[1fr_400px] gap-8 items-start">
-                  {/* Contenido de texto */}
-                  <div className="text-base lg:text-lg text-black/70 leading-relaxed space-y-4">
-                    {subTheme.content.split("\n\n").map((paragraph, pIndex) => (
-                      <p key={pIndex}>{paragraph}</p>
-                    ))}
-                  </div>
-
-                  {/* Columna derecha con imagen y posible iframe */}
-                  <div className="space-y-4">
-                    {subTheme.image && (
-                      <div className="relative h-48 lg:h-56 rounded-xl overflow-hidden">
-                        <Image
-                          src={subTheme.image}
-                          alt={subTheme.title}
-                          fill
-                          className="object-cover saturate-[0.7] contrast-125"
-                        />
-                        <div
-                          className={`absolute inset-0 ${theme.overlayColor}`}
-                        ></div>
-                      </div>
-                    )}
-
-                    {/* Testimonios relacionados */}
-                    <TestimonialsSection testimonials={theme.content.testimonials} />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <SubthemesSection 
+        subThemes={theme.content.subThemes}
+        testimonials={theme.content.testimonials}
+        themeOverlayColor={theme.overlayColor}
+      />
 
       {/* Testimonials Section */}
       <section className="px-6 lg:px-16 py-12 bg-gray-50/50">

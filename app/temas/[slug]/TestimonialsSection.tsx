@@ -8,8 +8,19 @@ interface Testimonial {
   link?: string;
 }
 
-export default function TestimonialsSection({ testimonials }: { testimonials: Testimonial[] }) {
-  const [activeTestimonial, setActiveTestimonial] = React.useState<string | null>(null);
+interface TestimonialsSectionProps {
+  testimonials: Testimonial[];
+  activeTestimonial: string | null;
+  setActiveTestimonial: (link: string | null) => void;
+  defaultIframe?: string;
+}
+
+export default function TestimonialsSection({ 
+  testimonials, 
+  activeTestimonial, 
+  setActiveTestimonial,
+  defaultIframe 
+}: TestimonialsSectionProps) {
   
   return (
     <div className="space-y-4">
@@ -30,11 +41,11 @@ export default function TestimonialsSection({ testimonials }: { testimonials: Te
         ))}
       </div>
       
-      {/* Iframe del testimonio activo */}
-      {activeTestimonial && (
+      {/* Iframe del testimonio activo o por defecto */}
+      {(activeTestimonial || defaultIframe) && (
         <div className="mt-4 bg-gray-100 rounded-lg overflow-hidden">
           <iframe
-            src={activeTestimonial}
+            src={activeTestimonial || defaultIframe}
             width="100%"
             height="400"
             frameBorder="0"

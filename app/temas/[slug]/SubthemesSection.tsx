@@ -28,7 +28,7 @@ export default function SubthemesSection({
 }: SubthemesSectionProps) {
   // Estado para manejar el subtema activo
   const [activeSubthemeIndex, setActiveSubthemeIndex] = useState<number>(0);
-  
+
   // Iframe por defecto (el primero disponible)
   const defaultIframe = testimonials[0]?.link || null;
 
@@ -43,29 +43,31 @@ export default function SubthemesSection({
       "manejo-mascotas": "María Mercedes", // menciona mascotas
       "ruido-volumen": "Blanca", // menciona ruido/apartamentos
       "solucion-conflictos": "Katherine", // menciona conflictos/multas
-      
-      // Transporte  
-      "costos": "Nubia", // menciona doble transporte
+
+      // Transporte
+      costos: "Nubia", // menciona doble transporte
       "transporte-pirata": "Linda", // menciona carros piratas
       "oferta-rutas": "Paola", // menciona rutas/tiempo
-      
+
       // Espacio Público
       "areas-verdes": "Claribel", // menciona parques/picnic
       "recreacion-deporte": "Vicente", // menciona parque de lectura
-      
+
       // Seguridad
-      "robos": "Mercedes", // menciona robo en SITP
-      
+      robos: "Mercedes", // menciona robo en SITP
+
       // Otros temas específicos
       "grupos-poblacionales": "Roberto Díaz",
-      "calidad-de-vida": "Elena Vargas", 
-      "gobernanza": "Miguel Castillo",
-      "infraestructura": "Carmen López"
+      "calidad-de-vida": "Elena Vargas",
+      gobernanza: "Miguel Castillo",
+      infraestructura: "Carmen López",
     };
 
     const associatedTestimonialName = subthemeToTestimonialMap[subtheme.id];
     if (associatedTestimonialName) {
-      const testimonial = testimonials.find(t => t.name === associatedTestimonialName);
+      const testimonial = testimonials.find(
+        (t) => t.name === associatedTestimonialName,
+      );
       if (testimonial?.link) {
         return testimonial.link;
       }
@@ -78,39 +80,51 @@ export default function SubthemesSection({
   // Función para renderizar contenido con nombres clickeables (mantener funcionalidad existente)
   const renderContentWithClickableNames = (content: string) => {
     let processedContent = content;
-    
+
     testimonials.forEach((testimonial) => {
       const nameVariations = [
         testimonial.name,
         testimonial.name.normalize("NFD").replace(/[\u0300-\u036f]/g, ""), // Sin tildes
       ];
-      
+
       nameVariations.forEach((nameVariation) => {
-        const nameRegex = new RegExp(`\\b${nameVariation.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
-        processedContent = processedContent.replace(nameRegex, `__CLICKABLE_NAME_${testimonial.name}__`);
+        const nameRegex = new RegExp(
+          `\\b${nameVariation.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`,
+          "gi",
+        );
+        processedContent = processedContent.replace(
+          nameRegex,
+          `__CLICKABLE_NAME_${testimonial.name}__`,
+        );
       });
     });
 
     const parts = processedContent.split(/(__CLICKABLE_NAME_[^_]+__)/);
-    
+
     return parts.map((part, index) => {
-      if (part.startsWith('__CLICKABLE_NAME_') && part.endsWith('__')) {
-        const name = part.replace('__CLICKABLE_NAME_', '').replace('__', '');
-        const testimonial = testimonials.find(t => t.name === name);
-        
+      if (part.startsWith("__CLICKABLE_NAME_") && part.endsWith("__")) {
+        const name = part.replace("__CLICKABLE_NAME_", "").replace("__", "");
+        const testimonial = testimonials.find((t) => t.name === name);
+
         return (
           <button
             key={index}
             onClick={() => {
               if (testimonial?.link) {
                 // Buscar el índice del subtema que corresponde a este testimonio
-                const subthemeIndex = subThemes.findIndex(subtheme => {
+                const subthemeIndex = subThemes.findIndex((subtheme) => {
                   const content = subtheme.content.toLowerCase();
                   const nameLower = name.toLowerCase();
-                  const nameNoTildes = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-                  return content.includes(nameLower) || content.includes(nameNoTildes);
+                  const nameNoTildes = name
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "")
+                    .toLowerCase();
+                  return (
+                    content.includes(nameLower) ||
+                    content.includes(nameNoTildes)
+                  );
                 });
-                
+
                 if (subthemeIndex >= 0) {
                   setActiveSubthemeIndex(subthemeIndex);
                 }
@@ -140,9 +154,9 @@ export default function SubthemesSection({
                   <button
                     onClick={() => setActiveSubthemeIndex(index)}
                     className={`text-xl lg:text-2xl font-bebas transition-colors cursor-pointer ${
-                      activeSubthemeIndex === index 
-                        ? 'text-cv-pink' 
-                        : 'text-cv-purple/60 hover:text-cv-pink'
+                      activeSubthemeIndex === index
+                        ? "text-cv-pink"
+                        : "text-cv-purple/60 hover:text-cv-pink"
                     }`}
                   >
                     {subTheme.title}
@@ -152,7 +166,9 @@ export default function SubthemesSection({
                 {/* Contenido de texto */}
                 <div className="text-base lg:text-lg text-black/70 leading-relaxed space-y-4">
                   {subTheme.content.split("\n\n").map((paragraph, pIndex) => (
-                    <p key={pIndex}>{renderContentWithClickableNames(paragraph)}</p>
+                    <p key={pIndex}>
+                      {renderContentWithClickableNames(paragraph)}
+                    </p>
                   ))}
                 </div>
               </div>
@@ -170,7 +186,7 @@ export default function SubthemesSection({
                 <iframe
                   src={getSubthemeIframe(activeSubthemeIndex)!}
                   width="100%"
-                  height="300"
+                  height="200"
                   className="rounded-lg"
                   allow="autoplay"
                   loading="lazy"

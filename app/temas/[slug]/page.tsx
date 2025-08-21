@@ -2,6 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+interface SubTheme {
+  id: string;
+  title: string;
+  content: string;
+  image?: string;
+}
+
 interface ThemeData {
   id: string;
   title: string;
@@ -12,6 +19,7 @@ interface ThemeData {
   content: {
     overview: string;
     highlights: string[];
+    subThemes: SubTheme[];
     testimonials: {
       name: string;
       quote: string;
@@ -24,29 +32,85 @@ const themesData: ThemeData[] = [
   {
     id: "convivencia",
     title: "Convivencia",
-    description: "La vida en comunidad y las relaciones vecinales en Ciudad Verde",
+    description:
+      "La vida en comunidad y las relaciones vecinales en Ciudad Verde",
     image: "/images/photo5.jpg",
     bgColor: "bg-cv-pink/20",
     overlayColor: "bg-cv-pink/20",
     content: {
-      overview: "La convivencia en Ciudad Verde representa uno de los aspectos más importantes de la vida cotidiana en la ciudadela. Los residentes han compartido sus experiencias sobre cómo es vivir en comunidad, las relaciones vecinales y los desafíos y alegrías de la vida compartida.",
+      overview:
+        "En Ciudad Verde habitan miles de familias provenientes principalmente de barrios populares de Bogotá, Soacha y algunos otros municipios cercanos. Los residentes llegaron por tandas, unas más grandes que otras, conforme finalizaba la construcción de los conjuntos residenciales que componen la ciudadela. Llegaban a un barrio nuevo, cuyas características cotidianas estaban por conformarse. Muchas de las familias que llegaron a vivir a Ciudad Verde nunca habían vivido en un conjunto cerrado. Otras tantas nunca habían vivido en edificios de apartamentos. Según la caracterización liderada por la Corporación Responder, tan solo el 35% de los residentes de Ciudad Verde en 2022 habían vivido antes en propiedad horizontal.",
       highlights: [
         "Relaciones vecinales y apoyo mutuo",
         "Espacios compartidos y su uso",
         "Conflictos y resolución de problemas",
-        "Eventos comunitarios y celebraciones"
+        "Eventos comunitarios y celebraciones",
+      ],
+      subThemes: [
+        {
+          id: "manejo-mascotas",
+          title: "Manejo de mascotas y animales de compañía",
+          content: "Según la caracterización realizada por Corporación Responder, el 51% de los residentes de Ciudad Verde en el 2022 poseían una mascota. En efecto, Maria Mercedes aprecia que la ciudadela es un lugar propicio para el encuentro entre vecinos y sus mascotas. A su vez, Andrea comparte en su fotorelato la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde. Sin embargo, no todo es positivo. Los residentes también expresan la falta de compromiso de los dueños al recoger las heces de las mascotas. Esta situación impide hacer ejercicio o usar los espacios adecuadamente.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "ruido-volumen",
+          title: "Ruido, música a alto volumen, horas del día",
+          content: "La alta densidad de personas que viven en los conjuntos hace que el manejo del volumen al momento de escuchar música, mover objetos, martillar, entre otras acciones, genere molestias. Según Blanca la cercanía entre los apartamentos y el hecho de que los conjuntos tengan hasta 10 torres, cada una de 6 pisos potencia la posibilidad de oír lo que hacen los vecinos. Estos relatos complementan los hallazgos del ejercicio realizado por Corporación Responder, en donde se encontró que más del 50% de los residentes identificaron una relación entre el ruido y los problemas de convivencia en la urbanización.",
+          image: "/images/photo2.jpg"
+        },
+        {
+          id: "espacios-comunes",
+          title: "Uso de espacios comunes dentro y fuera del conjunto",
+          content: "Los espacios comunes de la ciudadela, tanto aquellas que hacen parte de los conjuntos cerrados, como aquellos que comparten todos los residentes de Ciudad Verde, brindan a sus habitantes la posibilidad de compartir con los vecinos y vivir diferentes experiencias que en su mayoría identifican como positivas. El mal uso de los espacios comunes puede generar conflictos relacionados con la convivencia.",
+          image: "/images/photo4.jpg"
+        },
+        {
+          id: "animales-abandonados",
+          title: "Animales abandonados",
+          content: "Los animales abandonados o callejeros despiertan diferentes emociones en los participantes de este ejercicio. Desde hace algunos años, la Agrupación Social Ciudad Verde adecúa espacios para los animales que habitan la calle. Sin embargo, algunos residentes consideran que estos perros tienen tendencias violentas y se preguntan si es una buena idea alimentarlos y mantenerlos tan cerca de los residentes.",
+          image: "/images/photo5.jpg"
+        },
+        {
+          id: "administraciones",
+          title: "Administraciones, vivienda horizontal, manejo del conjunto",
+          content: "Vivir en propiedad horizontal cambia las dinámicas a las que estaban acostumbrados muchos de los residentes de Ciudad Verde en sus lugares de vivienda previos. El desconocimiento de los residentes sobre el funcionamiento de la gestión de la administración puede hacer que los problemas de convivencia entre residentes y las inconformidades con las administraciones surjan.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "solucion-conflictos",
+          title: "Solución de conflictos/comunicación",
+          content: "La caracterización adelantada por Corporación Responder encontró que tan solo el 3% de la población censada en Ciudad Verde identificó el conflicto entre vecinos como el aspecto que menos les agradaba de su lugar de vivienda. Sin embargo, en las conversaciones entre residentes participantes este tema pareciera tener mayor relevancia. Los habitantes de Ciudad Verde en muchos casos tienen pocas herramientas o instancias para solucionar los conflictos que aparecen en el día a día.",
+          image: "/images/photo2.jpg"
+        }
       ],
       testimonials: [
         {
-          name: "María González",
-          quote: "Aquí en Ciudad Verde hemos aprendido a vivir juntos, a compartir los espacios y a ayudarnos mutuamente. Es como una gran familia."
+          name: "María Mercedes",
+          quote:
+            "La ciudadela es un lugar propicio para el encuentro entre vecinos y sus mascotas.",
+          audio: "convivencia-maria-mercedes.mp3"
         },
         {
-          name: "Carlos Rodríguez",
-          quote: "La convivencia no siempre es fácil, pero hemos encontrado maneras de resolver nuestros conflictos y vivir en armonía."
+          name: "Blanca",
+          quote:
+            "La cercanía entre los apartamentos hace que se escuche todo lo que hacen los vecinos. Es el principal inconveniente en materia de convivencia.",
+          audio: "convivencia-blanca.mp3"
+        },
+        {
+          name: "Katherine",
+          quote:
+            "En nuestro conjunto acordaron multar a los vecinos que hicieran ruido, pero ahora quienes hacen ruido pagan para seguir con sus actividades.",
+          audio: "convivencia-katherine.mp3"
+        },
+        {
+          name: "Luz Marina",
+          quote:
+            "Las personas no llevan bolsas para los excrementos de las mascotas, esto hace que los parques estén sucios.",
+          audio: "convivencia-luz-marina.mp3"
         }
-      ]
-    }
+      ],
+    },
   },
   {
     id: "transporte",
@@ -56,89 +120,201 @@ const themesData: ThemeData[] = [
     bgColor: "bg-cv-green/20",
     overlayColor: "bg-cv-green/20",
     content: {
-      overview: "El transporte es un tema crucial para los residentes de Ciudad Verde. La movilidad hacia el trabajo, centros educativos y servicios de salud representa tanto oportunidades como desafíos para la comunidad.",
+      overview:
+        "Según los resultados de la caracterización implementada por Corporación Responder, en el 2022 el 63% de habitantes de Ciudad Verde utilizaba servicio público y el 29% hacía uso del vehículo particular. El Transmilenio es el medio de transporte público habitual de las y los residentes. Si bien existen rutas y vías de acceso que conectan con Transmilenio y otros corredores viales relevantes, estas son limitadas e insuficientes.",
       highlights: [
         "Acceso a transporte público",
-        "Conectividad con otras áreas de la ciudad",
+        "Conectividad con otras áreas de la ciudad", 
         "Costos de transporte",
-        "Tiempo de desplazamiento"
+        "Tiempo de desplazamiento",
+      ],
+      subThemes: [
+        {
+          id: "oferta-rutas",
+          title: "Oferta, horarios y frecuencias de rutas",
+          content: "La oferta de opciones de transporte público para conectar a Ciudad Verde con los corredores viales de Soacha y Bogotá ha sido uno de los elementos más problemáticos de estos años iniciales de la ciudadela. Los citoverdinos reconocen la relativa buena ubicación geográfica de su ciudadela, pero muchos narraron historias relacionadas con la falta de rutas y horarios.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "costos",
+          title: "Costos",
+          content: "Los habitantes pagan entre dos o más pasajes para cada trayecto, situación distinta para quienes viven en Bogotá. Un ejemplo de ello, es lo que vive Nubia que debe pagar doble transporte al tener que tomar carro pirata para salir de la ciudadela y luego usar Transmilenio y SITP para llegar a su trabajo.",
+          image: "/images/photo2.jpg"
+        },
+        {
+          id: "transporte-pirata",
+          title: "Transporte ilegal/pirata",
+          content: "La demanda en transporte para el número de habitantes es muy alta, por ese motivo Linda debe usar carros piratas, los cuales se demoran en pasar, pero les permiten conectarse con la estación de Transmilenio de Terreros. Esta situación ha hecho que llegue tarde a su trabajo. Otros habitantes manifiestan sentirse inseguros al usar estos medios de transporte.",
+          image: "/images/photo4.jpg"
+        },
+        {
+          id: "conectividad",
+          title: "Falta de conectividad",
+          content: "Los habitantes de la ciudadela cuentan con dos conexiones viales principales para salir hacia Bogotá: la Avenida Potrero Grande, que lleva a la autopista sur y la carrera 38 que conduce a la frontera entre Ciudad Verde y Bosa San José. Algunos habitantes son activistas sociales y participan en temas de comunicación terrestre para mejorar la malla vial del tramo.",
+          image: "/images/photo5.jpg"
+        }
       ],
       testimonials: [
         {
-          name: "Ana Martínez",
-          quote: "El transporte público ha mejorado mucho, pero aún necesitamos más rutas que nos conecten directamente con el centro de la ciudad."
+          name: "Paola",
+          quote:
+            "Me lleva mucho tiempo salir hasta la estación Terreros al tener que tomar doble transporte.",
+          audio: "transporte-paola.mp3"
+        },
+        {
+          name: "Nubia",
+          quote:
+            "Debo pagar doble transporte: carro pirata para salir de la ciudadela y luego Transmilenio para llegar al trabajo.",
+          audio: "transporte-nubia.mp3"
+        },
+        {
+          name: "Linda",
+          quote:
+            "Uso carros piratas porque se demoran en pasar, pero me permiten conectarme con Terreros. Esto me ha hecho llegar tarde al trabajo.",
+          audio: "transporte-linda.mp3"
         }
-      ]
-    }
+      ],
+    },
   },
   {
     id: "espacio-publico",
     title: "Espacio Público",
-    description: "Parques, plazas y áreas comunes para la recreación y encuentro",
+    description:
+      "Parques, plazas y áreas comunes para la recreación y encuentro",
     image: "/images/photo4.jpg",
     bgColor: "bg-cv-blue/20",
     overlayColor: "bg-cv-blue/20",
     content: {
-      overview: "Los espacios públicos en Ciudad Verde son fundamentales para la vida comunitaria. Parques, plazas y áreas recreativas ofrecen lugares de encuentro y esparcimiento para todas las edades.",
+      overview:
+        "El macro proyecto ofrece diversidad de espacios de entretenimiento. Los parques y la infraestructura son algunos de los aspectos que más le agradan a los residentes con un 39% y 15% respectivamente. Los sitios que más evocaron los habitantes fueron los parques de la lectura y el Logroño por las jornadas de actividad física que se realizan.",
       highlights: [
         "Calidad y mantenimiento de parques",
-        "Espacios para niños y jóvenes",
+        "Espacios para niños y jóvenes", 
         "Áreas deportivas y recreativas",
-        "Seguridad en espacios públicos"
+        "Seguridad en espacios públicos",
+      ],
+      subThemes: [
+        {
+          id: "comercio-informal",
+          title: "Comercio Informal",
+          content: "Algunos citoverdinos usan las zonas comunes para generar ingresos en las principales esquinas de la ciudadela. Ofrecen en su gran mayoría hortalizas, frutas, verduras y comidas rápidas. Esta actividad genera diversas emociones entre los vecinos.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "areas-verdes",
+          title: "Áreas verdes - parques",
+          content: "Los espacios comunes, en su mayoría verdes, inspiran a muchos participantes. De ahí el sentido que tiene el nombre de Ciudad Verde para sus habitantes. La mayoría de citoverdinos disfrutan estar en los parques, el 39% de los encuestados afirman que estos lugares es lo que más les agrada de su lugar de vivienda.",
+          image: "/images/photo4.jpg"
+        },
+        {
+          id: "recreacion-deporte",
+          title: "Recreación, deporte, actividad física",
+          content: "Ciudad Verde es un lugar para reactivar el cuerpo por medio de actividades deportivas. Algunos habitantes como Rosa participan en las jornadas aeróbicas para el adulto mayor que se realizan dos días a la semana con horarios flexibles.",
+          image: "/images/photo5.jpg"
+        },
+        {
+          id: "mantenimiento",
+          title: "Mantenimiento",
+          content: "Los habitantes se cuestionan cómo aportar en el cuidado de la infraestructura tanto de la ciudadela como del conjunto. Algunos expresan que los equipamientos de algunos parques están dañados y que las rejas y puertas de los conjuntos son averiados intencionalmente por otros vecinos.",
+          image: "/images/photo2.jpg"
+        }
       ],
       testimonials: [
         {
-          name: "Pedro Silva",
-          quote: "Los parques son el corazón de nuestra comunidad. Aquí los niños juegan y los adultos se encuentran para conversar."
+          name: "Claribel",
+          quote:
+            "Vamos con la familia a hacer picnic casi todos los domingos. Las temporadas que más me gustan son agosto para elevar cometa y diciembre por el alumbrado.",
+          audio: "espacio-publico-claribel.mp3"
+        },
+        {
+          name: "Vicente",
+          quote:
+            "El parque de la lectura es mi lugar favorito, allí comparto un helado con mis hijos y juego con mi mascota.",
+          audio: "espacio-publico-vicente.mp3"
         }
-      ]
-    }
+      ],
+    },
   },
   {
     id: "seguridad",
     title: "Seguridad",
-    description: "Percepción de seguridad y medidas de protección en la comunidad",
+    description:
+      "Percepción de seguridad y medidas de protección en la comunidad",
     image: "/images/photo2.jpg",
     bgColor: "bg-cv-purple/20",
     overlayColor: "bg-cv-purple/20",
     content: {
-      overview: "La seguridad es una preocupación central para los residentes de Ciudad Verde. Las experiencias varían, pero la comunidad ha desarrollado estrategias para mejorar la seguridad colectiva.",
+      overview:
+        "La seguridad es una preocupación central para los residentes de Ciudad Verde. Las experiencias varían, pero la comunidad ha desarrollado estrategias para mejorar la seguridad colectiva.",
       highlights: [
         "Percepción de seguridad en diferentes horarios",
-        "Vigilancia comunitaria",
+        "Vigilancia comunitaria", 
         "Iluminación y espacios seguros",
-        "Relación con las autoridades"
+        "Relación con las autoridades",
+      ],
+      subThemes: [
+        {
+          id: "consumo-sustancias",
+          title: "Consumo de sustancias",
+          content: "En los parques Teresa ha visto jóvenes consumir drogas, situación que le preocupa. Según la encuesta realizada a residentes la frecuencia del consumo de sustancias psicoactivas varía: 12% dice que a veces se presenta, 9% casi siempre y 5% siempre.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "robos",
+          title: "Robos", 
+          content: "Presenciar o ser víctima de robos puede ser una experiencia bastante traumática. Mercedes vivió esto cerca de la frontera donde toma el SITP alrededor de las 4:00 am. Esta situación la dejó con una sensación de estar predispuesta a vivir algo similar.",
+          image: "/images/photo2.jpg"
+        }
       ],
       testimonials: [
         {
-          name: "Lucía Herrera",
-          quote: "Hemos organizado grupos de vigilancia vecinal que nos han ayudado a sentirnos más seguros en nuestro barrio."
-        }
-      ]
-    }
+          name: "Mercedes",
+          quote:
+            "Vi un robo cerca de donde tomo el SITP a las 4:00 am. Huyé y corrí. Quedé con la sensación de estar predispuesta a vivir algo similar.",
+          audio: "seguridad-mercedes.mp3"
+        },
+      ],
+    },
   },
   {
     id: "grupos-poblacionales",
     title: "Grupos Poblacionales",
-    description: "Diversidad demográfica y necesidades específicas de diferentes grupos",
+    description:
+      "Diversidad demográfica y necesidades específicas de diferentes grupos",
     image: "/images/photo1.jpg",
     bgColor: "bg-cv-orange/20",
     overlayColor: "bg-cv-orange/20",
     content: {
-      overview: "Ciudad Verde alberga una gran diversidad de grupos poblacionales, cada uno con necesidades y perspectivas únicas sobre la vida en la ciudadela.",
+      overview:
+        "Ciudad Verde alberga una gran diversidad de grupos poblacionales, cada uno con necesidades y perspectivas únicas sobre la vida en la ciudadela.",
       highlights: [
         "Niños y jóvenes",
         "Adultos mayores",
-        "Familias monoparentales",
-        "Personas con discapacidad"
+        "Familias monoparentales", 
+        "Personas con discapacidad",
+      ],
+      subThemes: [
+        {
+          id: "jovenes",
+          title: "Jóvenes",
+          content: "La educación es uno de los principales temas de interés para este grupo poblacional. Los padres de familia mencionan la preocupación por el consumo de sustancias psicoactivas.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "familias",
+          title: "Familias",
+          content: "El cerro de la Chucuita es uno de los lugares más emblemáticos de la ciudadela. Las familias ven en este ambiente natural un punto de encuentro desde donde se logra divisar la ciudadela.",
+          image: "/images/photo2.jpg"
+        }
       ],
       testimonials: [
         {
           name: "Roberto Díaz",
-          quote: "La diversidad de nuestra comunidad es nuestra fortaleza. Aquí conviven personas de todas las edades y backgrounds."
-        }
-      ]
-    }
+          quote:
+            "La diversidad de nuestra comunidad es nuestra fortaleza. Aquí conviven personas de todas las edades y backgrounds.",
+        },
+      ],
+    },
   },
   {
     id: "calidad-de-vida",
@@ -148,20 +324,36 @@ const themesData: ThemeData[] = [
     bgColor: "bg-cv-yellow/20",
     overlayColor: "bg-cv-yellow/20",
     content: {
-      overview: "La calidad de vida en Ciudad Verde abarca múltiples aspectos del bienestar de los residentes, desde la salud y educación hasta las oportunidades de desarrollo personal y comunitario.",
+      overview:
+        "La calidad de vida en Ciudad Verde abarca múltiples aspectos del bienestar de los residentes, desde la salud y educación hasta las oportunidades de desarrollo personal y comunitario.",
       highlights: [
         "Acceso a servicios de salud",
         "Oportunidades educativas",
         "Calidad del aire y ambiente",
-        "Bienestar emocional y social"
+        "Bienestar emocional y social",
+      ],
+      subThemes: [
+        {
+          id: "transicion-lugar-origen",
+          title: "Transición ciudad verde - antiguo lugar de origen",
+          content: "Llegar a Ciudad Verde para los residentes implicó un cambio en las condiciones de las viviendas, vecindarios y diario vivir. Adriana manifiesta sentirse a gusto por el acceso a infraestructura pública y nuevas oportunidades.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "costos-bienes-servicios",
+          title: "Costos de bienes y servicios",
+          content: "Las personas manifiestan que Ciudad Verde es un gran lugar para vivir, sin embargo los costos de los servicios y los alimentos ponen en aprieto a las familias, las cuales en su mayoría cuentan con recursos muy limitados.",
+          image: "/images/photo2.jpg"
+        }
       ],
       testimonials: [
         {
           name: "Elena Vargas",
-          quote: "Vivir aquí ha significado una mejora en nuestra calidad de vida. Tenemos acceso a servicios que antes no teníamos."
-        }
-      ]
-    }
+          quote:
+            "Vivir aquí ha significado una mejora en nuestra calidad de vida. Tenemos acceso a servicios que antes no teníamos.",
+        },
+      ],
+    },
   },
   {
     id: "gobernanza",
@@ -171,20 +363,30 @@ const themesData: ThemeData[] = [
     bgColor: "bg-cv-teal/20",
     overlayColor: "bg-cv-teal/20",
     content: {
-      overview: "La gobernanza en Ciudad Verde involucra la participación activa de los residentes en las decisiones que afectan su comunidad y su relación con las instituciones locales.",
+      overview:
+        "La gobernanza en Ciudad Verde involucra la participación activa de los residentes en las decisiones que afectan su comunidad y su relación con las instituciones locales.",
       highlights: [
         "Participación en juntas de acción comunal",
         "Relación con la administración local",
         "Procesos de toma de decisiones",
-        "Liderazgo comunitario"
+        "Liderazgo comunitario",
+      ],
+      subThemes: [
+        {
+          id: "gestion-institucional",
+          title: "Gestión Institucional",
+          content: "Ciudad Verde en la actualidad cuenta con dos figuras que protegen los intereses de los habitantes: la Corporación Agrupación Social Ciudad Verde y la Junta de Acción Comunal.",
+          image: "/images/photo1.jpg"
+        }
       ],
       testimonials: [
         {
           name: "Miguel Castillo",
-          quote: "Es importante que nuestra voz sea escuchada. Participamos activamente en las decisiones que afectan nuestro barrio."
-        }
-      ]
-    }
+          quote:
+            "Es importante que nuestra voz sea escuchada. Participamos activamente en las decisiones que afectan nuestro barrio.",
+        },
+      ],
+    },
   },
   {
     id: "infraestructura",
@@ -194,21 +396,37 @@ const themesData: ThemeData[] = [
     bgColor: "bg-gray-400/20",
     overlayColor: "bg-gray-400/20",
     content: {
-      overview: "La infraestructura de Ciudad Verde incluye todos los servicios públicos y la infraestructura urbana que sostiene la vida diaria de los residentes.",
+      overview:
+        "La infraestructura de Ciudad Verde incluye todos los servicios públicos y la infraestructura urbana que sostiene la vida diaria de los residentes.",
       highlights: [
         "Servicios de agua y alcantarillado",
         "Energía eléctrica y gas",
         "Vías y accesibilidad",
-        "Internet y comunicaciones"
+        "Internet y comunicaciones",
+      ],
+      subThemes: [
+        {
+          id: "vias",
+          title: "Vías",
+          content: "La cantidad de rampas para que se desplacen las personas con movilidad reducida por los alrededores de la ciudadela son adecuadas. Las conexiones viales, señalización y ciclorrutas cumplen con las condiciones para sentirse seguro.",
+          image: "/images/photo1.jpg"
+        },
+        {
+          id: "servicios-salud",
+          title: "Servicios de salud",
+          content: "Una de las construcciones que se esperaba tener en la ciudadela es el Hospital Avidanti. Los habitantes se emocionan saber que es posible tener cerca los servicios médicos.",
+          image: "/images/photo2.jpg"
+        }
       ],
       testimonials: [
         {
           name: "Carmen López",
-          quote: "La infraestructura ha mejorado considerablemente desde que llegamos. Ahora tenemos servicios más confiables."
-        }
-      ]
-    }
-  }
+          quote:
+            "La infraestructura ha mejorado considerablemente desde que llegamos. Ahora tenemos servicios más confiables.",
+        },
+      ],
+    },
+  },
 ];
 
 interface PageProps {
@@ -219,7 +437,7 @@ interface PageProps {
 
 export default async function ThemeDetail({ params }: PageProps) {
   const { slug } = await params;
-  const theme = themesData.find(t => t.id === slug);
+  const theme = themesData.find((t) => t.id === slug);
 
   if (!theme) {
     notFound();
@@ -266,7 +484,7 @@ export default async function ThemeDetail({ params }: PageProps) {
               {theme.description}
             </p>
           </div>
-          
+
           <div className="relative h-80 lg:h-96 rounded-2xl overflow-hidden">
             <Image
               src={theme.image}
@@ -282,13 +500,16 @@ export default async function ThemeDetail({ params }: PageProps) {
       {/* Overview Section */}
       <section className="px-6 lg:px-16 py-12">
         <div className="max-w-4xl">
-          <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70 mb-6">
-            Visión General
-          </h2>
+          <div className="bg-cv-orange/30 inline-block rounded mb-6">
+            <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
+              Resumen
+            </h2>
+          </div>
+
           <p className="text-lg text-black/60 leading-relaxed mb-8">
             {theme.content.overview}
           </p>
-          
+
           <h3 className="text-2xl font-bebas text-cv-purple/60 mb-4">
             Aspectos Destacados
           </h3>
@@ -303,16 +524,64 @@ export default async function ThemeDetail({ params }: PageProps) {
         </div>
       </section>
 
+      {/* Subtemas Section */}
+      <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-cv-orange/30 inline-block rounded mb-8">
+            <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
+              Subtemas
+            </h2>
+          </div>
+          
+          <div className="space-y-12">
+            {theme.content.subThemes.map((subTheme, index) => (
+              <div key={subTheme.id} className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm">
+                <div className="grid lg:grid-cols-[1fr_300px] gap-8 items-start">
+                  <div>
+                    <div className="bg-cv-orange/30 inline-block rounded px-3 py-1 mb-4">
+                      <h3 className="text-xl lg:text-2xl font-bebas text-cv-purple/60">
+                        {subTheme.title}
+                      </h3>
+                    </div>
+                    
+                    <p className="text-base lg:text-lg text-black/70 leading-relaxed">
+                      {subTheme.content}
+                    </p>
+                  </div>
+                  
+                  {subTheme.image && (
+                    <div className="relative h-48 lg:h-56 rounded-xl overflow-hidden">
+                      <Image
+                        src={subTheme.image}
+                        alt={subTheme.title}
+                        fill
+                        className="object-cover saturate-[0.7] contrast-125"
+                      />
+                      <div className={`absolute inset-0 ${theme.overlayColor}`}></div>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="px-6 lg:px-16 py-12 bg-gray-50/50">
         <div className="max-w-4xl">
-          <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70 mb-8">
-            Voces de los Residentes
-          </h2>
-          
+          <div className="bg-cv-orange/30 inline-block rounded mb-8">
+            <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
+              Voces de los Residentes
+            </h2>
+          </div>
+
           <div className="space-y-8">
             {theme.content.testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-6 lg:p-8 rounded-2xl shadow-sm">
+              <div
+                key={index}
+                className="bg-white p-6 lg:p-8 rounded-2xl shadow-sm"
+              >
                 <blockquote className="text-lg lg:text-xl text-black/70 italic leading-relaxed mb-4">
                   &ldquo;{testimonial.quote}&rdquo;
                 </blockquote>
@@ -320,8 +589,8 @@ export default async function ThemeDetail({ params }: PageProps) {
                   — {testimonial.name}
                 </cite>
                 {testimonial.audio && (
-                  <div className="mt-4 flex items-center gap-3">
-                    <button className="flex items-center gap-2 px-4 py-2 bg-cv-pink/10 text-cv-pink rounded-lg hover:bg-cv-pink/20 transition-colors">
+                  <div className="mt-4">
+                    <div className="flex items-center gap-3 mb-3">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -332,11 +601,27 @@ export default async function ThemeDetail({ params }: PageProps) {
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"
+                        className="text-cv-pink"
                       >
-                        <polygon points="6 3 20 12 6 21 6 3" />
+                        <path d="M17.5 22h.5a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
+                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                        <path d="M2 19a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0v-4a6 6 0 0 1 12 0v4a2 2 0 1 1-4 0v-1a2 2 0 1 1 4 0" />
                       </svg>
-                      Escuchar testimonio
-                    </button>
+                      <span className="text-sm font-medium text-cv-pink">
+                        Escuchar testimonio completo
+                      </span>
+                    </div>
+                    <div className="bg-gray-100 rounded-lg p-2">
+                      <iframe
+                        src={`/audios/${testimonial.audio}`}
+                        width="100%"
+                        height="50"
+                        frameBorder="0"
+                        className="rounded"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                      ></iframe>
+                    </div>
                   </div>
                 )}
               </div>
@@ -367,7 +652,7 @@ export default async function ThemeDetail({ params }: PageProps) {
             </svg>
             Volver a todos los temas
           </Link>
-          
+
           <div className="text-center text-black/50">
             <p className="text-sm">
               Explora otros temas de la investigación participativa
@@ -410,3 +695,4 @@ export async function generateStaticParams() {
     slug: theme.id,
   }));
 }
+

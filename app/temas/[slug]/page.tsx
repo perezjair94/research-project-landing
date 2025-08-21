@@ -51,43 +51,38 @@ const themesData: ThemeData[] = [
           id: "manejo-mascotas",
           title: "Manejo de mascotas y animales de compañía",
           content:
-            "Según la caracterización realizada por Corporación Responder, el 51% de los residentes de Ciudad Verde en el 2022 poseían una mascota. En efecto, Maria Mercedes aprecia que la ciudadela es un lugar propicio para el encuentro entre vecinos y sus mascotas. A su vez, Andrea comparte en su fotorelato la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde. Sin embargo, no todo es positivo. Los residentes también expresan la falta de compromiso de los dueños al recoger las heces de las mascotas. Esta situación impide hacer ejercicio o usar los espacios adecuadamente.",
+            "Según la caracterización realizada por Corporación Responder, el 51% de los residentes de Ciudad Verde en el 2022 poseían una mascota. En efecto, Maria Mercedes aprecia que la ciudadela es un lugar propicio para el encuentro entre vecinos y sus mascotas. A su vez, Andrea comparte en su fotorelato la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde.\n\nSin embargo, no todo es positivo. Los residentes también expresan la falta de compromiso de los dueños al recoger las heces de las mascotas. Esta situación impide hacer ejercicio o usar los espacios adecuadamente.",
           image: "/images/photo1.jpg",
         },
         {
           id: "ruido-volumen",
           title: "Ruido, música a alto volumen, horas del día",
           content:
-            "La alta densidad de personas que viven en los conjuntos hace que el manejo del volumen al momento de escuchar música, mover objetos, martillar, entre otras acciones, genere molestias. Según Blanca la cercanía entre los apartamentos y el hecho de que los conjuntos tengan hasta 10 torres, cada una de 6 pisos potencia la posibilidad de oír lo que hacen los vecinos. Estos relatos complementan los hallazgos del ejercicio realizado por Corporación Responder, en donde se encontró que más del 50% de los residentes identificaron una relación entre el ruido y los problemas de convivencia en la urbanización.",
-          image: "/images/photo2.jpg",
+            "La alta densidad de personas que viven en los conjuntos hace que el manejo del volumen al momento de escuchar música, mover objetos, martillar, entre otras acciones, genere molestias. Según Blanca la cercanía entre los apartamentos y el hecho de que los conjuntos tengan hasta 10 torres, cada una de 6 pisos potencia la posibilidad de oír lo que hacen los vecinos.\n\nEstos relatos complementan los hallazgos del ejercicio realizado por Corporación Responder, en donde se encontró que más del 50% de los residentes identificaron una relación entre el ruido y los problemas de convivencia en la urbanización.",
         },
         {
           id: "espacios-comunes",
           title: "Uso de espacios comunes dentro y fuera del conjunto",
           content:
             "Los espacios comunes de la ciudadela, tanto aquellas que hacen parte de los conjuntos cerrados, como aquellos que comparten todos los residentes de Ciudad Verde, brindan a sus habitantes la posibilidad de compartir con los vecinos y vivir diferentes experiencias que en su mayoría identifican como positivas. El mal uso de los espacios comunes puede generar conflictos relacionados con la convivencia.",
-          image: "/images/photo4.jpg",
         },
         {
           id: "animales-abandonados",
           title: "Animales abandonados",
           content:
-            "Los animales abandonados o callejeros despiertan diferentes emociones en los participantes de este ejercicio. Desde hace algunos años, la Agrupación Social Ciudad Verde adecúa espacios para los animales que habitan la calle. Sin embargo, algunos residentes consideran que estos perros tienen tendencias violentas y se preguntan si es una buena idea alimentarlos y mantenerlos tan cerca de los residentes.",
-          image: "/images/photo5.jpg",
+            "Los animales abandonados o callejeros despiertan diferentes emociones en los participantes de este ejercicio. Desde hace algunos años, la Agrupación Social Ciudad Verde adecúa espacios para los animales que habitan la calle.\n\nSin embargo, algunos residentes consideran que estos perros tienen tendencias violentas y se preguntan si es una buena idea alimentarlos y mantenerlos tan cerca de los residentes.",
         },
         {
           id: "administraciones",
           title: "Administraciones, vivienda horizontal, manejo del conjunto",
           content:
             "Vivir en propiedad horizontal cambia las dinámicas a las que estaban acostumbrados muchos de los residentes de Ciudad Verde en sus lugares de vivienda previos. El desconocimiento de los residentes sobre el funcionamiento de la gestión de la administración puede hacer que los problemas de convivencia entre residentes y las inconformidades con las administraciones surjan.",
-          image: "/images/photo1.jpg",
         },
         {
           id: "solucion-conflictos",
           title: "Solución de conflictos/comunicación",
           content:
-            "La caracterización adelantada por Corporación Responder encontró que tan solo el 3% de la población censada en Ciudad Verde identificó el conflicto entre vecinos como el aspecto que menos les agradaba de su lugar de vivienda. Sin embargo, en las conversaciones entre residentes participantes este tema pareciera tener mayor relevancia. Los habitantes de Ciudad Verde en muchos casos tienen pocas herramientas o instancias para solucionar los conflictos que aparecen en el día a día.",
-          image: "/images/photo2.jpg",
+            "La caracterización adelantada por Corporación Responder encontró que tan solo el 3% de la población censada en Ciudad Verde identificó el conflicto entre vecinos como el aspecto que menos les agradaba de su lugar de vivienda.\n\nSin embargo, en las conversaciones entre residentes participantes este tema pareciera tener mayor relevancia. Los habitantes de Ciudad Verde en muchos casos tienen pocas herramientas o instancias para solucionar los conflictos que aparecen en el día a día.",
         },
       ],
       testimonials: [
@@ -363,7 +358,6 @@ const themesData: ThemeData[] = [
           title: "Costos de bienes y servicios",
           content:
             "Las personas manifiestan que Ciudad Verde es un gran lugar para vivir, sin embargo los costos de los servicios y los alimentos ponen en aprieto a las familias, las cuales en su mayoría cuentan con recursos muy limitados.",
-          image: "/images/photo2.jpg",
         },
       ],
       testimonials: [
@@ -522,51 +516,54 @@ export default async function ThemeDetail({ params }: PageProps) {
               <p key={index}>{paragraph}</p>
             ))}
           </div>
-
         </div>
       </section>
 
       {/* Subtemas Section */}
       <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-cv-orange/30 inline-block rounded mb-8">
-            <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
-              Subtemas
-            </h2>
-          </div>
-
           <div className="space-y-12">
             {theme.content.subThemes.map((subTheme, index) => (
-              <div
-                key={subTheme.id}
-                className="bg-white rounded-2xl p-6 lg:p-8 shadow-sm"
-              >
-                <div className="grid lg:grid-cols-[1fr_300px] gap-8 items-start">
-                  <div>
-                    <div className="bg-cv-orange/30 inline-block rounded px-3 py-1 mb-4">
-                      <h3 className="text-xl lg:text-2xl font-bebas text-cv-purple/60">
-                        {subTheme.title}
-                      </h3>
-                    </div>
+              <div key={subTheme.id}>
+                {/* Título en barra naranja */}
+                <div className="bg-cv-orange/30 inline-block rounded px-3 py-1 mb-6">
+                  <h3 className="text-xl lg:text-2xl font-bebas text-cv-purple/60">
+                    {subTheme.title}
+                  </h3>
+                </div>
 
-                    <p className="text-base lg:text-lg text-black/70 leading-relaxed">
-                      {subTheme.content}
-                    </p>
+                {/* Layout principal con texto a la izquierda e imagen/iframe a la derecha */}
+                <div className="grid lg:grid-cols-[1fr_400px] gap-8 items-start">
+                  {/* Contenido de texto */}
+                  <div className="text-base lg:text-lg text-black/70 leading-relaxed space-y-4">
+                    {subTheme.content.split("\n\n").map((paragraph, pIndex) => (
+                      <p key={pIndex}>{paragraph}</p>
+                    ))}
                   </div>
 
-                  {subTheme.image && (
-                    <div className="relative h-48 lg:h-56 rounded-xl overflow-hidden">
-                      <Image
-                        src={subTheme.image}
-                        alt={subTheme.title}
-                        fill
-                        className="object-cover saturate-[0.7] contrast-125"
-                      />
-                      <div
-                        className={`absolute inset-0 ${theme.overlayColor}`}
-                      ></div>
+                  {/* Columna derecha con imagen y posible iframe */}
+                  <div className="space-y-4">
+                    {subTheme.image && (
+                      <div className="relative h-48 lg:h-56 rounded-xl overflow-hidden">
+                        <Image
+                          src={subTheme.image}
+                          alt={subTheme.title}
+                          fill
+                          className="object-cover saturate-[0.7] contrast-125"
+                        />
+                        <div
+                          className={`absolute inset-0 ${theme.overlayColor}`}
+                        ></div>
+                      </div>
+                    )}
+
+                    {/* Placeholder para iframe - se puede agregar contenido específico aquí */}
+                    <div className="bg-gray-100 rounded-lg p-4 h-32 flex items-center justify-center">
+                      <span className="text-gray-500 text-sm">
+                        Espacio para iframe
+                      </span>
                     </div>
-                  )}
+                  </div>
                 </div>
               </div>
             ))}
@@ -618,17 +615,17 @@ export default async function ThemeDetail({ params }: PageProps) {
                         Escuchar testimonio completo
                       </span>
                     </div>
-                    <div className="bg-gray-100 rounded-lg p-2">
-                      <iframe
-                        src={`/audios/${testimonial.audio}`}
-                        width="100%"
-                        height="50"
-                        frameBorder="0"
-                        className="rounded"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                      ></iframe>
-                    </div>
+                    {/* <div className="bg-gray-100 rounded-lg p-2"> */}
+                    {/*   <iframe */}
+                    {/*     src={`/audios/${testimonial.audio}`} */}
+                    {/*     width="100%" */}
+                    {/*     height="50" */}
+                    {/*     frameBorder="0" */}
+                    {/*     className="rounded" */}
+                    {/*     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" */}
+                    {/*     loading="lazy" */}
+                    {/*   ></iframe> */}
+                    {/* </div> */}
                   </div>
                 )}
               </div>

@@ -94,28 +94,28 @@ const themesData: ThemeData[] = [
           quote:
             "La ciudadela es un lugar propicio para el encuentro entre vecinos y sus mascotas.",
           audio: "convivencia-maria-mercedes.mp3",
-          link: "https://app.lvn.org/highlight/5259885",
+          link: "https://embed.lvn.org/?hid=5259885",
         },
         {
           name: "Blanca",
           quote:
             "La cercanía entre los apartamentos hace que se escuche todo lo que hacen los vecinos. Es el principal inconveniente en materia de convivencia.",
           audio: "convivencia-blanca.mp3",
-          link: "https://app.lvn.org/highlight/5259886",
+          link: "https://embed.lvn.org/?hid=5259886",
         },
         {
           name: "Katherine",
           quote:
             "En nuestro conjunto acordaron multar a los vecinos que hicieran ruido, pero ahora quienes hacen ruido pagan para seguir con sus actividades.",
           audio: "convivencia-katherine.mp3",
-          link: "https://app.lvn.org/highlight/5259887",
+          link: "https://embed.lvn.org/?hid=5259887",
         },
         {
           name: "Luz Marina",
           quote:
             "Las personas no llevan bolsas para los excrementos de las mascotas, esto hace que los parques estén sucios.",
           audio: "convivencia-luz-marina.mp3",
-          link: "https://app.lvn.org/highlight/5259888",
+          link: "https://embed.lvn.org/?hid=5259888",
         },
       ],
     },
@@ -172,21 +172,21 @@ const themesData: ThemeData[] = [
           quote:
             "Me lleva mucho tiempo salir hasta la estación Terreros al tener que tomar doble transporte.",
           audio: "transporte-paola.mp3",
-          link: "https://app.lvn.org/highlight/5259889",
+          link: "https://embed.lvn.org/?hid=5259889",
         },
         {
           name: "Nubia",
           quote:
             "Debo pagar doble transporte: carro pirata para salir de la ciudadela y luego Transmilenio para llegar al trabajo.",
           audio: "transporte-nubia.mp3",
-          link: "https://app.lvn.org/highlight/5259890",
+          link: "https://embed.lvn.org/?hid=5259890",
         },
         {
           name: "Linda",
           quote:
             "Uso carros piratas porque se demoran en pasar, pero me permiten conectarme con Terreros. Esto me ha hecho llegar tarde al trabajo.",
           audio: "transporte-linda.mp3",
-          link: "https://app.lvn.org/highlight/5259891",
+          link: "https://embed.lvn.org/?hid=5259891",
         },
       ],
     },
@@ -244,14 +244,14 @@ const themesData: ThemeData[] = [
           quote:
             "Vamos con la familia a hacer picnic casi todos los domingos. Las temporadas que más me gustan son agosto para elevar cometa y diciembre por el alumbrado.",
           audio: "espacio-publico-claribel.mp3",
-          link: "https://app.lvn.org/highlight/5259892",
+          link: "https://embed.lvn.org/?hid=5259892",
         },
         {
           name: "Vicente",
           quote:
             "El parque de la lectura es mi lugar favorito, allí comparto un helado con mis hijos y juego con mi mascota.",
           audio: "espacio-publico-vicente.mp3",
-          link: "https://app.lvn.org/highlight/5259893",
+          link: "https://embed.lvn.org/?hid=5259893",
         },
       ],
     },
@@ -295,7 +295,7 @@ const themesData: ThemeData[] = [
           quote:
             "Vi un robo cerca de donde tomo el SITP a las 4:00 am. Huyé y corrí. Quedé con la sensación de estar predispuesta a vivir algo similar.",
           audio: "seguridad-mercedes.mp3",
-          link: "https://app.lvn.org/highlight/5259894",
+          link: "https://embed.lvn.org/?hid=5259894",
         },
       ],
     },
@@ -338,7 +338,7 @@ const themesData: ThemeData[] = [
           name: "Roberto Díaz",
           quote:
             "La diversidad de nuestra comunidad es nuestra fortaleza. Aquí conviven personas de todas las edades y backgrounds.",
-          link: "https://app.lvn.org/highlight/5259895",
+          link: "https://embed.lvn.org/?hid=5259895",
         },
       ],
     },
@@ -379,7 +379,7 @@ const themesData: ThemeData[] = [
           name: "Elena Vargas",
           quote:
             "Vivir aquí ha significado una mejora en nuestra calidad de vida. Tenemos acceso a servicios que antes no teníamos.",
-          link: "https://app.lvn.org/highlight/5259896",
+          link: "https://embed.lvn.org/?hid=5259896",
         },
       ],
     },
@@ -414,7 +414,7 @@ const themesData: ThemeData[] = [
           name: "Miguel Castillo",
           quote:
             "Es importante que nuestra voz sea escuchada. Participamos activamente en las decisiones que afectan nuestro barrio.",
-          link: "https://app.lvn.org/highlight/5259897",
+          link: "https://embed.lvn.org/?hid=5259897",
         },
       ],
     },
@@ -456,7 +456,7 @@ const themesData: ThemeData[] = [
           name: "Carmen López",
           quote:
             "La infraestructura ha mejorado considerablemente desde que llegamos. Ahora tenemos servicios más confiables.",
-          link: "https://app.lvn.org/highlight/5259898",
+          link: "https://embed.lvn.org/?hid=5259898",
         },
       ],
     },

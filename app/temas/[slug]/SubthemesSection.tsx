@@ -70,7 +70,7 @@ export default function SubthemesSection({
                   )}
 
                   {/* Iframe del testimonio por defecto */}
-                  {/* {defaultIframe && (
+                  {defaultIframe && (
                     <div className="bg-gray-100 rounded-lg overflow-hidden">
                       <iframe
                         src={defaultIframe}
@@ -83,7 +83,7 @@ export default function SubthemesSection({
                         title="Testimonio"
                       ></iframe>
                     </div>
-                  )} */}
+                  )}
                 </div>
               </div>
             </div>

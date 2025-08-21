@@ -73,7 +73,13 @@ export default function Themes() {
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
       <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
-        <div className="font-semibold text-lg lg:text-xl text-black">Logo</div>
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          width={250}
+          height={180}
+          className="h-15 lg:h-20 w-auto"
+        />
         <nav className="py-1 rounded flex gap-6 lg:gap-8">
           <Link
             href="/"
@@ -144,7 +150,7 @@ export default function Themes() {
                 <h3 className="text-2xl lg:text-3xl font-bebas text-black/50 mb-2">
                   {theme.title}
                 </h3>
-                <p className="text-sm text-black/50 leading-relaxed leading-relaxed tracking-tight">
+                <p className="text-sm text-black/50 leading-relaxed tracking-tight">
                   {theme.description}
                 </p>
               </div>

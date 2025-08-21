@@ -37,7 +37,13 @@ export default function Home() {
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
       <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
-        <div className="font-semibold text-lg lg:text-xl text-black">Logo</div>
+        <Image
+          src="/logo.png"
+          alt="Logo"
+          width={250}
+          height={180}
+          className="h-8 lg:h-20 w-auto"
+        />
         <nav className="py-1 rounded flex gap-6 lg:gap-8">
           <span className="text-cv-pink font-bold text-lg lg:text-xl border-b-2 border-cv-pink">
             Inicio

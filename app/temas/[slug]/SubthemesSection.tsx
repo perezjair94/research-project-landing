@@ -26,23 +26,60 @@ export default function SubthemesSection({
   testimonials,
   themeOverlayColor,
 }: SubthemesSectionProps) {
-  // Estado para manejar el iframe activo
-  const [activeIframe, setActiveIframe] = useState<string | null>(testimonials[0]?.link || null);
+  // Estado para manejar el subtema activo
+  const [activeSubthemeIndex, setActiveSubthemeIndex] = useState<number>(0);
+  
+  // Iframe por defecto (el primero disponible)
+  const defaultIframe = testimonials[0]?.link || null;
 
-  // Función para normalizar nombres (quitar tildes y caracteres especiales)
-  const normalizeString = (str: string): string => {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  // Función para obtener el iframe de un subtema específico
+  const getSubthemeIframe = (subthemeIndex: number): string | null => {
+    const subtheme = subThemes[subthemeIndex];
+    if (!subtheme) return defaultIframe;
+
+    // Mapeo específico de subtemas a testimonios basado en el contenido
+    const subthemeToTestimonialMap: { [key: string]: string } = {
+      // Convivencia
+      "manejo-mascotas": "María Mercedes", // menciona mascotas
+      "ruido-volumen": "Blanca", // menciona ruido/apartamentos
+      "solucion-conflictos": "Katherine", // menciona conflictos/multas
+      
+      // Transporte  
+      "costos": "Nubia", // menciona doble transporte
+      "transporte-pirata": "Linda", // menciona carros piratas
+      "oferta-rutas": "Paola", // menciona rutas/tiempo
+      
+      // Espacio Público
+      "areas-verdes": "Claribel", // menciona parques/picnic
+      "recreacion-deporte": "Vicente", // menciona parque de lectura
+      
+      // Seguridad
+      "robos": "Mercedes", // menciona robo en SITP
+      
+      // Otros temas específicos
+      "grupos-poblacionales": "Roberto Díaz",
+      "calidad-de-vida": "Elena Vargas", 
+      "gobernanza": "Miguel Castillo",
+      "infraestructura": "Carmen López"
+    };
+
+    const associatedTestimonialName = subthemeToTestimonialMap[subtheme.id];
+    if (associatedTestimonialName) {
+      const testimonial = testimonials.find(t => t.name === associatedTestimonialName);
+      if (testimonial?.link) {
+        return testimonial.link;
+      }
+    }
+
+    // Si no hay mapeo específico, usar el iframe por defecto
+    return defaultIframe;
   };
 
-  // Función para renderizar contenido con nombres clickeables
+  // Función para renderizar contenido con nombres clickeables (mantener funcionalidad existente)
   const renderContentWithClickableNames = (content: string) => {
     let processedContent = content;
     
-    // Para cada testimonio, buscar variaciones del nombre en el contenido
     testimonials.forEach((testimonial) => {
-      const testimonialNameNormalized = normalizeString(testimonial.name);
-      
-      // Buscar tanto el nombre original como versiones normalizadas
       const nameVariations = [
         testimonial.name,
         testimonial.name.normalize("NFD").replace(/[\u0300-\u036f]/g, ""), // Sin tildes
@@ -54,7 +91,6 @@ export default function SubthemesSection({
       });
     });
 
-    // Dividir el contenido en partes y renderizar
     const parts = processedContent.split(/(__CLICKABLE_NAME_[^_]+__)/);
     
     return parts.map((part, index) => {
@@ -65,7 +101,21 @@ export default function SubthemesSection({
         return (
           <button
             key={index}
-            onClick={() => testimonial?.link && setActiveIframe(testimonial.link)}
+            onClick={() => {
+              if (testimonial?.link) {
+                // Buscar el índice del subtema que corresponde a este testimonio
+                const subthemeIndex = subThemes.findIndex(subtheme => {
+                  const content = subtheme.content.toLowerCase();
+                  const nameLower = name.toLowerCase();
+                  const nameNoTildes = name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+                  return content.includes(nameLower) || content.includes(nameNoTildes);
+                });
+                
+                if (subthemeIndex >= 0) {
+                  setActiveSubthemeIndex(subthemeIndex);
+                }
+              }
+            }}
             className="text-cv-purple font-semibold hover:text-cv-pink transition-colors cursor-pointer underline"
           >
             {name}
@@ -79,63 +129,62 @@ export default function SubthemesSection({
   return (
     <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
       <div className="max-w-6xl mx-auto">
-        <div className="space-y-12">
-          {subThemes.map((subTheme, index) => (
-            <div key={subTheme.id}>
-              {/* Título en barra naranja */}
-              <div className="bg-cv-orange/30 inline-block rounded px-3 py-1 mb-6">
-                <h3 className="text-xl lg:text-2xl font-bebas text-cv-purple/60">
-                  {subTheme.title}
-                </h3>
-              </div>
+        {/* Layout principal con subtemas a la izquierda e iframe a la derecha */}
+        <div className="grid lg:grid-cols-[1fr_400px] gap-8 items-start">
+          {/* Columna izquierda - Subtemas */}
+          <div className="space-y-12">
+            {subThemes.map((subTheme, index) => (
+              <div key={subTheme.id}>
+                {/* Título en barra naranja - ahora clickeable */}
+                <div className="bg-cv-orange/30 inline-block rounded px-3 py-1 mb-6">
+                  <button
+                    onClick={() => setActiveSubthemeIndex(index)}
+                    className={`text-xl lg:text-2xl font-bebas transition-colors cursor-pointer ${
+                      activeSubthemeIndex === index 
+                        ? 'text-cv-pink' 
+                        : 'text-cv-purple/60 hover:text-cv-pink'
+                    }`}
+                  >
+                    {subTheme.title}
+                  </button>
+                </div>
 
-              {/* Layout principal con texto a la izquierda e imagen/iframe a la derecha */}
-              <div className="grid lg:grid-cols-[1fr_400px] gap-8 items-start">
                 {/* Contenido de texto */}
                 <div className="text-base lg:text-lg text-black/70 leading-relaxed space-y-4">
                   {subTheme.content.split("\n\n").map((paragraph, pIndex) => (
                     <p key={pIndex}>{renderContentWithClickableNames(paragraph)}</p>
                   ))}
                 </div>
-
-                {/* Columna derecha con imagen e iframe */}
-                <div className="space-y-4">
-                  {/* {subTheme.image && ( */}
-                  {/*   <div className="relative h-48 lg:h-56 rounded-xl overflow-hidden"> */}
-                  {/*     <Image */}
-                  {/*       src={subTheme.image} */}
-                  {/*       alt={subTheme.title} */}
-                  {/*       fill */}
-                  {/*       className="object-cover saturate-[0.7] contrast-125" */}
-                  {/*     /> */}
-                  {/*     <div className={`absolute inset-0 ${themeOverlayColor}`}></div> */}
-                  {/*   </div> */}
-                  {/* )} */}
-
-                  {/* Iframe del testimonio activo */}
-                  {activeIframe && (
-                    <div className="bg-gray-100 rounded-lg overflow-hidden">
-                      <iframe
-                        src={activeIframe}
-                        width="100%"
-                        height="200"
-                        className="rounded-lg"
-                        allow="autoplay"
-                        loading="lazy"
-                        title="Testimonio"
-                        scrolling="no"
-                        style={{
-                          maxWidth: "570px",
-                          margin: "0 auto",
-                          display: "block",
-                        }}
-                      ></iframe>
-                    </div>
-                  )}
-                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          {/* Columna derecha - Iframe fijo */}
+          <div className="lg:sticky lg:top-8 space-y-4">
+            {/* Iframe del subtema activo */}
+            {getSubthemeIframe(activeSubthemeIndex) && (
+              <div className="bg-gray-100 rounded-lg overflow-hidden">
+                <div className="p-3 bg-cv-purple/10 text-sm text-cv-purple/70 font-medium">
+                  Testimonio: {subThemes[activeSubthemeIndex]?.title}
+                </div>
+                <iframe
+                  src={getSubthemeIframe(activeSubthemeIndex)!}
+                  width="100%"
+                  height="300"
+                  className="rounded-lg"
+                  allow="autoplay"
+                  loading="lazy"
+                  title={`Testimonio - ${subThemes[activeSubthemeIndex]?.title}`}
+                  scrolling="no"
+                  style={{
+                    maxWidth: "400px",
+                    margin: "0 auto",
+                    display: "block",
+                  }}
+                ></iframe>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>

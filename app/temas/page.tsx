@@ -4,65 +4,73 @@ import Link from "next/link";
 export default function Themes() {
   const themes = [
     {
+      id: "convivencia",
       title: "Convivencia",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "La vida en comunidad y las relaciones vecinales en Ciudad Verde",
       image: "/images/photo5.jpg",
       bgColor: "bg-cv-pink/20",
       overlayColor: "bg-cv-pink/20",
     },
     {
+      id: "transporte",
       title: "Transporte",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "Movilidad y conectividad desde y hacia Ciudad Verde",
       image: "/images/photo1.jpg",
       bgColor: "bg-cv-green/20",
       overlayColor: "bg-cv-green/20",
     },
     {
+      id: "espacio-publico",
       title: "Espacio Público",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "Parques, plazas y áreas comunes para la recreación y encuentro",
       image: "/images/photo4.jpg",
       bgColor: "bg-cv-blue/20",
       overlayColor: "bg-cv-blue/20",
     },
     {
+      id: "seguridad",
       title: "Seguridad",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "Percepción de seguridad y medidas de protección en la comunidad",
       image: "/images/photo2.jpg",
       bgColor: "bg-cv-purple/20",
       overlayColor: "bg-cv-purple/20",
     },
     {
+      id: "grupos-poblacionales",
       title: "Grupos poblacionales",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "Diversidad demográfica y necesidades específicas de diferentes grupos",
       image: "/images/photo1.jpg",
       bgColor: "bg-cv-orange/20",
       overlayColor: "bg-cv-orange/20",
     },
     {
+      id: "calidad-de-vida",
       title: "Calidad de Vida",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "Bienestar general y satisfacción con la vida en Ciudad Verde",
       image: "/images/photo5.jpg",
       bgColor: "bg-cv-yellow/20",
       overlayColor: "bg-cv-yellow/20",
     },
     {
+      id: "gobernanza",
       title: "Gobernanza",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "Participación ciudadana y relación con las instituciones",
       image: "/images/photo4.jpg",
       bgColor: "bg-cv-teal/20",
       overlayColor: "bg-cv-teal/20",
     },
     {
+      id: "infraestructura",
       title: "Infraestructura",
       description:
-        "Housing Affordability, Homeownership, Gentrification and Displacement, Housing Instability, Housing Quality",
+        "Servicios públicos y infraestructura urbana de la ciudadela",
       image: "/images/photo2.jpg",
       bgColor: "bg-gray-400/20",
       overlayColor: "bg-gray-400/20",
@@ -126,8 +134,9 @@ export default function Themes() {
       <section className="p-6 lg:px-14 lg:py-12">
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
           {themes.map((theme, index) => (
-            <div
+            <Link
               key={index}
+              href={`/temas/${theme.id}`}
               className={`${theme.bgColor} rounded-2xl overflow-hidden backdrop-blur-md flex flex-col lg:flex-row hover:shadow-lg transition-shadow cursor-pointer`}
               style={{ minHeight: "120px" }}
             >
@@ -154,7 +163,7 @@ export default function Themes() {
                   {theme.description}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>

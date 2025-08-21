@@ -322,7 +322,7 @@ export default function Home() {
         </div>
 
         <div className="flex-1 px-6 lg:px-16">
-          <div className=" inline-block">
+          <div className="inline-block">
             <h3 className="text-2xl lg:text-3xl font-bebas text-cv-purple/50 mb-6 lg:mb-8">
               Navegando las voces de los residentes
             </h3>

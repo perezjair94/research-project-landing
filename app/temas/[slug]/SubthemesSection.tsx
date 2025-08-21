@@ -1,6 +1,5 @@
 "use client";
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
 
 interface SubTheme {
   id: string;
@@ -27,8 +26,55 @@ export default function SubthemesSection({
   testimonials,
   themeOverlayColor,
 }: SubthemesSectionProps) {
-  // Usar el primer testimonio por defecto para el iframe
-  const defaultIframe = testimonials[0]?.link || null;
+  // Estado para manejar el iframe activo
+  const [activeIframe, setActiveIframe] = useState<string | null>(testimonials[0]?.link || null);
+
+  // Función para normalizar nombres (quitar tildes y caracteres especiales)
+  const normalizeString = (str: string): string => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  };
+
+  // Función para renderizar contenido con nombres clickeables
+  const renderContentWithClickableNames = (content: string) => {
+    let processedContent = content;
+    
+    // Para cada testimonio, buscar variaciones del nombre en el contenido
+    testimonials.forEach((testimonial) => {
+      const testimonialNameNormalized = normalizeString(testimonial.name);
+      
+      // Buscar tanto el nombre original como versiones normalizadas
+      const nameVariations = [
+        testimonial.name,
+        testimonial.name.normalize("NFD").replace(/[\u0300-\u036f]/g, ""), // Sin tildes
+      ];
+      
+      nameVariations.forEach((nameVariation) => {
+        const nameRegex = new RegExp(`\\b${nameVariation.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi');
+        processedContent = processedContent.replace(nameRegex, `__CLICKABLE_NAME_${testimonial.name}__`);
+      });
+    });
+
+    // Dividir el contenido en partes y renderizar
+    const parts = processedContent.split(/(__CLICKABLE_NAME_[^_]+__)/);
+    
+    return parts.map((part, index) => {
+      if (part.startsWith('__CLICKABLE_NAME_') && part.endsWith('__')) {
+        const name = part.replace('__CLICKABLE_NAME_', '').replace('__', '');
+        const testimonial = testimonials.find(t => t.name === name);
+        
+        return (
+          <button
+            key={index}
+            onClick={() => testimonial?.link && setActiveIframe(testimonial.link)}
+            className="text-cv-purple font-semibold hover:text-cv-pink transition-colors cursor-pointer underline"
+          >
+            {name}
+          </button>
+        );
+      }
+      return part;
+    });
+  };
 
   return (
     <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
@@ -48,7 +94,7 @@ export default function SubthemesSection({
                 {/* Contenido de texto */}
                 <div className="text-base lg:text-lg text-black/70 leading-relaxed space-y-4">
                   {subTheme.content.split("\n\n").map((paragraph, pIndex) => (
-                    <p key={pIndex}>{paragraph}</p>
+                    <p key={pIndex}>{renderContentWithClickableNames(paragraph)}</p>
                   ))}
                 </div>
 
@@ -66,11 +112,11 @@ export default function SubthemesSection({
                   {/*   </div> */}
                   {/* )} */}
 
-                  {/* Iframe del testimonio por defecto */}
-                  {defaultIframe && (
+                  {/* Iframe del testimonio activo */}
+                  {activeIframe && (
                     <div className="bg-gray-100 rounded-lg overflow-hidden">
                       <iframe
-                        src={defaultIframe}
+                        src={activeIframe}
                         width="100%"
                         height="200"
                         className="rounded-lg"

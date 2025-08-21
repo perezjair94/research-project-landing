@@ -469,7 +469,6 @@ interface PageProps {
   }>;
 }
 
-
 export default async function ThemeDetail({ params }: PageProps) {
   const { slug } = await params;
   const theme = themesData.find((t) => t.id === slug);
@@ -538,74 +537,11 @@ export default async function ThemeDetail({ params }: PageProps) {
       </section>
 
       {/* Subtemas Section */}
-      <SubthemesSection 
+      <SubthemesSection
         subThemes={theme.content.subThemes}
         testimonials={theme.content.testimonials}
         themeOverlayColor={theme.overlayColor}
       />
-
-      {/* Testimonials Section */}
-      {/* <section className="px-6 lg:px-16 py-12 bg-gray-50/50">
-        <div className="max-w-4xl">
-          <div className="bg-cv-orange/30 inline-block rounded mb-8">
-            <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
-              Voces de los Residentes
-            </h2>
-          </div>
-
-          <div className="space-y-8">
-            {theme.content.testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 lg:p-8 rounded-2xl shadow-sm"
-              >
-                <blockquote className="text-lg lg:text-xl text-black/70 italic leading-relaxed mb-4">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </blockquote>
-                <cite className="text-base font-semibold text-cv-purple/60 not-italic">
-                  — {testimonial.name}
-                </cite>
-                {testimonial.audio && (
-                  <div className="mt-4">
-                    <div className="flex items-center gap-3 mb-3">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="text-cv-pink"
-                      >
-                        <path d="M17.5 22h.5a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
-                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                        <path d="M2 19a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0v-4a6 6 0 0 1 12 0v4a2 2 0 1 1-4 0v-1a2 2 0 1 1 4 0" />
-                      </svg>
-                      <span className="text-sm font-medium text-cv-pink">
-                        Escuchar testimonio completo
-                      </span>
-                    </div>
-                    <div className="bg-gray-100 rounded-lg p-2">
-                      <iframe
-                        src={`/audios/${testimonial.audio}`}
-                        width="100%"
-                        height="50"
-                        frameBorder="0"
-                        className="rounded"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                        loading="lazy"
-                      ></iframe>
-                    </div>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* Navigation Section */}
       <section className="px-6 lg:px-16 py-12">

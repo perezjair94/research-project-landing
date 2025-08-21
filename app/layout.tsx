@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   keywords:
     "Ciudad Verde, investigación participativa, vivienda social, residentes, comunidad, Colombia, voces ciudadanas, fotorelato, conversaciones cívicas",
   authors: [{ name: "Residentes Investigadores de Ciudad Verde" }],
+  icons: {
+    icon: "/logo.ico",
+    shortcut: "/logo.ico",
+    apple: "/logo.ico",
+  },
   openGraph: {
     title: "Hacer la vida en Ciudad Verde - Investigación Participativa",
     description:

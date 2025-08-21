@@ -545,7 +545,7 @@ export default async function ThemeDetail({ params }: PageProps) {
       />
 
       {/* Testimonials Section */}
-      <section className="px-6 lg:px-16 py-12 bg-gray-50/50">
+      {/* <section className="px-6 lg:px-16 py-12 bg-gray-50/50">
         <div className="max-w-4xl">
           <div className="bg-cv-orange/30 inline-block rounded mb-8">
             <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
@@ -588,24 +588,24 @@ export default async function ThemeDetail({ params }: PageProps) {
                         Escuchar testimonio completo
                       </span>
                     </div>
-                    {/* <div className="bg-gray-100 rounded-lg p-2"> */}
-                    {/*   <iframe */}
-                    {/*     src={`/audios/${testimonial.audio}`} */}
-                    {/*     width="100%" */}
-                    {/*     height="50" */}
-                    {/*     frameBorder="0" */}
-                    {/*     className="rounded" */}
-                    {/*     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" */}
-                    {/*     loading="lazy" */}
-                    {/*   ></iframe> */}
-                    {/* </div> */}
+                    <div className="bg-gray-100 rounded-lg p-2">
+                      <iframe
+                        src={`/audios/${testimonial.audio}`}
+                        width="100%"
+                        height="50"
+                        frameBorder="0"
+                        className="rounded"
+                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        loading="lazy"
+                      ></iframe>
+                    </div>
                   </div>
                 )}
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Navigation Section */}
       <section className="px-6 lg:px-16 py-12">

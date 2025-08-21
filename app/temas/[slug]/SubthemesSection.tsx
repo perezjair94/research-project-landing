@@ -22,14 +22,13 @@ interface SubthemesSectionProps {
   themeOverlayColor: string;
 }
 
-export default function SubthemesSection({ 
-  subThemes, 
-  testimonials, 
-  themeOverlayColor 
+export default function SubthemesSection({
+  subThemes,
+  testimonials,
+  themeOverlayColor,
 }: SubthemesSectionProps) {
   // Usar el primer testimonio por defecto para el iframe
   const defaultIframe = testimonials[0]?.link || null;
-
 
   return (
     <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
@@ -48,26 +47,24 @@ export default function SubthemesSection({
               <div className="grid lg:grid-cols-[1fr_400px] gap-8 items-start">
                 {/* Contenido de texto */}
                 <div className="text-base lg:text-lg text-black/70 leading-relaxed space-y-4">
-                  {subTheme.content.split('\n\n').map((paragraph, pIndex) => (
-                    <p key={pIndex}>
-                      {paragraph}
-                    </p>
+                  {subTheme.content.split("\n\n").map((paragraph, pIndex) => (
+                    <p key={pIndex}>{paragraph}</p>
                   ))}
                 </div>
 
                 {/* Columna derecha con imagen e iframe */}
                 <div className="space-y-4">
-                  {subTheme.image && (
-                    <div className="relative h-48 lg:h-56 rounded-xl overflow-hidden">
-                      <Image
-                        src={subTheme.image}
-                        alt={subTheme.title}
-                        fill
-                        className="object-cover saturate-[0.7] contrast-125"
-                      />
-                      <div className={`absolute inset-0 ${themeOverlayColor}`}></div>
-                    </div>
-                  )}
+                  {/* {subTheme.image && ( */}
+                  {/*   <div className="relative h-48 lg:h-56 rounded-xl overflow-hidden"> */}
+                  {/*     <Image */}
+                  {/*       src={subTheme.image} */}
+                  {/*       alt={subTheme.title} */}
+                  {/*       fill */}
+                  {/*       className="object-cover saturate-[0.7] contrast-125" */}
+                  {/*     /> */}
+                  {/*     <div className={`absolute inset-0 ${themeOverlayColor}`}></div> */}
+                  {/*   </div> */}
+                  {/* )} */}
 
                   {/* Iframe del testimonio por defecto */}
                   {defaultIframe && (
@@ -75,12 +72,17 @@ export default function SubthemesSection({
                       <iframe
                         src={defaultIframe}
                         width="100%"
-                        height="300"
-                        frameBorder="0"
+                        height="200"
                         className="rounded-lg"
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                        allow="autoplay"
                         loading="lazy"
                         title="Testimonio"
+                        scrolling="no"
+                        style={{
+                          maxWidth: "570px",
+                          margin: "0 auto",
+                          display: "block",
+                        }}
                       ></iframe>
                     </div>
                   )}

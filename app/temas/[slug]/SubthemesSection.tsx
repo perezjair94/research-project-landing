@@ -30,9 +30,24 @@ export default function SubthemesSection({
   const [activeSubthemeIndex, setActiveSubthemeIndex] = useState<number>(0);
   // Estado para manejar el iframe activo específicamente
   const [activeIframe, setActiveIframe] = useState<string | null>(null);
+  // Estado para trackear qué testimonio específico está seleccionado para cada autor
+  const [selectedTestimonialIndex, setSelectedTestimonialIndex] = useState<{
+    [authorName: string]: number;
+  }>({});
 
   // Iframe por defecto (el primero disponible)
   const defaultIframe = testimonials[0]?.link || null;
+
+  // Función para obtener el testimonio correcto para un autor
+  const getTestimonialForAuthor = (authorName: string) => {
+    const matchingTestimonials = testimonials.filter(
+      (t) => t.name === authorName,
+    );
+    if (matchingTestimonials.length === 0) return null;
+
+    const currentIndex = selectedTestimonialIndex[authorName] || 0;
+    return matchingTestimonials[currentIndex] || matchingTestimonials[0];
+  };
 
   // Función para obtener el iframe actual (activo o por defecto del subtema)
   const getCurrentIframe = (): string | null => {
@@ -78,9 +93,7 @@ export default function SubthemesSection({
 
     const associatedTestimonialName = subthemeToTestimonialMap[subtheme.id];
     if (associatedTestimonialName) {
-      const testimonial = testimonials.find(
-        (t) => t.name === associatedTestimonialName,
-      );
+      const testimonial = getTestimonialForAuthor(associatedTestimonialName);
       if (testimonial?.link) {
         return testimonial.link;
       }
@@ -117,13 +130,25 @@ export default function SubthemesSection({
     return parts.map((part, index) => {
       if (part.startsWith("__CLICKABLE_NAME_") && part.endsWith("__")) {
         const name = part.replace("__CLICKABLE_NAME_", "").replace("__", "");
-        const testimonial = testimonials.find((t) => t.name === name);
+        const testimonial = getTestimonialForAuthor(name);
 
         return (
           <button
             key={index}
             onClick={() => {
               if (testimonial?.link) {
+                // Rotar al siguiente testimonio del mismo autor si hay múltiples
+                const matchingTestimonials = testimonials.filter(
+                  (t) => t.name === name,
+                );
+                if (matchingTestimonials.length > 1) {
+                  const currentIndex = selectedTestimonialIndex[name] || 0;
+                  const nextIndex = (currentIndex + 1) % matchingTestimonials.length;
+                  setSelectedTestimonialIndex((prev) => ({
+                    ...prev,
+                    [name]: nextIndex,
+                  }));
+                }
                 // Buscar el índice del subtema que corresponde a este testimonio
                 const subthemeIndex = subThemes.findIndex((subtheme) => {
                   const content = subtheme.content.toLowerCase();

@@ -140,8 +140,7 @@ const themesData: ThemeData[] = [
         },
         {
           name: "Jenny",
-          quote:
-            "Trabajo de noche y en el día no puede dormir por el ruido.",
+          quote: "Trabajo de noche y en el día no puede dormir por el ruido.",
           audio: "convivencia-jenny.mp3",
           link: "https://embed.lvn.org/?hid=5263921",
         },

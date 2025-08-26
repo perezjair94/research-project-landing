@@ -85,7 +85,7 @@ const themesData: ThemeData[] = [
           id: "solucion-conflictos",
           title: "Solución de conflictos/comunicación",
           content:
-            "La caracterización adelantada por Corporación Responder encontró que tan solo el 3% de la población censada en Ciudad Verde identificó el conflicto entre vecinos como el aspecto que menos les agradaba de su lugar de vivienda.\n\nSin embargo, en las conversaciones entre residentes participantes este tema pareciera tener mayor relevancia. Los habitantes de Ciudad Verde en muchos casos tienen pocas herramientas o instancias para solucionar los conflictos que aparecen en el día a día.",
+            "La caracterización adelantada por Corporación Responder encontró que tan solo el 3% de la población censada en Ciudad Verde identificó el conflicto entre vecinos como el aspecto que menos les agradaba de su lugar de vivienda. Sin embargo, en las conversaciones entre residentes participantes este tema pareciera tener mayor relevancia; el ruido y el incumplimiento de las normas de convivencia son temas frecuentes en los relatos compartidos. Un ejemplo adicional a los ya mencionados es la situación que narra Jeny, quien comparte que a su apartamento llega el humo de la torre del lado, en donde sus vecinos fuman a pesar de saber que esto está afectando a los hijos de Jeny.\n\nDinámicas similares de falta de comunicación e intolerancia aquejan a los residentes. Una noche a Rebeca la insultó el conductor de un carro pirata, quien posteriormente la dejó lejos de su conjunto, todo porque consideró que ella no fue clara al momento de guiarlo. Otro caso de intolerancia es el contado por Adriana, quien recibió amenazas por ser parte del consejo de la administración lo cual la motivó a poner en arriendo su apartamento e irse del conjunto en el que vivía.\n\nEstas situaciones permiten observar que los habitantes de Ciudad Verde en muchos casos tienen pocas herramientas o instancias para solucionar los conflictos que aparecen en el día a día. Identificamos durante este ejercicio que esto es motivado por factores como el desconocimiento de las normas de convivencia, la ausencia de sanciones formales y sociales ante los comportamientos que afectan la tranquilidad de la comunidad, y la ausencia de reglas del juego claras que trae la informalidad.",
         },
       ],
       testimonials: [
@@ -197,6 +197,24 @@ const themesData: ThemeData[] = [
           quote:
             "Considera que es bueno encontrar un mecanismo que mejore la comunicación entre vecinos.",
           link: "https://embed.lvn.org/?hid=5259795",
+        },
+        {
+          name: "Jeny",
+          quote:
+            "Comparte que a su apartamento llega el humo de la torre del lado, en donde sus vecinos fuman a pesar de saber que esto está afectando a los hijos de Jeny.",
+          link: "https://embed.lvn.org/?hid=5259785",
+        },
+        {
+          name: "Rebeca",
+          quote:
+            "Una noche la insultó el conductor de un carro pirata, quien posteriormente la dejó lejos de su conjunto, todo porque consideró que ella no fue clara al momento de guiarlo.",
+          link: "https://embed.lvn.org/?hid=5259913",
+        },
+        {
+          name: "Adriana",
+          quote:
+            "Recibió amenazas por ser parte del consejo de la administración lo cual la motivó a poner en arriendo su apartamento e irse del conjunto en el que vivía.",
+          link: "https://embed.lvn.org/?hid=5260883",
         },
       ],
     },

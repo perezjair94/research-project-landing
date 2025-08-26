@@ -71,9 +71,9 @@ const themesData: ThemeData[] = [
         },
         {
           id: "animales-abandonados",
-          title: "Animales abandonados",
+          title: "Otros animales",
           content:
-            "Los animales abandonados o callejeros despiertan diferentes emociones en los participantes de este ejercicio. Desde hace algunos años, la Agrupación Social Ciudad Verde adecúa espacios para los animales que habitan la calle.\n\nSin embargo, algunos residentes consideran que estos perros tienen tendencias violentas y se preguntan si es una buena idea alimentarlos y mantenerlos tan cerca de los residentes.",
+            "Los animales abandonados o callejeros despiertan diferentes emociones en los participantes de este ejercicio. Desde hace algunos años, la Agrupación Social Ciudad Verde adecúa espacios para los animales que habitan la calle como María nos muestra en su fotorelato. A ella y a Elsa les tranquiliza saber que existen estos espacios para los animales en condición de abandono con casas, comida y agua para ellos. Sin embargo, Ricardo recuerda una vez que casi lo atacan unos perros callejeros mientras caminaba por los lados del Centro Comercial Jardín. Considera que estos perros tienen tendencias violentas y se pregunta si es una buena idea alimentarlos y mantenerlos tan cerca de los residentes en situaciones como estas.",
         },
         {
           id: "administraciones",
@@ -167,6 +167,18 @@ const themesData: ThemeData[] = [
           quote:
             "Cuenta una historia de intolerancia de parte de un vecino por un malentendido que lo llevó consecuentemente a evitar la zona de la Ciudadela en donde ocurrió el altercado.",
           link: "https://embed.lvn.org/?hid=5263999",
+        },
+        {
+          name: "Elsa",
+          quote:
+            "Le tranquiliza saber que existen espacios para los animales en condición de abandono con casas, comida y agua para ellos.",
+          link: "https://embed.lvn.org/?hid=5259884",
+        },
+        {
+          name: "Ricardo",
+          quote:
+            "Recuerda una vez que casi lo atacan unos perros callejeros mientras caminaba por los lados del Centro Comercial Jardín. Considera que estos perros tienen tendencias violentas y se pregunta si es una buena idea alimentarlos y mantenerlos tan cerca de los residentes.",
+          link: "https://embed.lvn.org/?hid=5259920",
         },
       ],
     },

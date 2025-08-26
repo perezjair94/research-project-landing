@@ -54,7 +54,7 @@ const themesData: ThemeData[] = [
           id: "manejo-mascotas",
           title: "Manejo de mascotas y animales de compañía",
           content:
-            "Según la caracterización realizada por Corporación Responder, el 51% de los residentes de Ciudad Verde en el 2022 poseían una mascota. En efecto, Maria Mercedes aprecia que la ciudadela es un lugar propicio para el encuentro entre vecinos y sus mascotas. A su vez, Andrea comparte en su fotorelato la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde.\n\nSin embargo, no todo es positivo. Los residentes también expresan la falta de compromiso de los dueños al recoger las heces de las mascotas. Esta situación impide hacer ejercicio o usar los espacios adecuadamente.",
+            "Según la caracterización realizada por Corporación Responder, el 51% de los residentes de Ciudad Verde en el 2022 poseían una mascota. En efecto, Maria Mercedes aprecia que la ciudadela es un lugar propicio para el encuentro entre vecinos y sus mascotas. A su vez, Andrea comparte en su fotorelato la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde, al igual que John, quien resalta el trabajo de la Gobernación de Soacha en el desarrollo de las brigadas de vacunación y esterilización en los parques y/o conjuntos, ayudando a las familias que no tienen recursos a prevenir enfermedades y animalitos desamparados.\n\nSin embargo, no todo es positivo. Los residentes también expresan la falta de compromiso de los dueños al recoger las heces de las mascotas. preocupación que resumen Luz Marina y Katherine. Ellas han visto que las personas no llevan bolsas para los excrementos, esto hace que los parques y los conjuntos estén sucios. Esta situación impide hacer ejercicio o usar los espacios adecuadamente. En efecto, los conflictos que afectan la convivencia en Ciudad Verde parecen ser motivados en gran medida por la tenencia irresponsable de las mascotas; según la caracterización realizada por Corporación Responder, casi el 50% de los residentes identificaron que la tenencia inadecuada de estos animales de compañía causaba problemas de convivencia en la ciudadela.",
           image: "/images/photo1.jpg",
         },
         {
@@ -97,25 +97,25 @@ const themesData: ThemeData[] = [
           link: "https://embed.lvn.org/?hid=5259885",
         },
         {
-          name: "Blanca",
-          quote:
-            "La cercanía entre los apartamentos hace que se escuche todo lo que hacen los vecinos. Es el principal inconveniente en materia de convivencia.",
-          audio: "convivencia-blanca.mp3",
-          link: "https://embed.lvn.org/?hid=5259886",
-        },
-        {
           name: "Katherine",
           quote:
             "En nuestro conjunto acordaron multar a los vecinos que hicieran ruido, pero ahora quienes hacen ruido pagan para seguir con sus actividades.",
           audio: "convivencia-katherine.mp3",
-          link: "https://embed.lvn.org/?hid=5259887",
+          link: "https://embed.lvn.org/?hid=5259791",
         },
         {
           name: "Luz Marina",
           quote:
             "Las personas no llevan bolsas para los excrementos de las mascotas, esto hace que los parques estén sucios.",
           audio: "convivencia-luz-marina.mp3",
-          link: "https://embed.lvn.org/?hid=5259888",
+          link: "https://embed.lvn.org/?hid=5259784",
+        },
+        {
+          name: "John",
+          quote:
+            "Resalta el trabajo de la Gobernación de Soacha en el desarrollo de las brigadas de vacunación y esterilización en los parques y conjuntos, ayudando a las familias que no tienen recursos.",
+          audio: "convivencia-john.mp3",
+          link: "https://embed.lvn.org/?hid=5263918",
         },
       ],
     },
@@ -481,7 +481,7 @@ export default async function ThemeDetail({ params }: PageProps) {
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
       <Navigation currentPage="temas" />
-      
+
       {/* Breadcrumb */}
       <div className="px-6 lg:px-10 pb-4">
         <div className="flex items-center gap-2 text-sm text-black/50">

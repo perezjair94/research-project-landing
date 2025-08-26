@@ -28,12 +28,25 @@ export default function SubthemesSection({
 }: SubthemesSectionProps) {
   // Estado para manejar el subtema activo
   const [activeSubthemeIndex, setActiveSubthemeIndex] = useState<number>(0);
+  // Estado para manejar el iframe activo específicamente
+  const [activeIframe, setActiveIframe] = useState<string | null>(null);
 
   // Iframe por defecto (el primero disponible)
   const defaultIframe = testimonials[0]?.link || null;
 
-  // Función para obtener el iframe de un subtema específico
-  const getSubthemeIframe = (subthemeIndex: number): string | null => {
+  // Función para obtener el iframe actual (activo o por defecto del subtema)
+  const getCurrentIframe = (): string | null => {
+    // Si hay un iframe específicamente seleccionado, usarlo
+    if (activeIframe) {
+      return activeIframe;
+    }
+
+    // Sino, usar el mapeo por defecto del subtema activo
+    return getSubthemeDefaultIframe(activeSubthemeIndex);
+  };
+
+  // Función para obtener el iframe por defecto de un subtema específico
+  const getSubthemeDefaultIframe = (subthemeIndex: number): string | null => {
     const subtheme = subThemes[subthemeIndex];
     if (!subtheme) return defaultIframe;
 
@@ -128,6 +141,9 @@ export default function SubthemesSection({
                 if (subthemeIndex >= 0) {
                   setActiveSubthemeIndex(subthemeIndex);
                 }
+                
+                // Establecer el iframe específico de la persona clickeada
+                setActiveIframe(testimonial.link);
               }
             }}
             className="text-cv-purple font-semibold hover:text-cv-pink transition-colors cursor-pointer underline"
@@ -139,6 +155,8 @@ export default function SubthemesSection({
       return part;
     });
   };
+
+  console.log(getCurrentIframe());
 
   return (
     <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
@@ -152,7 +170,11 @@ export default function SubthemesSection({
                 {/* Título en barra naranja - ahora clickeable */}
                 <div className="bg-cv-orange/30 inline-block rounded px-3 py-1 mb-6">
                   <button
-                    onClick={() => setActiveSubthemeIndex(index)}
+                    onClick={() => {
+                      setActiveSubthemeIndex(index);
+                      // Limpiar iframe específico para usar el por defecto del subtema
+                      setActiveIframe(null);
+                    }}
                     className={`text-xl lg:text-2xl font-bebas transition-colors cursor-pointer ${
                       activeSubthemeIndex === index
                         ? "text-cv-pink"
@@ -178,13 +200,13 @@ export default function SubthemesSection({
           {/* Columna derecha - Iframe fijo */}
           <div className="lg:sticky lg:top-8 space-y-4">
             {/* Iframe del subtema activo */}
-            {getSubthemeIframe(activeSubthemeIndex) && (
+            {getCurrentIframe() && (
               <div className="bg-gray-100 rounded-lg overflow-hidden">
                 <div className="p-3 bg-cv-purple/10 text-sm text-cv-purple/70 font-medium">
                   Testimonio: {subThemes[activeSubthemeIndex]?.title}
                 </div>
                 <iframe
-                  src={getSubthemeIframe(activeSubthemeIndex)!}
+                  src={getCurrentIframe()!}
                   width="100%"
                   height="200"
                   className="rounded-lg"

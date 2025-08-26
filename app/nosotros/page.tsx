@@ -261,25 +261,11 @@ export default function AboutUs() {
       </section>
 
       {/* 
-        TEAM SECTION
-        =============
-        
-        Comprehensive team showcase section featuring three main categories:
-        1. Resident Researchers - Community members who led the participatory research
-        2. Academic and Support Team - External professionals who provided methodological support
-        3. Collaborative Organizations - Institutions that facilitated the project
-        
-        Design Features:
-        - Responsive grid layouts (1-3 columns based on screen size)
-        - Color-coded avatar backgrounds using project's theme colors
-        - Consistent card design with shadows and rounded corners
-        - SVG icons for visual identity and accessibility
-        
-        Content Strategy:
-        - Real names and roles based on actual project testimonials
-        - Contextual descriptions linking to specific research themes
-        - Emphasis on collaborative and participatory methodology
+      TEAM SECTION - TEMPORARILY HIDDEN
+      To show this section again, uncomment the entire block below by removing the 
+      conditional expression {false && (...)} and replacing it with just the JSX content
       */}
+      {false && (
       <section className="px-6 lg:px-16 py-12">
         <div className="max-w-6xl mx-auto">
           {/* Section Header with themed background */}
@@ -299,22 +285,6 @@ export default function AboutUs() {
             </p>
           </div>
 
-          {/* 
-            RESIDENT RESEARCHERS SUBSECTION
-            ================================
-            
-            Core community members who designed and implemented the participatory research.
-            Each profile includes:
-            - Name (from actual project testimonials)
-            - Role as "Residente Investigadora"
-            - Specialized focus area linking to research themes
-            - Color-coded avatar (cv-pink, cv-green, cv-purple, cv-orange, cv-teal, cv-yellow)
-            
-            Grid Layout:
-            - Mobile: 1 column
-            - Tablet (md): 2 columns  
-            - Desktop (lg): 3 columns
-          */}
           <div className="mb-16">
             <h3 className="text-2xl font-bebas text-cv-pink/80 mb-8 text-center">
               Residentes Investigadores
@@ -456,21 +426,6 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* 
-            ACADEMIC AND SUPPORT TEAM SUBSECTION
-            ====================================
-            
-            External professionals and organizations that provided methodological and technical support.
-            Includes:
-            - Corporación Responder: Research organization that provided demographic baseline
-            - Methodological Facilitators: Participatory research methodology experts  
-            - Jair Pérez: Web developer and digital platform creator
-            
-            Each card features:
-            - Larger avatar icons (w-24 h-24) with distinctive SVG graphics
-            - Role-based color coding (cv-purple, cv-pink, cv-green)
-            - Professional titles and specific contributions
-          */}
           <div className="mb-16">
             <h3 className="text-2xl font-bebas text-cv-purple/80 mb-8 text-center">
               Equipo Académico y de Apoyo
@@ -550,22 +505,6 @@ export default function AboutUs() {
             </div>
           </div>
 
-          {/* 
-            COLLABORATIVE ORGANIZATIONS SUBSECTION
-            ======================================
-            
-            Key institutions that facilitated and supported the participatory research project.
-            Features two main community organizations:
-            
-            1. Agrupación Social Ciudad Verde - Primary community advocacy organization
-            2. Junta de Acción Comunal - Formal community representation body
-            
-            Design Features:
-            - 2-column grid layout (responsive: 1 column on mobile, 2 on tablet/desktop)
-            - Larger cards with more padding (p-8) to emphasize institutional importance
-            - Smaller icons (w-16 h-16, w-8 h-8) with institutional color coding
-            - Detailed descriptions of each organization's role and mission
-          */}
           <div>
             <h3 className="text-2xl font-bebas text-cv-orange/80 mb-8 text-center">
               Organizaciones Colaboradoras
@@ -616,6 +555,7 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Call to Action */}
       <section className="px-6 lg:px-16 py-12 text-center">

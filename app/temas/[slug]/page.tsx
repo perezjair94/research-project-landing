@@ -61,7 +61,7 @@ const themesData: ThemeData[] = [
           id: "ruido-volumen",
           title: "Ruido, música a alto volumen, horas del día",
           content:
-            "La alta densidad de personas que viven en los conjuntos hace que el manejo del volumen al momento de escuchar música, mover objetos, martillar, entre otras acciones, genere molestias. Según Blanca la cercanía entre los apartamentos y el hecho de que los conjuntos tengan hasta 10 torres, cada una de 6 pisos potencia la posibilidad de oír lo que hacen los vecinos.\n\nEstos relatos complementan los hallazgos del ejercicio realizado por Corporación Responder, en donde se encontró que más del 50% de los residentes identificaron una relación entre el ruido y los problemas de convivencia en la urbanización.",
+            "La alta densidad de personas que viven en los conjuntos hace que el manejo del volumen al momento de escuchar música, mover objetos, martillar, entre otras acciones, genere molestias. Según Blanca la cercanía entre los apartamentos y el hecho de que los conjuntos tengan hasta 10 torres, cada una de 6, pisos potencia la posibilidad de oír lo que hacen los vecinos. Frente a esta problemática, Katherine comenta que en su conjunto acordaron como medida multar a los vecinos que hicieran ruido a ciertas horas, pero luego de esto se generó un efecto no deseado: quienes hacen ruido ahora pagan para poder seguir con sus actividades.\n\nBlanca sugiere que este es el principal inconveniente en materia de convivencia y una de las razones por las que los dueños de los apartamentos se van de Ciudad Verde y arriendan. Es un tema que ocurre a cualquier hora y condiciona la calidad de vida de las personas. Por ejemplo, Jenny trabaja de noche y en el día no puede dormir por el ruido. Estos relatos complementan los hallazgos del ejercicio realizado por Corporación Responder, en donde se encontró que más del 50% de los residentes identificaron una relación entre el ruido y los problemas de convivencia en la urbanización.",
         },
         {
           id: "espacios-comunes",
@@ -116,6 +116,34 @@ const themesData: ThemeData[] = [
             "Resalta el trabajo de la Gobernación de Soacha en el desarrollo de las brigadas de vacunación y esterilización en los parques y conjuntos, ayudando a las familias que no tienen recursos.",
           audio: "convivencia-john.mp3",
           link: "https://embed.lvn.org/?hid=5263918",
+        },
+        {
+          name: "Blanca",
+          quote:
+            "La cercanía entre los apartamentos y el hecho de que los conjuntos tengan hasta 10 torres, cada una de 6 pisos potencia la posibilidad de oír lo que hacen los vecinos.",
+          audio: "convivencia-blanca.mp3",
+          link: "https://embed.lvn.org/?hid=5259793",
+        },
+        {
+          name: "Katherine",
+          quote:
+            "En nuestro conjunto acordaron multar a los vecinos que hicieran ruido, pero ahora quienes hacen ruido pagan para seguir con sus actividades.",
+          audio: "convivencia-katherine-2.mp3",
+          link: "https://embed.lvn.org/?hid=5259783",
+        },
+        {
+          name: "Blanca",
+          quote:
+            "Este es el principal inconveniente en materia de convivencia y una de las razones por las que los dueños de los apartamentos se van de Ciudad Verde y arriendan.",
+          audio: "convivencia-blanca-2.mp3",
+          link: "https://embed.lvn.org/?hid=5259793",
+        },
+        {
+          name: "Jenny",
+          quote:
+            "Trabajo de noche y en el día no puede dormir por el ruido.",
+          audio: "convivencia-jenny.mp3",
+          link: "https://embed.lvn.org/?hid=5263921",
         },
       ],
     },

@@ -228,7 +228,7 @@ const themesData: ThemeData[] = [
     overlayColor: "bg-cv-green/20",
     content: {
       overview:
-        "Según los resultados de la caracterización implementada por Corporación Responder, en el 2022 el 63% de habitantes de Ciudad Verde utilizaba servicio público y el 29% hacía uso del vehículo particular. El Transmilenio es el medio de transporte público habitual de las y los residentes. Si bien existen rutas y vías de acceso que conectan con Transmilenio y otros corredores viales relevantes, estas son limitadas e insuficientes; además, durante muchos años la ausencia de coordinación interinstitucional significó que no existían rutas formales de ningún tipo. Estos son los puntos centrales de los relatos y preocupaciones compartidas por los participantes, sumados a experiencias relacionadas con el mal estado de la malla vial, el tiempo en los traslados, el transporte pirata y los sobrecostos.\n\nLos tiempos de desplazamiento varían según la actividad que se realice.  En promedio, los datos indican que desplazarse al trabajo le toma más de una hora al 60% de la población. Por su parte, los desplazamientos  a sitios  de estudios oscila entre 15 a 30 minutos. En el caso de lugares de recreación, el tiempo equivale a menos de 15 minutos. Sin duda ha sido prioritario para los residentes de la ciudadela pensar en formas de conectarse con los grandes corredores de transporte público de Soacha y Bogotá.",
+        "Según los resultados de la caracterización implementada por Corporación Responder, en el 2022 el 63% de habitantes de Ciudad Verde utilizaba servicio público y el 29% hacía uso del vehículo particular. El Transmilenio es el medio de transporte público habitual de las y los residentes. Si bien existen rutas y vías de acceso que conectan con Transmilenio y otros corredores viales relevantes, estas son limitadas e insuficientes; además, durante muchos años la ausencia de coordinación interinstitucional significó que no existían rutas formales de ningún tipo. Estos son los puntos centrales de los relatos y preocupaciones compartidas por los participantes, sumados a experiencias relacionadas con el mal estado de la malla vial, el tiempo en los traslados, el transporte pirata y los sobrecostos.\n\nLos tiempos de desplazamiento varían según la actividad que se realice. En promedio, los datos indican que desplazarse al trabajo le toma más de una hora al 60% de la población. Por su parte, los desplazamientos a sitios de estudios oscila entre 15 a 30 minutos. En el caso de lugares de recreación, el tiempo equivale a menos de 15 minutos. Sin duda ha sido prioritario para los residentes de la ciudadela pensar en formas de conectarse con los grandes corredores de transporte público de Soacha y Bogotá.\n\nLos habitantes de la ciudadela tienen tres vías para salir hacia Bogotá. Las principales son la Avenida potrero grande y la avenida Terreros que conectan con la Autopista Sur, y la carrera 38 que conduce a Bosa San José, por donde llegan a la avenida Ciudad de Cali. Para llegar a la Autopista es necesario tomar dos rutas en caso de que los buses municipales no funcionen o no aparezcan. Para salir por la conexión con Bosa se debe caminar hasta pasar la frontera municipal.\n\nLos testimonios compartidos por los participantes de este proceso visibilizan cómo la ausencia de rutas conectadas a los sistemas de transporte ha producido todo tipo de sobrecostos para los residentes, quienes resultan pagando doble, y hasta triple pasaje para llegar a sus destinos, además de los costos relacionados con el tiempo y la salud. Los limitados puntos de acceso generan preocupaciones para los habitantes y sin duda también trancones, principalmente en las horas pico. El tiempo que lleva salir o llegar a la ciudadela y el bajo control que la policía hace sobre las rutas piratas son problemáticas relacionadas que también se mencionan de manera reiterada por los residentes.",
       highlights: [
         "Acceso a transporte público",
         "Conectividad con otras áreas de la ciudad",
@@ -240,21 +240,21 @@ const themesData: ThemeData[] = [
           id: "oferta-rutas",
           title: "Oferta, horarios y frecuencias de rutas",
           content:
-            "La oferta de opciones de transporte público para conectar a Ciudad Verde con los corredores viales de Soacha y Bogotá ha sido uno de los elementos más problemáticos de estos años iniciales de la ciudadela. Los citoverdinos reconocen la relativa buena ubicación geográfica de su ciudadela, pero muchos narraron historias relacionadas con la falta de rutas y horarios.",
+            "La oferta de opciones de transporte público para conectar a Ciudad Verde con los corredores viales de Soacha y Bogotá ha sido uno de los elementos más problemáticos de estos años iniciales de la ciudadela. Aunque sin duda mejor conectada a las dinámicas urbanas que otros macroproyectos de vivienda en Colombia y otros casos en latinoamérica, la ciudadela y sus residentes sufrieron la ausencia de coordinación y planeación interinstitucional que demoró la llegada de rutas legales y formales de transporte público. Los citoverdinos reconocen la relativa buena ubicación geográfica de su ciudadela, e incluso algunos, como Alberto, destacan la buena conectividad que existe hoy en día para conectar con rutas hacia Soacha y Bogotá, pero muchos narraron historias relacionadas\n\nPaola y Nubia expresan que les lleva mucho tiempo salir hasta la estación Terreros al tener que tomar doble transporte. Postura que comparte Maria al estar en medio de trancones que se dan en horas pico como se muestra en la foto. Esta compleja situación se solucionaría con la integración de la ciudadela con Transmilenio, Elsa visualiza la entrada en operación servicios alimentadores.",
           image: "/images/photo1.jpg",
         },
         {
           id: "costos",
           title: "Costos",
           content:
-            "Los habitantes pagan entre dos o más pasajes para cada trayecto, situación distinta para quienes viven en Bogotá. Un ejemplo de ello, es lo que vive Nubia que debe pagar doble transporte al tener que tomar carro pirata para salir de la ciudadela y luego usar Transmilenio y SITP para llegar a su trabajo.",
+            "Los habitantes pagan entre dos o más pasajes para cada trayecto, situación distinta para quienes viven en Bogotá, así lo indica Maria. Un ejemplo de ello, es lo que vive Nubia que debe pagar doble transporte al tener que tomar carro pirata para salir de la ciudadela y luego usar Transmilenio y SITP para llegar a su trabajo. Como alternativa a los altos costos se, Conor propone que la Alcaldía y la Secretaría de Movilidad puedan llegar acuerdos con los habitantes y así subsidiar el transporte de Terreros a la ciudadela.",
           image: "/images/photo2.jpg",
         },
         {
           id: "transporte-pirata",
           title: "Transporte ilegal/pirata",
           content:
-            "La demanda en transporte para el número de habitantes es muy alta, por ese motivo Linda debe usar carros piratas, los cuales se demoran en pasar, pero les permiten conectarse con la estación de Transmilenio de Terreros. Esta situación ha hecho que llegue tarde a su trabajo. Otros habitantes manifiestan sentirse inseguros al usar estos medios de transporte.",
+            "La demanda en transporte para el número de habitantes es muy alta, por ese motivo Linda debe usar carros piratas, los cuales se demoran en pasar, pero les permiten conectarse con la estación de Transmilenio de Terreros. Esta situación ha hecho que llegue tarde a su trabajo. Otros habitantes manifiestan sentirse inseguros al usar estos medios de transporte. A Rebeca la insultaron y dejaron lejos de su conjunto en la noche; Ruby escuchó comentarios negativos de cosas que han pasado en esos carros. Un día se subió en uno de ellos y el conductor tomó otra ruta, hizo que se asustara y se bajara a buscar la policía para sentirse respaldada, pero no los encontró.",
           image: "/images/photo4.jpg",
         },
         {
@@ -286,6 +286,60 @@ const themesData: ThemeData[] = [
             "Uso carros piratas porque se demoran en pasar, pero me permiten conectarme con Terreros. Esto me ha hecho llegar tarde al trabajo.",
           audio: "transporte-linda.mp3",
           link: "https://embed.lvn.org/?hid=5259891",
+        },
+        {
+          name: "Alberto",
+          quote:
+            "Destaca la buena conectividad que existe hoy en día para conectar con rutas hacia Soacha y Bogotá.",
+          link: "https://embed.lvn.org/?hid=5263829",
+        },
+        {
+          name: "Paola",
+          quote:
+            "Les lleva mucho tiempo salir hasta la estación Terreros al tener que tomar doble transporte.",
+          link: "https://embed.lvn.org/?hid=5260887",
+        },
+        {
+          name: "Nubia",
+          quote:
+            "Expresan que les lleva mucho tiempo salir hasta la estación Terreros al tener que tomar doble transporte.",
+          link: "https://embed.lvn.org/?hid=5259915",
+        },
+        {
+          name: "Elsa",
+          quote:
+            "Visualiza la entrada en operación servicios alimentadores para solucionar la integración con Transmilenio.",
+          link: "https://embed.lvn.org/?hid=5259899",
+        },
+        {
+          name: "Nubia",
+          quote:
+            "Debe pagar doble transporte al tener que tomar carro pirata para salir de la ciudadela y luego usar Transmilenio y SITP para llegar a su trabajo.",
+          link: "https://embed.lvn.org/?hid=5259916",
+        },
+        {
+          name: "Conor",
+          quote:
+            "Propone que la Alcaldía y la Secretaría de Movilidad puedan llegar acuerdos con los habitantes y así subsidiar el transporte de Terreros a la ciudadela.",
+          link: "https://embed.lvn.org/?hid=5259768",
+        },
+        {
+          name: "Linda",
+          quote:
+            "Debe usar carros piratas, los cuales se demoran en pasar, pero les permiten conectarse con la estación de Transmilenio de Terreros. Esta situación ha hecho que llegue tarde a su trabajo.",
+          link: "https://embed.lvn.org/?hid=5261139",
+        },
+        {
+          name: "Rebeca",
+          quote:
+            "La insultaron y dejaron lejos de su conjunto en la noche al usar transporte pirata.",
+          link: "https://embed.lvn.org/?hid=5259913",
+        },
+        {
+          name: "Ruby",
+          quote:
+            "Escuchó comentarios negativos de cosas que han pasado en esos carros. Un día se subió en uno y el conductor tomó otra ruta, hizo que se asustara y se bajara a buscar la policía para sentirse respaldada, pero no los encontró.",
+          link: "https://embed.lvn.org/?hid=5259754",
         },
       ],
     },

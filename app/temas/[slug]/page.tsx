@@ -67,7 +67,7 @@ const themesData: ThemeData[] = [
           id: "espacios-comunes",
           title: "Uso de espacios comunes dentro y fuera del conjunto",
           content:
-            "Los espacios comunes de la ciudadela, tanto aquellas que hacen parte de los conjuntos cerrados, como aquellos que comparten todos los residentes de Ciudad Verde, brindan a sus habitantes la posibilidad de compartir con los vecinos y vivir diferentes experiencias que en su mayoría identifican como positivas. El mal uso de los espacios comunes puede generar conflictos relacionados con la convivencia.",
+            "Los espacios comunes de la ciudadela, tanto aquellas que hacen parte de los conjuntos cerrados, como aquellos que comparten todos los residentes de Ciudad Verde, brindan a sus habitantes la posibilidad de compartir con los vecinos y vivir diferentes experiencias que en su mayoría identifican como positivas. Lidia nos cuenta que puede charlar con otros al estar en un parque mientras juegan los niños y su mascota, o asistir a las clases de rumba. Otros lugares de encuentro pueden ser los gimnasios que están en los conjuntos. Estos espacios son aprovechados por personas como Ricardo para hacer ejercicio; además, dice que allí se siente seguro, elemento fundamental para el disfrute de estos espacios.\n\nAhora bien, el mal uso de los espacios comunes puede generar conflictos relacionados con la convivencia. Por ejemplo, Claribel indica que montar bicicleta en las ciclorrutas es agradable solo hasta cuando se topa con peatones que caminan por ella. Este tipo de encuentros hace que ella deba parar y se enfade un poco. Otro caso es el de Oscar, quien cuenta una historia de intolerancia de parte de un vecino por un malentendido que lo llevó consecuentemente a evitar la zona de la Ciudadela en donde ocurrió el altercado.",
         },
         {
           id: "animales-abandonados",
@@ -143,6 +143,30 @@ const themesData: ThemeData[] = [
           quote: "Trabajo de noche y en el día no puede dormir por el ruido.",
           audio: "convivencia-jenny.mp3",
           link: "https://embed.lvn.org/?hid=5263921",
+        },
+        {
+          name: "Lidia",
+          quote:
+            "Puede charlar con otros al estar en un parque mientras juegan los niños y su mascota, o asistir a las clases de rumba.",
+          link: "https://embed.lvn.org/?hid=5259887",
+        },
+        {
+          name: "Ricardo",
+          quote:
+            "Los gimnasios que están en los conjuntos son espacios aprovechados para hacer ejercicio; además, allí se siente seguro, elemento fundamental para el disfrute de estos espacios.",
+          link: "https://embed.lvn.org/?hid=5259926",
+        },
+        {
+          name: "Claribel",
+          quote:
+            "Montar bicicleta en las ciclorrutas es agradable solo hasta cuando se topa con peatones que caminan por ella. Este tipo de encuentros hace que deba parar y se enfade un poco.",
+          link: "https://embed.lvn.org/?hid=5259891",
+        },
+        {
+          name: "Oscar",
+          quote:
+            "Cuenta una historia de intolerancia de parte de un vecino por un malentendido que lo llevó consecuentemente a evitar la zona de la Ciudadela en donde ocurrió el altercado.",
+          link: "https://embed.lvn.org/?hid=5263999",
         },
       ],
     },

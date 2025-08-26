@@ -21,7 +21,7 @@ const themes: Theme[] = [
 ];
 
 interface NavigationProps {
-  currentPage?: "home" | "temas";
+  currentPage?: "home" | "temas" | "nosotros";
 }
 
 export default function Navigation({ currentPage = "home" }: NavigationProps) {
@@ -155,6 +155,17 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
               </div>
             </div>
           </div>
+          
+          <Link
+            href="/nosotros"
+            className={`font-bold text-lg lg:text-xl transition-colors ${
+              currentPage === "nosotros"
+                ? "text-cv-pink border-b-2 border-cv-pink"
+                : "text-black/30 hover:text-cv-pink/80"
+            }`}
+          >
+            Nosotros
+          </Link>
         </nav>
 
         {/* Mobile Hamburger Button */}
@@ -296,6 +307,18 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
                 </div>
               </div>
             </div>
+
+            <Link
+              href="/nosotros"
+              onClick={closeMobileMenu}
+              className={`block py-3 px-4 rounded-lg font-bold text-lg transition-colors ${
+                currentPage === "nosotros"
+                  ? "text-cv-pink bg-cv-pink/10"
+                  : "text-black/70 hover:text-cv-pink hover:bg-cv-pink/5"
+              }`}
+            >
+              Nosotros
+            </Link>
           </div>
         </div>
       </div>

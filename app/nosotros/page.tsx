@@ -39,7 +39,7 @@ export default function AboutUs() {
       {/* Project Overview */}
       <section className="px-6 lg:px-16 py-12">
         <div className="max-w-4xl">
-          <div className="bg-cv-pink/20 inline-block px-3 py-2 mb-8">
+          <div className="bg-cv-pink/10 inline-block px-3 py-2 mb-8">
             <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
               El Proyecto
             </h2>

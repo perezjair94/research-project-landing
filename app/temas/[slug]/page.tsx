@@ -79,7 +79,7 @@ const themesData: ThemeData[] = [
           id: "administraciones",
           title: "Administraciones, vivienda horizontal, manejo del conjunto",
           content:
-            "Vivir en propiedad horizontal cambia las dinámicas a las que estaban acostumbrados muchos de los residentes de Ciudad Verde en sus lugares de vivienda previos. El desconocimiento de los residentes sobre el funcionamiento de la gestión de la administración puede hacer que los problemas de convivencia entre residentes y las inconformidades con las administraciones surjan.",
+            "Como se comentó anteriormente, vivir en propiedad horizontal cambia las dinámicas a las que estaban acostumbrados muchos de los residentes de Ciudad Verde en sus lugares de vivienda previos. Una perspectiva positiva es la de Marina, quien siente satisfacción de tener vivienda propia con una maravillosa vista. Para María del Pilar esto ha sido un aprendizaje, ahora debe adaptarse a un manual de convivencia y no exceder el volumen permitido. Para ella, el sentido de comunidad cambia si se compara con su barrio anterior. Allí los vecinos saldrían a barrer y cuidar del espacio público inmediato a sus hogares, aquí no se hace, aún cuando hay problemas de aseo y fallas por parte de la administración. El desconocimiento de los residentes sobre el funcionamiento de la gestión de la administración puede hacer que los problemas de convivencia entre residentes y las inconformidades con las administraciones surjan.\n\nPor otra parte, Luz Marina considera que es bueno encontrar un mecanismo que mejore la comunicación entre vecinos y Diana opina que falta capacitar a los habitantes en Planes de Emergencias y Contingencias con la finalidad de prevenir incendios en espacios comunes entre conjuntos. Comparte una foto de uno de los lugares que más concurre.",
         },
         {
           id: "solucion-conflictos",
@@ -179,6 +179,24 @@ const themesData: ThemeData[] = [
           quote:
             "Recuerda una vez que casi lo atacan unos perros callejeros mientras caminaba por los lados del Centro Comercial Jardín. Considera que estos perros tienen tendencias violentas y se pregunta si es una buena idea alimentarlos y mantenerlos tan cerca de los residentes.",
           link: "https://embed.lvn.org/?hid=5259920",
+        },
+        {
+          name: "Marina",
+          quote:
+            "Siente satisfacción de tener vivienda propia con una maravillosa vista.",
+          link: "https://embed.lvn.org/?hid=5263839",
+        },
+        {
+          name: "María del Pilar",
+          quote:
+            "Esto ha sido un aprendizaje, ahora debe adaptarse a un manual de convivencia y no exceder el volumen permitido. Para ella, el sentido de comunidad cambia si se compara con su barrio anterior. Allí los vecinos saldrían a barrer y cuidar del espacio público inmediato a sus hogares, aquí no se hace, aún cuando hay problemas de aseo y fallas por parte de la administración.",
+          link: "https://embed.lvn.org/?hid=5259952",
+        },
+        {
+          name: "Luz Marina",
+          quote:
+            "Considera que es bueno encontrar un mecanismo que mejore la comunicación entre vecinos.",
+          link: "https://embed.lvn.org/?hid=5259795",
         },
       ],
     },

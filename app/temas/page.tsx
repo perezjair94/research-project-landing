@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navigation from "../components/Navigation";
 
 export default function Themes() {
   const themes = [
@@ -80,26 +81,7 @@ export default function Themes() {
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
-      <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width={250}
-          height={180}
-          className="h-15 lg:h-20 w-auto"
-        />
-        <nav className="py-1 rounded flex gap-6 lg:gap-8">
-          <Link
-            href="/"
-            className="text-black/30 font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
-          >
-            Inicio
-          </Link>
-          <span className="text-cv-pink font-bold text-lg lg:text-xl border-b-2 border-cv-pink">
-            Temas
-          </span>
-        </nav>
-      </header>
+      <Navigation currentPage="temas" />
 
       {/* Hero Section with background */}
       <section className="relative">

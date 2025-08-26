@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import SubthemesSection from "./SubthemesSection";
+import Navigation from "../../components/Navigation";
 
 interface SubTheme {
   id: string;
@@ -480,32 +480,22 @@ export default async function ThemeDetail({ params }: PageProps) {
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
-      <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width={250}
-          height={180}
-          className="h-15 lg:h-20 w-auto"
-        />
-        <nav className="py-1 rounded flex gap-6 lg:gap-8">
-          <Link
-            href="/"
-            className="text-black/30 font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
-          >
+      <Navigation currentPage="temas" />
+      
+      {/* Breadcrumb */}
+      <div className="px-6 lg:px-10 pb-4">
+        <div className="flex items-center gap-2 text-sm text-black/50">
+          <Link href="/" className="hover:text-cv-pink transition-colors">
             Inicio
           </Link>
-          <Link
-            href="/temas"
-            className="text-black/30 font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
-          >
+          <span>/</span>
+          <Link href="/temas" className="hover:text-cv-pink transition-colors">
             Temas
           </Link>
-          <span className="text-cv-pink font-bold text-lg lg:text-xl border-b-2 border-cv-pink">
-            {theme.title}
-          </span>
-        </nav>
-      </header>
+          <span>/</span>
+          <span className="text-cv-pink font-medium">{theme.title}</span>
+        </div>
+      </div>
 
       {/* Banner Section */}
       <section className="px-6 lg:px-10 py-6 lg:py-8">

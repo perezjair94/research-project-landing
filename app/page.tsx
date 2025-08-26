@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { useRef, useEffect } from "react";
 import ThemeSelector from "./components/ThemeSelector";
+import Navigation from "./components/Navigation";
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -36,26 +36,7 @@ export default function Home() {
   return (
     <main className="bg-white min-h-screen max-w-[1200px] mx-auto">
       {/* Header */}
-      <header className="px-6 lg:px-10 py-6 flex gap-6 lg:gap-10 items-center justify-start">
-        <Image
-          src="/logo.png"
-          alt="Logo"
-          width={250}
-          height={180}
-          className="h-8 lg:h-20 w-auto"
-        />
-        <nav className="py-1 rounded flex gap-6 lg:gap-8">
-          <span className="text-cv-pink font-bold text-lg lg:text-xl border-b-2 border-cv-pink">
-            Inicio
-          </span>
-          <Link
-            href="/temas"
-            className="text-black/30 font-bold text-lg lg:text-xl hover:text-cv-pink/80 transition-colors"
-          >
-            Temas
-          </Link>
-        </nav>
-      </header>
+      <Navigation currentPage="home" />
 
       {/* Hero Section */}
       <section className="px-6 lg:px-10 lg:py-12">

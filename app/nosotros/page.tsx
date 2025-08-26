@@ -11,7 +11,7 @@ export default function AboutUs() {
       <section className="px-6 lg:px-10 py-12 lg:py-16">
         <div className="text-center mb-12">
           <div className="bg-cv-orange/30 inline-block px-4 py-2 mb-6">
-            <h1 className="text-4xl lg:text-6xl font-bebas text-cv-purple/80">
+            <h1 className="text-4xl lg:text-6xl font-bebas text-cv-purple/70">
               Nosotros
             </h1>
           </div>
@@ -598,7 +598,7 @@ export default function AboutUs() {
 
             <Link
               href="/"
-              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-cv-purple text-cv-purple font-bold rounded-lg hover:bg-cv-purple hover:text-white transition-colors"
+              className="inline-flex items-center gap-2 px-8 py-4 border-2 border-cv-purple/50 text-cv-purple/60 font-bold rounded-lg hover:bg-cv-purple hover:text-white transition-colors"
             >
               Volver al Inicio
             </Link>

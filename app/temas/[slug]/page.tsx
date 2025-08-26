@@ -261,7 +261,7 @@ const themesData: ThemeData[] = [
           id: "conectividad",
           title: "Falta de conectividad",
           content:
-            "Los habitantes de la ciudadela cuentan con dos conexiones viales principales para salir hacia Bogotá: la Avenida Potrero Grande, que lleva a la autopista sur y la carrera 38 que conduce a la frontera entre Ciudad Verde y Bosa San José. Algunos habitantes son activistas sociales y participan en temas de comunicación terrestre para mejorar la malla vial del tramo.",
+            "Los habitantes de la ciudadela cuentan con dos conexiones viales principales para salir hacia Bogotá: la Avenida Potrero Grande, que lleva a la autopista sur y la carrera 38 que conduce a la frontera entre Ciudad Verde y Bosa San José.\n\nAlgunos habitantes son activistas sociales y participan en temas de comunicación terrestre como es el caso de Oscar que participó ante las autoridades municipales y del distrito capital para mejorar la malla vial del tramo, tal como se puede observar en la foto. Aun así, Sandra enuncia que el desplazamiento hacia su trabajo por Bosa le lleva mucho tiempo, es un trayecto muy largo, dice ella. Si bien esta es una problemática clara, también puede ser una oportunidad para contratar personal y construir nuevas conexiones viales, este es el punto de vista de Jairo. De hacerse esto, el sueño de ver Transmilenio y SITP en la ciudadela sería posible, así lo comparte Jairo.\n\nSandra e Jairo Alfredo En síntesis, se requieren más vías de acceso, rutas alternas de transporte público y regular los carros piratas. Se debe estudiar la posibilidad de generar un mecanismo de subsidios mientras se solucionan los dobles gastos asociados al ingreso y salida obligado de la ciudadela, pues al menos el 35% de los residentes afirman que sus lugares de trabajo y estudio están en otro municipio (Corporación Responder, 2022).",
           image: "/images/photo5.jpg",
         },
       ],
@@ -340,6 +340,24 @@ const themesData: ThemeData[] = [
           quote:
             "Escuchó comentarios negativos de cosas que han pasado en esos carros. Un día se subió en uno y el conductor tomó otra ruta, hizo que se asustara y se bajara a buscar la policía para sentirse respaldada, pero no los encontró.",
           link: "https://embed.lvn.org/?hid=5259754",
+        },
+        {
+          name: "Sandra",
+          quote:
+            "El desplazamiento hacia su trabajo por Bosa le lleva mucho tiempo, es un trayecto muy largo.",
+          link: "https://embed.lvn.org/?hid=5259753",
+        },
+        {
+          name: "Jairo",
+          quote:
+            "Ve la problemática como una oportunidad para contratar personal y construir nuevas conexiones viales. El sueño de ver Transmilenio y SITP en la ciudadela sería posible.",
+          link: "https://embed.lvn.org/?hid=5259958",
+        },
+        {
+          name: "Alfredo",
+          quote:
+            "Se requieren más vías de acceso, rutas alternas de transporte público y regular los carros piratas.",
+          link: "https://embed.lvn.org/?hid=5259955",
         },
       ],
     },

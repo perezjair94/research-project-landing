@@ -38,15 +38,70 @@ export default function SubthemesSection({
   // Iframe por defecto (el primero disponible)
   const defaultIframe = testimonials[0]?.link || null;
 
-  // Función para obtener el testimonio correcto para un autor
-  const getTestimonialForAuthor = (authorName: string) => {
-    const matchingTestimonials = testimonials.filter(
-      (t) => t.name === authorName,
-    );
-    if (matchingTestimonials.length === 0) return null;
+  // Función para asociar testimonios con subtemas basándose en el contenido y contexto
+  const getTestimonialSubthemeAssociation = (testimonial: Testimonial): string | null => {
+    const quote = testimonial.quote.toLowerCase();
+    
+    // Mapeo basado en palabras clave específicas y contexto del testimonio
+    if (quote.includes('ruta') || quote.includes('conectividad') || quote.includes('terreros') && quote.includes('tiempo')) {
+      return 'oferta-rutas';
+    }
+    if (quote.includes('pagar') || quote.includes('doble transporte') || quote.includes('subsidiar') || quote.includes('alcaldía')) {
+      return 'costos';
+    }
+    if (quote.includes('pirata') || quote.includes('insultaron') || quote.includes('asustara') || quote.includes('conductor')) {
+      return 'transporte-pirata';
+    }
+    if (quote.includes('conexi') || quote.includes('vial') || quote.includes('malla') || 
+        quote.includes('trayecto') || quote.includes('oportunidad') || quote.includes('transmilenio') || 
+        quote.includes('más vías') || quote.includes('rutas alternas')) {
+      return 'conectividad';
+    }
 
+    // Mapeos específicos por contenido del subtema para otros temas
+    if (quote.includes('mascota') || quote.includes('perro') || quote.includes('vacunación')) {
+      return 'manejo-mascotas';
+    }
+    if (quote.includes('ruido') || quote.includes('volumen') || quote.includes('multar')) {
+      return 'ruido-volumen';
+    }
+    if (quote.includes('parque') || quote.includes('espacio') && quote.includes('común')) {
+      return 'espacios-comunes';
+    }
+    if (quote.includes('conflicto') || quote.includes('comunicación') || quote.includes('amenaza')) {
+      return 'solucion-conflictos';
+    }
+
+    return null;
+  };
+
+  // Función para obtener testimonios de un autor filtrados por subtema actual
+  const getTestimonialsForAuthorInCurrentSubtheme = (authorName: string) => {
+    const currentSubtheme = subThemes[activeSubthemeIndex];
+    if (!currentSubtheme) return [];
+
+    return testimonials.filter(t => 
+      t.name === authorName && 
+      getTestimonialSubthemeAssociation(t) === currentSubtheme.id
+    );
+  };
+
+  // Función para obtener el testimonio correcto para un autor en el subtema actual
+  const getTestimonialForAuthor = (authorName: string) => {
+    // Primero intentar obtener testimonios del subtema actual
+    const subthemeTestimonials = getTestimonialsForAuthorInCurrentSubtheme(authorName);
+    
+    if (subthemeTestimonials.length > 0) {
+      const currentIndex = selectedTestimonialIndex[`${authorName}_${subThemes[activeSubthemeIndex].id}`] || 0;
+      return subthemeTestimonials[currentIndex] || subthemeTestimonials[0];
+    }
+    
+    // Si no hay testimonios específicos del subtema, usar todos los testimonios del autor
+    const allTestimonials = testimonials.filter(t => t.name === authorName);
+    if (allTestimonials.length === 0) return null;
+    
     const currentIndex = selectedTestimonialIndex[authorName] || 0;
-    return matchingTestimonials[currentIndex] || matchingTestimonials[0];
+    return allTestimonials[currentIndex] || allTestimonials[0];
   };
 
   // Función para obtener el iframe actual (activo o por defecto del subtema)
@@ -137,34 +192,41 @@ export default function SubthemesSection({
             key={index}
             onClick={() => {
               if (testimonial?.link) {
-                // Rotar al siguiente testimonio del mismo autor si hay múltiples
-                const matchingTestimonials = testimonials.filter(
-                  (t) => t.name === name,
-                );
-                if (matchingTestimonials.length > 1) {
-                  const currentIndex = selectedTestimonialIndex[name] || 0;
-                  const nextIndex = (currentIndex + 1) % matchingTestimonials.length;
+                // Obtener testimonios del autor en el subtema actual
+                const subthemeTestimonials = getTestimonialsForAuthorInCurrentSubtheme(name);
+                
+                if (subthemeTestimonials.length > 1) {
+                  // Rotar entre testimonios del subtema actual
+                  const currentSubthemeKey = `${name}_${subThemes[activeSubthemeIndex].id}`;
+                  const currentIndex = selectedTestimonialIndex[currentSubthemeKey] || 0;
+                  const nextIndex = (currentIndex + 1) % subthemeTestimonials.length;
                   setSelectedTestimonialIndex((prev) => ({
                     ...prev,
-                    [name]: nextIndex,
+                    [currentSubthemeKey]: nextIndex,
                   }));
-                }
-                // Buscar el índice del subtema que corresponde a este testimonio
-                const subthemeIndex = subThemes.findIndex((subtheme) => {
-                  const content = subtheme.content.toLowerCase();
-                  const nameLower = name.toLowerCase();
-                  const nameNoTildes = name
-                    .normalize("NFD")
-                    .replace(/[\u0300-\u036f]/g, "")
-                    .toLowerCase();
-                  return (
-                    content.includes(nameLower) ||
-                    content.includes(nameNoTildes)
-                  );
-                });
-
-                if (subthemeIndex >= 0) {
-                  setActiveSubthemeIndex(subthemeIndex);
+                } else if (subthemeTestimonials.length === 0) {
+                  // Si no hay testimonios en el subtema actual, buscar el subtema correcto
+                  const testimonialSubtheme = getTestimonialSubthemeAssociation(testimonial);
+                  if (testimonialSubtheme) {
+                    const subthemeIndex = subThemes.findIndex(s => s.id === testimonialSubtheme);
+                    if (subthemeIndex >= 0) {
+                      setActiveSubthemeIndex(subthemeIndex);
+                      // También rotar si hay múltiples en el nuevo subtema
+                      const newSubthemeTestimonials = testimonials.filter(t => 
+                        t.name === name && 
+                        getTestimonialSubthemeAssociation(t) === testimonialSubtheme
+                      );
+                      if (newSubthemeTestimonials.length > 1) {
+                        const currentSubthemeKey = `${name}_${testimonialSubtheme}`;
+                        const currentIndex = selectedTestimonialIndex[currentSubthemeKey] || 0;
+                        const nextIndex = (currentIndex + 1) % newSubthemeTestimonials.length;
+                        setSelectedTestimonialIndex((prev) => ({
+                          ...prev,
+                          [currentSubthemeKey]: nextIndex,
+                        }));
+                      }
+                    }
+                  }
                 }
                 
                 // Establecer el iframe específico de la persona clickeada

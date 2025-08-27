@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 
 export default function Themes() {
   const themes = [
@@ -151,38 +152,7 @@ export default function Themes() {
       </section>
 
       {/* Footer */}
-      <footer className="px-10 py-8 text-center">
-        <div className="flex items-center justify-center gap-2">
-          <span className="text-base font-semibold text-black/50">
-            Hecho con
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="lucide lucide-heart-icon lucide-heart text-red-500/50"
-          >
-            <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" />
-          </svg>
-          <span className="text-base font-semibold text-black/50">
-            por{" "}
-            <a
-              href="https://www.linkedin.com/in/jairperz/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-cv-purple/70 transition-colors"
-            >
-              Jair Pérez
-            </a>
-          </span>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }

@@ -93,11 +93,14 @@ export default function ThemeSelector() {
           </div>
 
           {/* Subtopics arranged in a circle around the main theme */}
-          <div className="relative w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80">
+          <div className={`relative ${selectedTheme.subthemes.length > 4 
+            ? 'w-80 h-80 md:w-96 md:h-96 lg:w-[420px] lg:h-[420px]' 
+            : 'w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80'}`}>
             {selectedTheme.subthemes.map((subtheme, index) => {
               const angle =
                 (index / selectedTheme.subthemes.length) * 2 * Math.PI;
-              const radius = 80; // Reducido para móvil
+              // Aumentar radio para temas con más de 4 subtemas
+              const radius = selectedTheme.subthemes.length > 4 ? 120 : 80;
               const x = Math.cos(angle) * radius;
               const y = Math.sin(angle) * radius;
 

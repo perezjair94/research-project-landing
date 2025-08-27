@@ -17,8 +17,7 @@ export default function Themes() {
     {
       id: "transporte",
       title: "Transporte",
-      description:
-        "Movilidad y conectividad desde y hacia Ciudad Verde",
+      description: "Movilidad y conectividad desde y hacia Ciudad Verde",
       image: "/images/photo1.jpg",
       bgColor: "bg-cv-green/20",
       overlayColor: "bg-cv-green/20",
@@ -62,8 +61,7 @@ export default function Themes() {
     {
       id: "gobernanza",
       title: "Gobernanza",
-      description:
-        "Participación ciudadana y relación con las instituciones",
+      description: "Participación ciudadana y relación con las instituciones",
       image: "/images/photo4.jpg",
       bgColor: "bg-cv-teal/20",
       overlayColor: "bg-cv-teal/20",
@@ -86,7 +84,7 @@ export default function Themes() {
 
       {/* Hero Section with background */}
       <section className="relative">
-        <div className="bg-cv-teal/10 px-6 py-10 lg:px-16 lg:py-2 flex gap-20 items-center justify-between">
+        <div className="bg-neutral-50 px-6 py-10 lg:px-16 lg:py-2 flex gap-20 items-center justify-between">
           <div className="relative z-10">
             <h1 className="text-4xl lg:text-5xl font-bebas text-cv-purple/80 mb-6">
               Temas

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import SubthemesSection from "./SubthemesSection";
+import GraphicsSection from "./GraphicsSection";
 import Navigation from "../../components/Navigation";
 
 interface SubTheme {
@@ -786,6 +787,9 @@ export default async function ThemeDetail({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Graphics Section */}
+      <GraphicsSection themeId={theme.id} />
 
       {/* Overview Section */}
       <section className="px-6 lg:px-16 py-12">

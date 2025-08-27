@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef, useEffect } from "react";
 import ThemeSelector from "./components/ThemeSelector";
 import Navigation from "./components/Navigation";
@@ -322,42 +323,29 @@ export default function Home() {
             perspectivas en 8 temas principales.
           </p>
 
-          <div className="flex items-center gap-3 mb-8 lg:mb-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-file-audio-icon lucide-file-audio text-cv-pink"
-            >
-              <path d="M17.5 22h.5a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3" />
-              <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-              <path d="M2 19a2 2 0 1 1 4 0v1a2 2 0 1 1-4 0v-4a6 6 0 0 1 12 0v4a2 2 0 1 1-4 0v-1a2 2 0 1 1 4 0" />
-            </svg>{" "}
-            <span className="text-lg lg:text-xl font-bold text-cv-pink">
-              Escuchar audios
-            </span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-move-right-icon lucide-move-right text-cv-pink"
-            >
-              <path d="M18 8L22 12L18 16" />
-              <path d="M2 12H22" />
-            </svg>
-          </div>
+          <Link
+            href="/temas"
+            className="text-lg lg:text-xl font-bold text-cv-pink hover:opacity-80 transition-opacity relative z-20"
+          >
+            <div className="flex items-center gap-3 mb-8 lg:mb-0">
+              Ver temas
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-move-right-icon lucide-move-right text-cv-pink"
+              >
+                <path d="M18 8L22 12L18 16" />
+                <path d="M2 12H22" />
+              </svg>
+            </div>
+          </Link>
         </div>
       </section>
 

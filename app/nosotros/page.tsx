@@ -17,7 +17,8 @@ export default function AboutUs() {
             </h1>
           </div>
           <p className="text-xl lg:text-2xl text-black/60 max-w-2xl mx-auto leading-relaxed">
-            Somos un grupo de investigación participativa conformado por residentes de Ciudad Verde, estudiantes e investigadores.
+            Somos un grupo de investigación participativa conformado por
+            residentes de Ciudad Verde, estudiantes e investigadores.
           </p>
         </div>
 
@@ -50,46 +51,107 @@ export default function AboutUs() {
               <strong className="text-black/80">
                 &ldquo;Hacer la vida en Ciudad Verde&rdquo;
               </strong>{" "}
-              es el primer ejercicio de investigación participativa de este equipo de trabajo. Llevado a cabo en el 2023, este diseño participativo se basa en la premisa absoluta de que las experiencias vividas por los residentes deben estar en el centro de cómo entendemos lo que pasa en la ciudadela y cómo tomamos decisiones para su futuro. Así mismo, estamos convencidos de que la investigación debe tener una vocación de incidencia y acción, buscando así elevar nuestras voces y hallazgos a los espacios de toma de decisión.
+              es el primer ejercicio de investigación participativa de este
+              equipo de trabajo. Llevado a cabo en el 2023, este diseño
+              participativo se basa en la premisa absoluta de que las
+              experiencias vividas por los residentes deben estar en el centro
+              de cómo entendemos lo que pasa en la ciudadela y cómo tomamos
+              decisiones para su futuro. Así mismo, estamos convencidos de que
+              la investigación debe tener una vocación de incidencia y acción,
+              buscando así elevar nuestras voces y hallazgos a los espacios de
+              toma de decisión.
             </p>
 
             <p>
-              A través de la investigación cualitativa, las experiencias, reflexiones y experticia de los residentes que hacen su vida en Ciudad Verde se convierten en datos, hechos, e información clave para entender las dinámicas de un entorno de vivienda social y desarrollo urbano cuya escala no tiene precedentes.
+              A través de la investigación cualitativa, las experiencias,
+              reflexiones y experticia de los residentes que hacen su vida en
+              Ciudad Verde se convierten en datos, hechos, e información clave
+              para entender las dinámicas de un entorno de vivienda social y
+              desarrollo urbano cuya escala no tiene precedentes.
             </p>
 
             <p>
-              Esta investigación fue posible gracias a la financiación y el apoyo del Departamento de Estudios y Planificación Urbana del Massachusetts Institute of Technology, el Center for Constructive Communication y Amarilo SAS.
+              Esta investigación fue posible gracias a la financiación y el
+              apoyo del Departamento de Estudios y Planificación Urbana del
+              Massachusetts Institute of Technology, el Center for Constructive
+              Communication y Amarilo SAS.
             </p>
 
-            <div className="relative max-w-2xl mx-auto my-12">
-              <Image
-                src="/images/el-proyecto.jpeg"
-                alt="El proyecto de investigación participativa"
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover rounded-lg"
-              />
-              <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
-            </div>
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 my-12">
+              <div className="space-y-6">
+                <div className="relative">
+                  <Image
+                    src="/images/el-proyecto.jpeg"
+                    alt="El proyecto de investigación participativa"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+                </div>
 
-            <div className="bg-cv-blue/10 p-6 rounded-lg">
-              <h3 className="text-xl font-bebas text-cv-purple/80 mb-4">
-                Equipo de Residentes Investigadores
-              </h3>
-              <div className="space-y-2 text-base">
-                <p><strong>Ana María Pérez Carrillo</strong>, investigadora principal, grupo coordinador.</p>
-                <p><strong>Fabián Rodríguez</strong>, residente investigador</p>
-                <p><strong>Geraldín Rubio</strong>, residente investigadora, grupo coordinador.</p>
-                <p><strong>Gina Paola Rojas</strong>, residente investigadora</p>
-                <p><strong>Jonathan Velasquez</strong>, residente investigador</p>
-                <p><strong>Johana Carrillo</strong>, residente investigadora</p>
-                <p><strong>María del Pilar de la Hoz</strong>, residente investigadora</p>
-                <p><strong>María Isabel Montero</strong>, residente investigadora</p>
-                <p><strong>Marina Catives</strong>, residente investigadora</p>
-                <p><strong>Paula Rubio</strong>, residente investigadora</p>
-                <p><strong>Rafael Ospino</strong>, residente investigador</p>
-                <p><strong>Sandra Rodríguez</strong>, apoyo operativo</p>
-                <p><strong>Sebastián Forero</strong>, asistente de investigación, equipo coordinador.</p>
+                <div className="relative">
+                  <Image
+                    src="/images/photo2.jpg"
+                    alt="Trabajo de campo en Ciudad Verde"
+                    width={800}
+                    height={600}
+                    className="w-full h-auto object-cover rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-cv-green/10 rounded-lg"></div>
+                </div>
+              </div>
+
+              <div className="bg-cv-blue/10 p-6 rounded-lg">
+                <h3 className="text-lg font-bebas text-cv-purple/80 mb-4">
+                  Equipo de Residentes Investigadores
+                </h3>
+                <div className="space-y-2 text-sm">
+                  <p>
+                    <strong>Ana María Pérez Carrillo</strong>, investigadora
+                    principal, grupo coordinador.
+                  </p>
+                  <p>
+                    <strong>Fabián Rodríguez</strong>, residente investigador
+                  </p>
+                  <p>
+                    <strong>Geraldín Rubio</strong>, residente investigadora,
+                    grupo coordinador.
+                  </p>
+                  <p>
+                    <strong>Gina Paola Rojas</strong>, residente investigadora
+                  </p>
+                  <p>
+                    <strong>Jonathan Velasquez</strong>, residente investigador
+                  </p>
+                  <p>
+                    <strong>Johana Carrillo</strong>, residente investigadora
+                  </p>
+                  <p>
+                    <strong>María del Pilar de la Hoz</strong>, residente
+                    investigadora
+                  </p>
+                  <p>
+                    <strong>María Isabel Montero</strong>, residente
+                    investigadora
+                  </p>
+                  <p>
+                    <strong>Marina Catives</strong>, residente investigadora
+                  </p>
+                  <p>
+                    <strong>Paula Rubio</strong>, residente investigadora
+                  </p>
+                  <p>
+                    <strong>Rafael Ospino</strong>, residente investigador
+                  </p>
+                  <p>
+                    <strong>Sandra Rodríguez</strong>, apoyo operativo
+                  </p>
+                  <p>
+                    <strong>Sebastián Forero</strong>, asistente de
+                    investigación, equipo coordinador.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -97,7 +159,7 @@ export default function AboutUs() {
       </section>
 
       {/* Methodology Section */}
-      <section className="px-6 lg:px-16 py-12 bg-cv-blue/5">
+      <section className="px-6 lg:px-16 py-12 bg-neutral-50">
         <div className="max-w-6xl mx-auto">
           <div className="inline-block px-3 py-2 mb-8">
             <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
@@ -166,13 +228,17 @@ export default function AboutUs() {
               <div className="text-4xl lg:text-5xl font-bebas text-cv-purple mb-2">
                 8
               </div>
-              <p className="text-sm text-black/60">Temas principales identificados</p>
+              <p className="text-sm text-black/60">
+                Temas principales identificados
+              </p>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bebas text-cv-green mb-2">
                 2
               </div>
-              <p className="text-sm text-black/60">Metodologías cualitativas empleadas</p>
+              <p className="text-sm text-black/60">
+                Metodologías cualitativas empleadas
+              </p>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bebas text-cv-blue mb-2">
@@ -207,11 +273,20 @@ export default function AboutUs() {
 
           <div className="space-y-6 text-lg text-black/60 leading-relaxed mb-12">
             <p>
-              Esta investigación fue posible gracias al compromiso y dedicación de los residentes investigadores de Ciudad Verde, quienes no solo participaron en el diseño de la metodología, sino que también lideraron las conversaciones y la recolección de testimonios de sus vecinos y amigos. Su conocimiento íntimo de la comunidad, combinado con sus ganas de aprender y aportar a un futuro mejor, fueron fundamentales para el éxito de este proyecto de investigación participativa.
+              Esta investigación fue posible gracias al compromiso y dedicación
+              de los residentes investigadores de Ciudad Verde, quienes no solo
+              participaron en el diseño de la metodología, sino que también
+              lideraron las conversaciones y la recolección de testimonios de
+              sus vecinos y amigos. Su conocimiento íntimo de la comunidad,
+              combinado con sus ganas de aprender y aportar a un futuro mejor,
+              fueron fundamentales para el éxito de este proyecto de
+              investigación participativa.
             </p>
 
             <p>
-              Agradecemos también a las organizaciones, líderes y colaboradores que apoyaron este ejercicio y a quienes apuesten, en el futuro, por co-crear, financiar y apoyar proyectos como el nuestro.
+              Agradecemos también a las organizaciones, líderes y colaboradores
+              que apoyaron este ejercicio y a quienes apuesten, en el futuro,
+              por co-crear, financiar y apoyar proyectos como el nuestro.
             </p>
           </div>
 
@@ -266,7 +341,8 @@ export default function AboutUs() {
                 Análisis cualitativo colectivo
               </h3>
               <p className="text-sm text-black/50">
-                Trabajo conjunto para hacer sentido de la diversidad de voces y encontrar tendencias y hallazgos
+                Trabajo conjunto para hacer sentido de la diversidad de voces y
+                encontrar tendencias y hallazgos
               </p>
             </div>
           </div>

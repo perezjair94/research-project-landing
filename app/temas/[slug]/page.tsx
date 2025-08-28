@@ -708,35 +708,187 @@ const themesData: ThemeData[] = [
     overlayColor: "bg-gray-400/10",
     content: {
       overview:
-        "La infraestructura de Ciudad Verde incluye todos los servicios públicos y la infraestructura urbana que sostiene la vida diaria de los residentes.",
+        "Los equipamientos y servicios urbanos dentro de la ciudadela fueron una parte fundamental de la promesa de Ciudad Verde para sus habitantes. La urbanización cuenta con corredores viales de diferentes tipologías, ciclorutas y andenes amplios, acceso universal a redes de energía, acueducto, alcantarillado y gas, seis colegios públicos y privados y un jardín infantil del ICBF. Cuenta también con una biblioteca pública del municipio de Soacha, una iglesia católica, un centro de rehabilitación integral, una estación de policía, instalaciones de la Universidad Nacional Abierta y a Distancia y el hospital privado Avidanti. Asimismo, se encuentra en construcción una sede del Sena, y se proyecta a futuro una posible sede la Universidad Minuto de Dios.\n\nEn materia comercial, los citoverdinos tienen acceso a tres centros comerciales medianos en su barrio, así como módulos de comercio y una galería comercial que ofrecen servicios y productos adicionales. Algunos conjuntos cerrados también cuentan con gimnasios y tiendas. Muchas de estas últimas han sido adecuadas por las administraciones de cada conjunto en años recientes en gran medida en respuesta a la insuficiencia de las opciones comerciales formales que ofrece la ciudadela.\n\nLos testimonios relacionados con la infraestructura evidencian el reconocimiento que hacen los citoverdinos a la importancia para su cotidianidad de tener acceso a los mencionados equipamientos, pero también evidencian una conciencia colectiva de que estos continúan siendo insuficientes para la inmensa demanda para todo tipo de bienes y servicio que involucra traer a más de 200 mil personas a vivir a un nuevo barrio. Así mismo, muchos participantes comentan que buena parte de esta infraestructura existe hoy, pero tardó años en llegar. Por último, un amplio número de testimonios demuestra preocupación por el estado de mantenimiento de las vías, el mobiliario público e incluso andenes y ciclovías. Fue tan consistente esta intranquilidad en los participantes que se observa que el 24% de las respuesta a 'Una pregunta que harías sobre el futuro de Ciudad Verde y tu rol en ese futuro' tuvieron que ver con infraestructura; el siguiente tema más comentado entorno a futuro fue Calidad de Vida con 17% de las respuestas.",
       highlights: [
-        "Servicios de agua y alcantarillado",
-        "Energía eléctrica y gas",
-        "Vías y accesibilidad",
-        "Internet y comunicaciones",
+        "Vías y sistema de movilidad",
+        "Servicios de salud y centros médicos",
+        "Educación y equipamientos educativos",
+        "Servicios públicos domiciliarios",
+        "Comercio formal e informal",
+        "Iluminación y seguridad urbana",
       ],
       subThemes: [
         {
           id: "vias",
           title: "Vías",
           content:
-            "La cantidad de rampas para que se desplacen las personas con movilidad reducida por los alrededores de la ciudadela son adecuadas. Las conexiones viales, señalización y ciclorrutas cumplen con las condiciones para sentirse seguro.",
+            "Como parte del diseño urbanístico de Ciudad Verde, su promotor, Amarilo, estuvo encargado del diseño de la malla vial, con avenidas principales, rotondas, accesos y calles secundarias. Algunas vías fueron construidas de tal forma que en el futuro se pudieran ampliar. Participantes como Marco Tulio reconocen que se sienten seguros movilizándose por la ciudadela. Argemiro, un participante con discapacidad y movilidad reducida, dice sentirse contento por poder moverse fácilmente por toda la ciudadela gracias a las rampas que le son de gran ayuda. Luz Helena, por su parte, comparte que ha llegado tarde a su trabajo por el tráfico generado por la gran cantidad de carros parqueados sobre las vías ya que los parqueaderos de los conjuntos son insuficientes. Adriana se pregunta si en un futuro serán construidas más vías de acceso porque identifica que buena parte de los problemas de congestión están relacionados con la existencia de sólo dos puntos de entrada.\n\nMarina y July comparten su preocupación por el creciente deterioro de las vías, en gran medida por el creciente tráfico pesado que se evidencia en las mismas. Por su parte, Gilbert, resalta una preocupación similar en su fotorelato. Allí, captura el estado de la entrada principal de la ciudadela , donde las grietas comienzan a convertirse en huecos. Para él, esta situación, de no atenderse, llevará al deterioro progresivo de las calles, convirtiéndolas en espacios polvorientos y en malas condiciones para la movilidad de los residentes.",
           image: "/images/photo1.jpg",
         },
         {
           id: "servicios-salud",
           title: "Servicios de salud",
           content:
-            "Una de las construcciones que se esperaba tener en la ciudadela es el Hospital Avidanti. Los habitantes se emocionan saber que es posible tener cerca los servicios médicos.",
+            "Varios participantes hicieron mención a la llegada del Hospital Avidanti en la ciudadela. Así lo hizo Yeison en su fotorelato. Le emociona saber que tiene acceso a servicios médicos a pocos metros de su casa. A dicho sentir se suma Ricardo, quien ve el beneficio de la calidad de vida para la comunidad; asimismo, comenta esperar que los servicios que se presenten allí sean tanto públicos como privados. Otros participantes hicieron mención a la necesidad de pensar en la salud de la comunidad desde una óptica de prevención y promoción de la actividad física. Luis propone que se realicen jornadas de salud y sensibilización en los espacios públicos de la comunidad.",
           image: "/images/photo2.jpg",
+        },
+        {
+          id: "educacion",
+          title: "Educación",
+          content:
+            "Con más de 50 mil hogares, Ciudad Verde contiene una gran población en edad educativa. Suplir esa demanda ha sido una prioridad tanto de la Alcaldía Municipal como de Amarilo como promotor; de ahí que la ciudadela cuente ya con 6 colegios y una sede del ICBF. Sin embargo, los participantes afirman que la oferta de educación pública continúa siendo insuficiente. Cecilia comparte que se ha visto obligada a pagar altos costos de matrícula para su nieto en un colegio privado. Comenta, también, que muchos niños se ven obligados a estudiar en colegios en otras zonas de Soacha y en la localidad de Bosa, generando sobrecostos para sus familias.\n\nTambién surgieron conversaciones en torno a la educación de jóvenes, adultos y personas con capacidades cognitivas diversas. Lidia, por ejemplo, aboga por la apertura de matrícula escolar para adultos, pues ha identificado que muchos de sus vecinos y conocidos quisieran terminar sus estudios. Dairy afirma en su fotorelato que la emociona la construcción de la sede del SENA pues afirma que los jóvenes de la ciudadela necesitan más oportunidades para salir adelante. Maria Fernanda, quien es docente, sueña con algún día ver tres o más universidades, ojalá públicas. Mercedes discute la importancia de una oferta educativa para personas con discapacidades.",
+          image: "/images/photo3.jpg",
+        },
+        {
+          id: "iluminacion",
+          title: "Iluminación",
+          content:
+            "Participantes como Lady compartieron la importancia de la buena iluminación en sus primeras impresiones positivas de la ciudadela. Asimismo, Gilbert comparte en su fotorelato una toma de la entrada a ciudad verde en la noche; comenta que lo que más le gusta de vivir en Ciudad Verde es contar con una buena iluminación y farolas en buen estado, lo cual, afirma, brinda seguridad a las personas que, como él, trabajan en la noche o llegan tarde a sus hogares. Blanca, en cambio, considera que falta iluminación en la ciudadela, pues las situaciones de inseguridad suelen suceder en zonas oscuras de parques y ciclorutas. Bajo esta misma línea John comparte su deseo de articularse con las entidades competentes para señalarles los lugares dentro de la ciudadela donde considera se debe aumentar la iluminación para incrementar la seguridad.",
+          image: "/images/photo4.jpg",
+        },
+        {
+          id: "servicios-publicos",
+          title: "Servicios públicos domiciliarios",
+          content:
+            "Los costos por servicios son un factor de preocupación para los residentes. La comunidad está preocupada por el aumento de las tarifas. Para Samuel y Estela las altas tarifas reducen su calidad de vida. Samuel afirma que él y las personas que conoce en la ciudadela son trabajadores que ganan un salario mínimo; al tener sus viviendas asignadas al estrato 3 los servicios llegan muy caros. En un mes puede llegar a pagar 95 mil por el gas y más de 100 mil por el agua, a pesar de que en su hogar solo vive él, su pareja y su bebé. Estela, por su parte, hace una comparación con los costos de servicios en su antigua vivienda en Bogotá, en donde compartía una casa con 7 familias, y afirma que aunque en la ciudadela 'se vive bonito' pagar los servicios es difícil. Por otra parte, a Jose le preocupa el mantenimiento del alcantarillado. Liliana, mientras tanto, considera que los servicios de aseo en la ciudadela son muy buenos y nos comparte en su fotorelato el agrado que le produce ver que los operarios cuidan la ciudadela como si fuera de ellos.",
+          image: "/images/photo5.jpg",
+        },
+        {
+          id: "comercio-formal",
+          title: "Comercio formal",
+          content:
+            "Los espacios de comercio formal inicialmente planificados para Ciudad Verde son dramáticamente pocos para la demanda por bienes y servicios que genera una población de más de doscientas mil personas. Si bien los participantes reconocen los esfuerzos realizados por aumentar esta oferta a través de la construcción de módulos comerciales y una galería comercial, algunos, como Sandra y Cecilia quisieran ver una mayor cantidad y tipos de espacios en donde, por ejemplo, se pudieran encontrar supermercados de más bajos precios como un D1. Otros participantes como Marta realizan ventas en el espacio público como mecanismo de sustento para sus hogares y aseguran que los arriendos de la galería de comercio son muy elevados, muy pocos de los emprendimientos de los citoverdios podrían solventar esos costos. El fotorelato de Luz Mery, en donde se retrata un espacio de comercio formal en desuso, podría explicarse por dichos sobrecostos.",
+          image: "/images/photo1.jpg",
         },
       ],
       testimonials: [
         {
-          name: "Carmen López",
-          quote:
-            "La infraestructura ha mejorado considerablemente desde que llegamos. Ahora tenemos servicios más confiables.",
-          link: "https://embed.lvn.org/?hid=5259898",
+          name: "Marco Tulio",
+          quote: "Se sienten seguros movilizándose por la ciudadela.",
+          link: "https://embed.lvn.org/?hid=5259748",
+        },
+        {
+          name: "Argemiro",
+          quote: "Un participante con discapacidad y movilidad reducida, dice sentirse contento por poder moverse fácilmente por toda la ciudadela gracias a las rampas que le son de gran ayuda.",
+          link: "https://embed.lvn.org/?hid=5260879",
+        },
+        {
+          name: "Luz Helena",
+          quote: "Ha llegado tarde a su trabajo por el tráfico generado por la gran cantidad de carros parqueados sobre las vías ya que los parqueaderos de los conjuntos son insuficientes.",
+        },
+        {
+          name: "Adriana",
+          quote: "Se pregunta si en un futuro serán construidas más vías de acceso porque identifica que buena parte de los problemas de congestión están relacionados con la existencia de sólo dos puntos de entrada.",
+          link: "https://embed.lvn.org/?hid=5260907",
+        },
+        {
+          name: "Marina",
+          quote: "Comparten su preocupación por el creciente deterioro de las vías, en gran medida por el creciente tráfico pesado.",
+          link: "https://embed.lvn.org/?hid=5263860",
+        },
+        {
+          name: "July",
+          quote: "Comparten su preocupación por el creciente deterioro de las vías, en gran medida por el creciente tráfico pesado.",
+          link: "https://embed.lvn.org/?hid=5259812",
+        },
+        {
+          name: "Gilbert",
+          quote: "Captura el estado de la entrada principal de la ciudadela, donde las grietas comienzan a convertirse en huecos.",
+        },
+        {
+          name: "Yeison",
+          quote: "Le emociona saber que tiene acceso a servicios médicos a pocos metros de su casa.",
+        },
+        {
+          name: "Ricardo",
+          quote: "Ve el beneficio de la calidad de vida para la comunidad; asimismo, comenta esperar que los servicios que se presenten allí sean tanto públicos como privados.",
+          link: "https://embed.lvn.org/?hid=5259932",
+        },
+        {
+          name: "Luis",
+          quote: "Propone que se realicen jornadas de salud y sensibilización en los espacios públicos de la comunidad.",
+          link: "https://embed.lvn.org/?hid=5259896",
+        },
+        {
+          name: "Cecilia",
+          quote: "Se ha visto obligada a pagar altos costos de matrícula para su nieto en un colegio privado. Comenta, también, que muchos niños se ven obligados a estudiar en colegios en otras zonas de Soacha y en la localidad de Bosa.",
+          link: "https://embed.lvn.org/?hid=5263878",
+        },
+        {
+          name: "Lidia",
+          quote: "Aboga por la apertura de matrícula escolar para adultos, pues ha identificado que muchos de sus vecinos y conocidos quisieran terminar sus estudios.",
+          link: "https://embed.lvn.org/?hid=5259897",
+        },
+        {
+          name: "Dairy",
+          quote: "La emociona la construcción de la sede del SENA pues afirma que los jóvenes de la ciudadela necesitan más oportunidades para salir adelante.",
+        },
+        {
+          name: "Maria Fernanda",
+          quote: "Quien es docente, sueña con algún día ver tres o más universidades, ojalá públicas.",
+          link: "https://embed.lvn.org/?hid=5259957",
+        },
+        {
+          name: "Mercedes",
+          quote: "Discute la importancia de una oferta educativa para personas con discapacidades.",
+          link: "https://embed.lvn.org/?hid=5261146",
+        },
+        {
+          name: "Lady",
+          quote: "Compartió la importancia de la buena iluminación en sus primeras impresiones positivas de la ciudadela.",
+          link: "https://embed.lvn.org/?hid=5259802",
+        },
+        {
+          name: "Gilbert",
+          quote: "Lo que más le gusta de vivir en Ciudad Verde es contar con una buena iluminación y farolas en buen estado, lo cual brinda seguridad a las personas que trabajan en la noche o llegan tarde a sus hogares.",
+        },
+        {
+          name: "Blanca",
+          quote: "Considera que falta iluminación en la ciudadela, pues las situaciones de inseguridad suelen suceder en zonas oscuras de parques y ciclorutas.",
+          link: "https://embed.lvn.org/?hid=5259781",
+        },
+        {
+          name: "John",
+          quote: "Comparte su deseo de articularse con las entidades competentes para señalarles los lugares dentro de la ciudadela donde considera se debe aumentar la iluminación.",
+          link: "https://embed.lvn.org/?hid=5263851",
+        },
+        {
+          name: "Samuel",
+          quote: "Afirma que él y las personas que conoce en la ciudadela son trabajadores que ganan un salario mínimo; al tener sus viviendas asignadas al estrato 3 los servicios llegan muy caros. En un mes puede llegar a pagar 95 mil por el gas y más de 100 mil por el agua.",
+          link: "https://embed.lvn.org/?hid=5263875",
+        },
+        {
+          name: "Estela",
+          quote: "Hace una comparación con los costos de servicios en su antigua vivienda en Bogotá, afirma que aunque en la ciudadela 'se vive bonito' pagar los servicios es difícil.",
+          link: "https://embed.lvn.org/?hid=5328763",
+        },
+        {
+          name: "Jose",
+          quote: "Le preocupa el mantenimiento del alcantarillado.",
+          link: "https://embed.lvn.org/?hid=5259808",
+        },
+        {
+          name: "Liliana",
+          quote: "Considera que los servicios de aseo en la ciudadela son muy buenos y comparte el agrado que le produce ver que los operarios cuidan la ciudadela.",
+        },
+        {
+          name: "Sandra",
+          quote: "Quisiera ver una mayor cantidad y tipos de espacios comerciales en donde se pudieran encontrar supermercados de más bajos precios como un D1.",
+          link: "https://embed.lvn.org/?hid=5259763",
+        },
+        {
+          name: "Cecilia",
+          quote: "Quisiera ver una mayor cantidad y tipos de espacios comerciales.",
+          link: "https://embed.lvn.org/?hid=5263876",
+        },
+        {
+          name: "Marta",
+          quote: "Realizan ventas en el espacio público como mecanismo de sustento para sus hogares y aseguran que los arriendos de la galería de comercio son muy elevados.",
+          link: "https://embed.lvn.org/?hid=5261136",
+        },
+        {
+          name: "Luz Mery",
+          quote: "En su fotorelato se retrata un espacio de comercio formal en desuso.",
         },
       ],
     },

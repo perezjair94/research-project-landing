@@ -59,14 +59,13 @@ export default function Home() {
               </div>
 
               <p className="mt-8 text-md md:text-lg text-black/50 max-w-[590px] leading-relaxed">
-                Basándose en dos premisas: &ldquo;Nada sobre nosotros sin
-                nosotros&rdquo; y &ldquo;Nadie se las sabe todas, pero juntos
-                sabemos muchas cosas&rdquo;, el grupo de residentes
-                investigadores de Ciudad Verde se reunió en 2023 para diseñar e
-                implementar una investigación que diera luces sobre las
-                alegrías, las tristezas, los sueños y los miedos de los
-                habitantes de Ciudad Verde pasada una década después de la
-                inauguración de este, el macroproyecto de vivienda social más
+                Basándose en dos premisas: “Nada sobre nosotros sin nosotros” y
+                “Nadie se las sabe todas, pero juntos sabemos muchas cosas”, el
+                grupo de residentes investigadores de Ciudad Verde se reunió en
+                2023 para diseñar e implementar una investigación que diera
+                luces sobre las alegrías, las tristezas, los sueños y los miedos
+                de los habitantes de Ciudad Verde pasada una década después de
+                la inauguración de este, el macroproyecto de vivienda social más
                 grande del país.
               </p>
             </div>

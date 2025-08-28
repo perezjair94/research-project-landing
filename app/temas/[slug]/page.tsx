@@ -40,8 +40,8 @@ const themesData: ThemeData[] = [
     description:
       "La vida en comunidad y las relaciones vecinales en Ciudad Verde",
     image: "/images/photo5.jpg",
-    bgColor: "bg-cv-pink/20",
-    overlayColor: "bg-cv-pink/20",
+    bgColor: "bg-cv-pink/10",
+    overlayColor: "bg-cv-pink/10",
     content: {
       overview:
         "En Ciudad Verde habitan miles de familias provenientes principalmente de barrios populares de Bogotá, Soacha y algunos otros municipios cercanos. Los residentes llegaron por tandas, unas más grandes que otras, conforme finalizaba la construcción de los conjuntos residenciales que componen la ciudadela. Llegaban a un barrio nuevo, cuyas características cotidianas estaban por conformarse. Muchas de las familias que llegaron a vivir a Ciudad Verde nunca habían vivido en un conjunto cerrado. Otras tantas nunca habían vivido en edificios de apartamentos. Según una caracterización liderada por la Corporación Responder y Amarilo en el año, tan solo el 35% de los residentes de Ciudad Verde en 2022 habían vivido antes en propiedad horizontal.\n\nLa nueva vida en Ciudad Verde implicó para muchos, por lo tanto, la necesidad de adaptarse a las nuevas reglas del juego formales e informales de la vivienda horizontal. Ese proceso de adaptación no ha sido necesariamente fácil, generando, en ocasiones, dinámicas conflictivas entre vecinos. Así mismo, las características físicas de los conjuntos y apartamentos, y la alta densidad poblacional de estos nuevos espacios de vivienda traen consigo retos de convivencia asociados a los usos de los espacios comunes y la proximidad de los apartamentos entre sí. Finalmente, la creciente tendencia de los propietarios a arrendar los apartamentos–para el 2022 casi el 30% de los habitantes de Ciudad Verde vivían en arriendo–resulta en una rotación alta de nuevos residentes que pueden llegar a mejorar o disrumpir las dinámicas de convivencia que se han venido asentando durante los años.\n\nLos residentes participantes hacen hincapié en diferentes dinámicas o situaciones que dificultan la convivencia entre vecinos. Entre ellas se resalta el egoísmo, la falta de solidaridad y la necesidad de querer tener la razón como algunas de las causas subyacentes. Así mismo, los relatos también destacan los esfuerzos que se hacen a nivel de las instituciones relevantes, las administraciones de los conjuntos y, por supuesto, los residentes mismos por generar acuerdos y disminuir los conflictos.",
@@ -226,8 +226,8 @@ const themesData: ThemeData[] = [
     title: "Transporte",
     description: "Movilidad y conectividad desde y hacia Ciudad Verde",
     image: "/images/photo1.jpg",
-    bgColor: "bg-cv-green/20",
-    overlayColor: "bg-cv-green/20",
+    bgColor: "bg-cv-green/10",
+    overlayColor: "bg-cv-green/10",
     content: {
       overview:
         "Alrededor del 30% de las experiencias negativas relatadas por los participantes tienen que ver con el tema del transporte y la conectividad, el cual ha sido y continúa siendo un gran reto para los citaverdinos en su día a día. Si bien existen rutas y vías de acceso que conectan con Transmilenio y otros corredores viales relevantes, estas son limitadas e insuficientes; además, durante muchos años la ausencia de coordinación interinstitucional significó que no existían rutas formales de ningún tipo. Estos son los puntos centrales de los relatos y preocupaciones compartidas por los participantes sobre este tema, sumados a experiencias relacionadas con el mal estado de la malla vial, el tiempo en los traslados, el transporte pirata y los sobrecostos.\n\nLos relatos demuestran la urgencia que ha implicado para los residentes de la ciudadela pensar en formas de conectarse con los grandes corredores de transporte público de Soacha y Bogotá, principalmente para desplazarse diariamente a sus lugares de empleo. Los habitantes de la ciudadela tienen tres vías para salir hacia Bogotá. Las principales son la Avenida Potrero Grande y la Avenida Terreros que conectan con la Autopista Sur, y la carrera 38 que conduce a Bosa San José, por donde llegan a la avenida Ciudad de Cali. Para llegar a la Autopista es necesario tomar dos rutas en caso de que los buses municipales no funcionen o no aparezcan. Para salir por la conexión con Bosa se debe caminar hasta pasar la frontera municipal.\n\nLos testimonios compartidos por los participantes de este proceso visibilizan cómo la ausencia de rutas conectadas a los sistemas de transporte ha producido todo tipo de sobrecostos para los residentes, quienes resultan pagando doble, y hasta triple pasaje para llegar a sus destinos, además de los costos relacionados con el tiempo y la salud. Los limitados puntos de acceso generan preocupaciones para los habitantes y sin duda también trancones, principalmente en las horas pico. El tiempo que lleva salir o llegar a la ciudadela y el bajo control que la policía hace sobre las rutas piratas son problemáticas relacionadas que también se mencionan de manera reiterada.",
@@ -370,8 +370,8 @@ const themesData: ThemeData[] = [
     description:
       "Parques, plazas y áreas comunes para la recreación y encuentro",
     image: "/images/photo4.jpg",
-    bgColor: "bg-cv-blue/20",
-    overlayColor: "bg-cv-blue/20",
+    bgColor: "bg-cv-blue/10",
+    overlayColor: "bg-cv-blue/10",
     content: {
       overview:
         "Ciudad Verde le debe su nombre a una propuesta urbanística que priorizó la disposición de espacio público en tasas muy superiores a las del municipio de Soacha y la capital vecina. Con un concepto de parques lineales y centralidades comerciales, la ciudadela se caracteriza por sus amplias zonas verdes, ciclovías y andenes. En efecto, el espacio público es, de lejos, el tema que con mayor favorabilidad destacaron los participantes de este ejercicio. El 76% de las respuestas relacionadas con este tema fueron en torno a experiencias positivas. De manera relacionada, el 25% de las experiencias positivas narradas por los participantes sucedieron en torno al espacio público que ofrece la ciudadela.\n\nUn gran número de residentes destaca las zonas verdes, las zonas de juegos para niños y niñas, las canchas de baloncesto, microfútbol y patinaje, el skate park y las plazoletas. En estos espacios, afirman, comparten tiempo con sus familias, amigos, vecinos y mascotas; allí hacen picnic y asados, juegan fútbol y cogidos, caminan y hacen deporte. En los relatos y testimonios se evidencia una asociación clara entre el acceso a este espacio público planificado y la sensación de calidad de vida. Casi el 40% de las experiencias relacionadas con el espacio público hablan también de cómo estos espacios permiten tranquilidad, paz y conexión con la naturaleza y la familia. Los residentes destacan también el acceso a la montaña y el denominado Parque de la Niebla como un elemento invaluable de la cotidianidad en la ciudadela.\n\nAhora bien, no todo es positivo. A un gran número de participantes les duele o preocupa el deterioro que evidencian en dichos espacios comunes. Esto tiene que ver, por un lado, con el mantenimiento que se realiza a las zonas verdes, las zonas de juegos, y el mobiliario público en general, el cual, comentan, es insuficiente y viene en declive en años recientes. Por otro lado, el uso del espacio público para ventas informales sobresale como un subtema de alta contención: de una parte, hay quienes reclaman estos espacios que consideran invadidos e inutilizables. De otra, hay quienes han encontrado en el espacio público de la ciudadela una oportunidad para emprender y sostener la economía de sus hogares.",
@@ -449,8 +449,8 @@ const themesData: ThemeData[] = [
     description:
       "Percepción de seguridad y medidas de protección en la comunidad",
     image: "/images/photo2.jpg",
-    bgColor: "bg-cv-purple/20",
-    overlayColor: "bg-cv-purple/20",
+    bgColor: "bg-cv-purple/10",
+    overlayColor: "bg-cv-purple/10",
     content: {
       overview:
         "El 68% de los participantes que hablaron sobre el tema de seguridad se refirieron a experiencias negativas en torno a la misma. Asimismo, el 26% de las experiencias negativas relatadas por los participantes tuvieron que ver con este tema. Esto confirma que la seguridad es el tema que más aqueja y preocupa a los citaverdinos.\n\nEn sus relatos, los participantes identifican variables que detonan la sensación de seguridad como el consumo de sustancias psicoactivas en parques y la incidencia de robos en calles, transporte público, parques e incluso dentro de los conjuntos residenciales. Múltiples participantes encuentran la presencia de la policía y la vigilancia privada de los conjuntos insuficiente. Las riñas–muchas veces asociadas a la informalidad y la intolerancia–derivan con frecuencia en agresiones y hasta muertes en el espacio público. De igual forma, los bordes y fronteras de la ciudadela son identificados como puntos cruciales de inseguridad, especialmente en los desplazamientos desde y hacia la localidad de Bosa.\n\nLos participantes reclaman una presencia más elevada y estratégica de la fuerza pública, así como más articulación con los sistemas de vigilancia privada de los conjuntos. Así mismo, se propone trabajar en temas de resolución y desescalamiento de conflictos para evitar peleas interpersonales que deriven en situaciones de violencia.",
@@ -586,8 +586,8 @@ const themesData: ThemeData[] = [
     description:
       "Diversidad demográfica y necesidades específicas de diferentes grupos",
     image: "/images/photo1.jpg",
-    bgColor: "bg-cv-orange/20",
-    overlayColor: "bg-cv-orange/20",
+    bgColor: "bg-cv-orange/10",
+    overlayColor: "bg-cv-orange/10",
     content: {
       overview:
         "Ciudad Verde alberga una gran diversidad de grupos poblacionales, cada uno con necesidades y perspectivas únicas sobre la vida en la ciudadela.",
@@ -628,8 +628,8 @@ const themesData: ThemeData[] = [
     title: "Calidad de Vida",
     description: "Bienestar general y satisfacción con la vida en Ciudad Verde",
     image: "/images/photo5.jpg",
-    bgColor: "bg-cv-yellow/20",
-    overlayColor: "bg-cv-yellow/20",
+    bgColor: "bg-cv-yellow/10",
+    overlayColor: "bg-cv-yellow/10",
     content: {
       overview:
         "La calidad de vida en Ciudad Verde abarca múltiples aspectos del bienestar de los residentes, desde la salud y educación hasta las oportunidades de desarrollo personal y comunitario.",
@@ -669,8 +669,8 @@ const themesData: ThemeData[] = [
     title: "Gobernanza",
     description: "Participación ciudadana y relación con las instituciones",
     image: "/images/photo4.jpg",
-    bgColor: "bg-cv-teal/20",
-    overlayColor: "bg-cv-teal/20",
+    bgColor: "bg-cv-teal/10",
+    overlayColor: "bg-cv-teal/10",
     content: {
       overview:
         "La gobernanza en Ciudad Verde involucra la participación activa de los residentes en las decisiones que afectan su comunidad y su relación con las instituciones locales.",
@@ -704,8 +704,8 @@ const themesData: ThemeData[] = [
     title: "Infraestructura",
     description: "Servicios públicos y infraestructura urbana de la ciudadela",
     image: "/images/photo2.jpg",
-    bgColor: "bg-gray-400/20",
-    overlayColor: "bg-gray-400/20",
+    bgColor: "bg-gray-400/10",
+    overlayColor: "bg-gray-400/10",
     content: {
       overview:
         "La infraestructura de Ciudad Verde incluye todos los servicios públicos y la infraestructura urbana que sostiene la vida diaria de los residentes.",
@@ -781,10 +781,64 @@ export default async function ThemeDetail({ params }: PageProps) {
       <section className="px-6 lg:px-10 py-6 lg:py-8">
         <div className="max-w-[1184px] mx-auto">
           <div
-            className={`${theme.bgColor} rounded-lg flex items-center justify-center`}
+            className={`${theme.bgColor} rounded-lg flex items-center justify-center relative overflow-hidden`}
             style={{ height: "231px" }}
           >
-            <h2 className="text-5xl font-bebas text-black/50">{theme.title}</h2>
+            {/* Decorative Background Element */}
+            <div className={`absolute inset-0 ${theme.bgColor} rounded-lg`}>
+              <div className="absolute inset-0" style={{ width: "783px", height: "174px", left: "192px", top: "24px" }}>
+                {/* Circle 1 */}
+                <div 
+                  className="absolute"
+                  style={{ left: "148px", top: "0px", width: "75px", height: "75px" }}
+                >
+                  <img 
+                    src="/images/decorative/decor-circle-1.png" 
+                    alt="" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                
+                {/* Circle 2 */}
+                <div 
+                  className="absolute"
+                  style={{ left: "0px", top: "83px", width: "91px", height: "91px" }}
+                >
+                  <img 
+                    src="/images/decorative/decor-circle-2.png" 
+                    alt="" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                
+                {/* Circle 3 */}
+                <div 
+                  className="absolute"
+                  style={{ left: "611px", top: "92px", width: "74px", height: "74px" }}
+                >
+                  <img 
+                    src="/images/decorative/decor-circle-3.png" 
+                    alt="" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                
+                {/* Circle 4 */}
+                <div 
+                  className="absolute"
+                  style={{ left: "708px", top: "0px", width: "75px", height: "75px" }}
+                >
+                  <img 
+                    src="/images/decorative/decor-circle-4.png" 
+                    alt="" 
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Title */}
+            <h2 className="text-5xl font-bebas text-black/50 relative z-10">{theme.title}</h2>
           </div>
         </div>
       </section>

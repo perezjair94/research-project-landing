@@ -76,83 +76,81 @@ export default function AboutUs() {
               Massachusetts Institute of Technology, el Center for Constructive
               Communication y Amarilo SAS.
             </p>
+          </div>
+        </div>
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 my-12">
+          <div className="space-y-6">
+            <div className="relative">
+              <Image
+                src="/images/el-proyecto.jpeg"
+                alt="El proyecto de investigación participativa"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+            </div>
 
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 my-12">
-              <div className="space-y-6">
-                <div className="relative">
-                  <Image
-                    src="/images/el-proyecto.jpeg"
-                    alt="El proyecto de investigación participativa"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover rounded-lg"
-                  />
-                  <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
-                </div>
+            <div className="relative">
+              <Image
+                src="/images/photo2.jpg"
+                alt="Trabajo de campo en Ciudad Verde"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-cv-green/10 rounded-lg"></div>
+            </div>
+          </div>
 
-                <div className="relative">
-                  <Image
-                    src="/images/photo2.jpg"
-                    alt="Trabajo de campo en Ciudad Verde"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto object-cover rounded-lg"
-                  />
-                  <div className="absolute inset-0 bg-cv-green/10 rounded-lg"></div>
-                </div>
-              </div>
-
-              <div className="bg-cv-blue/10 p-6 rounded-lg">
-                <h3 className="text-lg font-bebas text-cv-purple/80 mb-4">
-                  Equipo de Residentes Investigadores
-                </h3>
-                <div className="space-y-2 text-sm">
-                  <p>
-                    <strong>Ana María Pérez Carrillo</strong>, investigadora
-                    principal, grupo coordinador.
-                  </p>
-                  <p>
-                    <strong>Fabián Rodríguez</strong>, residente investigador
-                  </p>
-                  <p>
-                    <strong>Geraldín Rubio</strong>, residente investigadora,
-                    grupo coordinador.
-                  </p>
-                  <p>
-                    <strong>Gina Paola Rojas</strong>, residente investigadora
-                  </p>
-                  <p>
-                    <strong>Jonathan Velasquez</strong>, residente investigador
-                  </p>
-                  <p>
-                    <strong>Johana Carrillo</strong>, residente investigadora
-                  </p>
-                  <p>
-                    <strong>María del Pilar de la Hoz</strong>, residente
-                    investigadora
-                  </p>
-                  <p>
-                    <strong>María Isabel Montero</strong>, residente
-                    investigadora
-                  </p>
-                  <p>
-                    <strong>Marina Catives</strong>, residente investigadora
-                  </p>
-                  <p>
-                    <strong>Paula Rubio</strong>, residente investigadora
-                  </p>
-                  <p>
-                    <strong>Rafael Ospino</strong>, residente investigador
-                  </p>
-                  <p>
-                    <strong>Sandra Rodríguez</strong>, apoyo operativo
-                  </p>
-                  <p>
-                    <strong>Sebastián Forero</strong>, asistente de
-                    investigación, equipo coordinador.
-                  </p>
-                </div>
-              </div>
+          <div className="bg-cv-blue/10 p-6 rounded-lg">
+            <h3 className="text-lg font-bebas text-cv-purple/80 mb-4">
+              Equipo de Residentes Investigadores
+            </h3>
+            <div className="space-y-2 text-sm text text-black/50">
+              <p>
+                <strong>Ana María Pérez Carrillo</strong>, investigadora
+                principal, grupo coordinador.
+              </p>
+              <p>
+                <strong>Fabián Rodríguez</strong>, residente investigador
+              </p>
+              <p>
+                <strong>Geraldín Rubio</strong>, residente investigadora, grupo
+                coordinador.
+              </p>
+              <p>
+                <strong>Gina Paola Rojas</strong>, residente investigadora
+              </p>
+              <p>
+                <strong>Jonathan Velasquez</strong>, residente investigador
+              </p>
+              <p>
+                <strong>Johana Carrillo</strong>, residente investigadora
+              </p>
+              <p>
+                <strong>María del Pilar de la Hoz</strong>, residente
+                investigadora
+              </p>
+              <p>
+                <strong>María Isabel Montero</strong>, residente investigadora
+              </p>
+              <p>
+                <strong>Marina Catives</strong>, residente investigadora
+              </p>
+              <p>
+                <strong>Paula Rubio</strong>, residente investigadora
+              </p>
+              <p>
+                <strong>Rafael Ospino</strong>, residente investigador
+              </p>
+              <p>
+                <strong>Sandra Rodríguez</strong>, apoyo operativo
+              </p>
+              <p>
+                <strong>Sebastián Forero</strong>, asistente de investigación,
+                equipo coordinador.
+              </p>
             </div>
           </div>
         </div>

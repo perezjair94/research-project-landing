@@ -112,20 +112,6 @@ export default function Themes() {
               className={`${theme.bgColor} rounded-2xl overflow-hidden backdrop-blur-md flex flex-col lg:flex-row hover:shadow-lg transition-shadow cursor-pointer`}
               style={{ minHeight: "120px" }}
             >
-              {/* Image */}
-              <div className="w-full h-50 lg:w-[160px] lg:h-full relative">
-                <Image
-                  src={theme.image}
-                  alt={theme.title}
-                  width={160}
-                  height={120}
-                  className="w-full h-full object-cover lg:rounded-l-2xl saturate-[0] contrast-125 opacity-50"
-                  style={{ objectPosition: 'center' }}
-                />
-                <div
-                  className={`absolute inset-0 ${theme.overlayColor} lg:rounded-l-2xl`}
-                ></div>
-              </div>
 
               {/* Content */}
               <div className="flex-1 p-5 flex flex-col justify-center">

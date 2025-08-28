@@ -66,6 +66,14 @@ export default function Themes() {
       bgColor: "bg-cv-teal/20",
       overlayColor: "bg-cv-teal/20",
     },
+    {
+      id: "calidad-de-vida",
+      title: "Calidad de vida",
+      description: "Engloba las percepciones y experiencias de los residentes sobre su bienestar general, satisfacción con la vida en Ciudad Verde, oportunidades de desarrollo personal y comunitario, y aspectos que contribuyen a una vida plena en la ciudadela.",
+      image: "/images/photo5.jpg",
+      bgColor: "bg-cv-yellow/20",
+      overlayColor: "bg-cv-yellow/20",
+    },
   ];
 
   return (

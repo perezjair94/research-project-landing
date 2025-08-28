@@ -101,6 +101,55 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Workshop Photos */}
+      <section className="px-6 lg:px-10 py-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <div className="aspect-square rounded-lg overflow-hidden">
+            <Image
+              src="/images/taller1.jpg"
+              alt="Taller de investigación participativa 1"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="aspect-square rounded-lg overflow-hidden">
+            <Image
+              src="/images/taller2.jpg"
+              alt="Taller de investigación participativa 2"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="aspect-square rounded-lg overflow-hidden">
+            <Image
+              src="/images/taller3.jpg"
+              alt="Taller de investigación participativa 3"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="aspect-square rounded-lg overflow-hidden">
+            <Image
+              src="/images/taller4.jpg"
+              alt="Taller de investigación participativa 4"
+              width={300}
+              height={300}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        {/* Methodology Subtitle */}
+        <div className="text-center mb-8">
+          <p className="text-lg lg:text-xl text-black/70 font-medium leading-relaxed max-w-3xl mx-auto">
+            El diseño de investigación se enfocó en dos metodologías de recolección de datos cualitativos.
+          </p>
+        </div>
+      </section>
+
       {/* Content Sections */}
       <section className="px-6 lg:px-10 lg:py-12">
         <div className="grid lg:grid-cols-5 lg:gap-20 items-center mb-12 lg:mb-0">

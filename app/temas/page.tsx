@@ -9,7 +9,7 @@ export default function Themes() {
       id: "convivencia",
       title: "Convivencia",
       description:
-        "La vida en comunidad y las relaciones vecinales en Ciudad Verde",
+        "Hace referencia a las relaciones entre vecinos en la vida cotidiana de los conjuntos y apartamentos, incluyendo reglas de propiedad horizontal, uso de espacios comunes, manejo de mascotas, ruido y resolución de conflictos.",
       image: "/images/photo5.jpg",
       bgColor: "bg-cv-pink/20",
       overlayColor: "bg-cv-pink/20",
@@ -17,63 +17,54 @@ export default function Themes() {
     {
       id: "transporte",
       title: "Transporte",
-      description: "Movilidad y conectividad desde y hacia Ciudad Verde",
+      description: "Se relaciona con la conectividad de la ciudadela hacia Bogotá y Soacha, incluyendo la oferta y frecuencia de rutas, los costos de los desplazamientos, el transporte ilegal y la infraestructura vial.",
       image: "/images/photo1.jpg",
       bgColor: "bg-cv-green/20",
       overlayColor: "bg-cv-green/20",
     },
     {
-      id: "espacio-publico",
-      title: "Espacio Público",
-      description:
-        "Parques, plazas y áreas comunes para la recreación y encuentro",
-      image: "/images/photo4.jpg",
-      bgColor: "bg-cv-blue/20",
-      overlayColor: "bg-cv-blue/20",
-    },
-    {
       id: "seguridad",
       title: "Seguridad",
       description:
-        "Percepción de seguridad y medidas de protección en la comunidad",
+        "Abarca la percepción y las experiencias de riesgo en la ciudadela, vinculadas al consumo problemático de sustancias, robos, riñas, el rol de la policía y la seguridad privada, así como las condiciones de los bordes y fronteras de la ciudadela.",
       image: "/images/photo2.jpg",
       bgColor: "bg-cv-purple/20",
       overlayColor: "bg-cv-purple/20",
     },
     {
-      id: "grupos-poblacionales",
-      title: "Grupos poblacionales",
+      id: "espacio-publico",
+      title: "Espacio Público",
       description:
-        "Diversidad demográfica y necesidades específicas de diferentes grupos",
-      image: "/images/photo1.jpg",
-      bgColor: "bg-cv-orange/20",
-      overlayColor: "bg-cv-orange/20",
-    },
-    {
-      id: "calidad-de-vida",
-      title: "Calidad de Vida",
-      description:
-        "Bienestar general y satisfacción con la vida en Ciudad Verde",
-      image: "/images/photo5.jpg",
-      bgColor: "bg-cv-yellow/20",
-      overlayColor: "bg-cv-yellow/20",
-    },
-    {
-      id: "gobernanza",
-      title: "Gobernanza",
-      description: "Participación ciudadana y relación con las instituciones",
+        "Engloba parques, zonas verdes, andenes y ciclovías, así como las múltiples actividades de recreación, deporte y encuentro que realizan allí los citaverdinos. Recoge también experiencias relacionadas con el comercio informal, el manejo de basuras, el mantenimiento y la relación con la naturaleza.",
       image: "/images/photo4.jpg",
-      bgColor: "bg-cv-teal/20",
-      overlayColor: "bg-cv-teal/20",
+      bgColor: "bg-cv-blue/20",
+      overlayColor: "bg-cv-blue/20",
     },
     {
       id: "infraestructura",
       title: "Infraestructura",
       description:
-        "Servicios públicos y infraestructura urbana de la ciudadela",
+        "Incluye reflexiones en torno a los equipamientos urbanos, las vías y los servicios que ofrece la ciudadela, así como la oferta de educación, salud, comercio formal, iluminación y servicios públicos domiciliarios.",
       image: "/images/photo2.jpg",
       bgColor: "bg-gray-400/20",
       overlayColor: "bg-gray-400/20",
+    },
+    {
+      id: "grupos-poblacionales",
+      title: "Poblaciones",
+      description:
+        "Hace referencia a testimonios relacionados con las experiencias, necesidades y oportunidades de los distintos grupos sociales que habitan la ciudadela.",
+      image: "/images/photo1.jpg",
+      bgColor: "bg-cv-orange/20",
+      overlayColor: "bg-cv-orange/20",
+    },
+    {
+      id: "gobernanza",
+      title: "Gobernanza",
+      description: "Se refiere a los mecanismos formales e informales de gestión y organización del territorio por parte de los diversos actores presentes en el mismo entorno a la vida comunitaria y la resolución de problemáticas locales.",
+      image: "/images/photo4.jpg",
+      bgColor: "bg-cv-teal/20",
+      overlayColor: "bg-cv-teal/20",
     },
   ];
 
@@ -129,6 +120,7 @@ export default function Themes() {
                   width={160}
                   height={120}
                   className="w-full h-full object-cover lg:rounded-l-2xl saturate-[0] contrast-125 opacity-50"
+                  style={{ objectPosition: 'center' }}
                 />
                 <div
                   className={`absolute inset-0 ${theme.overlayColor} lg:rounded-l-2xl`}

@@ -440,6 +440,39 @@ const themesData: ThemeData[] = [
           audio: "espacio-publico-vicente.mp3",
           link: "https://embed.lvn.org/?hid=5259893",
         },
+        {
+          name: "Jeovanny",
+          quote:
+            "Refuerza esta percepción a través de una fotografía tomada frente al Centro Comercial Prado Verde, en donde se observa cómo las macetas que fueron introducidas para disuadir a los vendedores son usadas, irónicamente, para ubicar productos de venta.",
+          photoStoryUrl: "https://drive.google.com/uc?id=1BFF6fXQMijtVaoNKwERclJ-amU9b3sdG",
+          photoStoryContent: `Subtema: Comercio Informal
+
+La presencia de vendedores informales en la ciudadela despierta distintas emociones entre los residentes. July manifiesta su preocupación al ver cómo este oficio es estigmatizado; cuenta que ha intentado conseguir un local formal, pero los altos costos la han llevado a continuar vendiendo en los andenes. Sandra coincide con esta apreciación y agrega que, ante la alta demanda, los centros comerciales no logran cubrir todas las necesidades de la comunidad, lo que hace que vender en el espacio público siga siendo una alternativa atractiva para muchos hogares.
+
+Otros habitantes, en cambio, expresan inconformidad frente a los impactos negativos que perciben que esta actividad genera en el espacio urbano. Edward menciona las dificultades que enfrenta al transitar con el coche de su bebé por andenes y ciclovías ocupadas, mientras que Jeovanny refuerza esta percepción a través de una fotografía tomada frente al Centro Comercial Prado Verde, en donde se observa cómo las macetas que fueron introducidas para disuadir a los vendedores son usadas, irónicamente, para ubicar productos de venta.`
+        },
+        {
+          name: "Liliana",
+          quote:
+            "Captura a un operador de aseo barriendo una calle, y nos comparte su emoción por ver que la limpieza es una prioridad en la ciudadela.",
+          photoStoryUrl: "https://drive.google.com/uc?id=1OgOirGj5DSOoMyC-ikUWhC0etXOE8-t-",
+          photoStoryContent: `Subtema: Basuras
+
+La mayoría de participantes destacan las buenas condiciones de aseo de la ciudadela. Por ejemplo, en su fotorelato Liliana captura a un operador de aseo barriendo una calle, y nos comparte su emoción por ver que la limpieza es una prioridad en la ciudadela. Sin embargo, se destacan algunos retos importantes en esta materia.
+
+El fotorelato de Gilbert nos presenta la problemática de la disposición incorrecta de residuos y escombros que se generan en las obras de acabados y remodelaciones de los apartamentos. Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de basura que ve en las zonas comunes y la falta de cultura cívica de algunos de sus vecinos a la hora de arrojar basura a la calle.`
+        },
+        {
+          name: "Gilbert",
+          quote:
+            "Nos presenta la problemática de la disposición incorrecta de residuos y escombros que se generan en las obras de acabados y remodelaciones de los apartamentos.",
+          photoStoryUrl: "https://drive.google.com/uc?id=1lVYcwjw5zEb6i5BUwi3B-nYW_rPRNqsY",
+          photoStoryContent: `Subtema: Basuras
+
+El fotorelato de Gilbert nos presenta la problemática de la disposición incorrecta de residuos y escombros que se generan en las obras de acabados y remodelaciones de los apartamentos. Esta situación evidencia uno de los retos importantes que enfrenta la ciudadela en materia de aseo y manejo de residuos.
+
+Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de basura que ve en las zonas comunes y la falta de cultura cívica de algunos de sus vecinos a la hora de arrojar basura a la calle. Al ser preguntados por el futuro, muchos participantes arrojaron ideas relacionadas con mejorar esta problemática, como Conor, quien quisiera liderar la conformación de una dependencia de medio ambiente para dar talleres sobre separación en la fuente y educación ambiental.`
+        },
       ],
     },
   },

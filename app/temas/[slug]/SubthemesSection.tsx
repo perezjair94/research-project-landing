@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import PhotoStoryModal from "../../components/PhotoStoryModal";
 
 interface SubTheme {
   id: string;
@@ -13,6 +14,8 @@ interface Testimonial {
   quote: string;
   audio?: string;
   link?: string;
+  photoStoryUrl?: string; // URL de la imagen del fotorelato
+  photoStoryContent?: string; // Contenido textual del fotorelato
 }
 
 interface SubthemesSectionProps {
@@ -36,6 +39,18 @@ export default function SubthemesSection({
   const [selectedTestimonialIndex, setSelectedTestimonialIndex] = useState<{
     [authorName: string]: number;
   }>({});
+  // Estado para el modal de fotorelatos
+  const [modalState, setModalState] = useState<{
+    isOpen: boolean;
+    author: string;
+    imageUrl: string;
+    content: string;
+  }>({
+    isOpen: false,
+    author: '',
+    imageUrl: '',
+    content: ''
+  });
 
   // Iframe por defecto (el primero disponible)
   const defaultIframe = testimonials[0]?.link || null;
@@ -236,6 +251,18 @@ export default function SubthemesSection({
           <button
             key={index}
             onClick={() => {
+              // Si el testimonio tiene fotorelato, abrir modal
+              if (testimonial?.photoStoryUrl && testimonial?.photoStoryContent) {
+                setModalState({
+                  isOpen: true,
+                  author: name,
+                  imageUrl: testimonial.photoStoryUrl,
+                  content: testimonial.photoStoryContent
+                });
+                return;
+              }
+
+              // Si no tiene fotorelato, usar la lógica original para iframe
               if (testimonial?.link) {
                 // Obtener testimonios del autor en el subtema actual
                 const subthemeTestimonials =
@@ -301,6 +328,14 @@ export default function SubthemesSection({
   return (
     <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
       <div className="max-w-6xl mx-auto">
+        {/* Modal de fotorelatos */}
+        <PhotoStoryModal
+          isOpen={modalState.isOpen}
+          onClose={() => setModalState({ isOpen: false, author: '', imageUrl: '', content: '' })}
+          author={modalState.author}
+          imageUrl={modalState.imageUrl}
+          content={modalState.content}
+        />
         {/* Layout principal con subtemas a la izquierda e iframe a la derecha */}
         <div className="grid lg:grid-cols-[1fr_400px] gap-8 items-start">
           {/* Columna izquierda - Subtemas */}

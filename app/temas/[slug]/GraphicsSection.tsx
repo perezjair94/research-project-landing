@@ -17,18 +17,17 @@ const GraphicsSection: React.FC<GraphicsSectionProps> = ({ themeId }) => {
 
   return (
     <section className="px-6 lg:px-16 py-8">
-      <div className="max-w-[1051px] mx-auto">
-        <div className="flex flex-col lg:flex-row gap-8 items-center">
-
+      <div className="lg:max-w-[1051px] lg:mx-auto">
+        <div className="flex flex-col lg:flex-row gap-8 lg:items-center">
           {/* Right side content */}
-          <div className="flex-1 flex flex-col justify-center">
+          <div className="lg:flex-1 lg:flex flex-col lg:justify-center">
             {/* Horizontal graphic */}
-            <div className="w-full max-w-[575px] h-[162px] relative mb-8">
+            <div className="w-full lg:max-w-[575px] h-[200px] sm:h-[180px] lg:h-[162px] relative mb-8">
               <Image
                 src={graphics.horizontal}
                 alt={`Gráfica secundaria del tema ${themeId}`}
                 fill
-                className="object-cover rounded-lg"
+                className="object-contain rounded-lg"
                 priority
               />
             </div>

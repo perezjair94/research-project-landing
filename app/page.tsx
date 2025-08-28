@@ -319,7 +319,7 @@ export default function Home() {
           </p>
 
           <p className="text-md lg:text-lg text-black/50 leading-relaxed mb-6 lg:mb-12">
-            88 residentes de Ciudad Verde centraron sus experiencias y
+            114 residentes de Ciudad Verde centraron sus experiencias y
             perspectivas en 8 temas principales.
           </p>
 

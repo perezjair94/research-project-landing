@@ -17,8 +17,7 @@ export default function AboutUs() {
             </h1>
           </div>
           <p className="text-xl lg:text-2xl text-black/60 max-w-2xl mx-auto leading-relaxed">
-            Una investigación participativa que centra las voces de los
-            residentes de Ciudad Verde
+            Somos un grupo de investigación participativa conformado por residentes de Ciudad Verde, estudiantes e investigadores.
           </p>
         </div>
 
@@ -26,7 +25,7 @@ export default function AboutUs() {
         <div className="relative max-w-4xl mx-auto mb-16">
           <div className="aspect-video rounded-lg overflow-hidden relative">
             <Image
-              src="/images/photo1.jpg"
+              src="/images/quienes-somos.jpeg"
               alt="Residentes investigadores de Ciudad Verde"
               width={1200}
               height={675}
@@ -51,34 +50,48 @@ export default function AboutUs() {
               <strong className="text-black/80">
                 &ldquo;Hacer la vida en Ciudad Verde&rdquo;
               </strong>{" "}
-              es una investigación participativa que surge de dos premisas
-              fundamentales:
-              <em className="text-cv-pink">
-                &ldquo;Nada sobre nosotros sin nosotros&rdquo;
-              </em>{" "}
-              y{" "}
-              <em className="text-cv-pink">
-                &ldquo;Nadie se las sabe todas, pero juntos sabemos muchas
-                cosas&rdquo;
-              </em>
-              .
+              es el primer ejercicio de investigación participativa de este equipo de trabajo. Llevado a cabo en el 2023, este diseño participativo se basa en la premisa absoluta de que las experiencias vividas por los residentes deben estar en el centro de cómo entendemos lo que pasa en la ciudadela y cómo tomamos decisiones para su futuro. Así mismo, estamos convencidos de que la investigación debe tener una vocación de incidencia y acción, buscando así elevar nuestras voces y hallazgos a los espacios de toma de decisión.
             </p>
 
             <p>
-              En 2023, un grupo de residentes investigadores de Ciudad Verde se
-              reunió para diseñar e implementar una investigación que diera
-              luces sobre las alegrías, las tristezas, los sueños y los miedos
-              de los habitantes de esta ciudadela, más de una década después de
-              la inauguración del macroproyecto de vivienda social más grande
-              del país.
+              A través de la investigación cualitativa, las experiencias, reflexiones y experticia de los residentes que hacen su vida en Ciudad Verde se convierten en datos, hechos, e información clave para entender las dinámicas de un entorno de vivienda social y desarrollo urbano cuya escala no tiene precedentes.
             </p>
 
             <p>
-              Con demasiada frecuencia hablamos de lugares como Ciudad Verde
-              desde afuera–sin preguntarnos por la perspectiva de las personas
-              que los habitan. Este diseño de investigación buscó, literalmente,
-              darle una plataforma a las voces de los residentes.
+              Esta investigación fue posible gracias a la financiación y el apoyo del Departamento de Estudios y Planificación Urbana del Massachusetts Institute of Technology, el Center for Constructive Communication y Amarilo SAS.
             </p>
+
+            <div className="relative max-w-2xl mx-auto my-12">
+              <Image
+                src="/images/el-proyecto.jpeg"
+                alt="El proyecto de investigación participativa"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+              <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+            </div>
+
+            <div className="bg-cv-blue/10 p-6 rounded-lg">
+              <h3 className="text-xl font-bebas text-cv-purple/80 mb-4">
+                Equipo de Residentes Investigadores
+              </h3>
+              <div className="space-y-2 text-base">
+                <p><strong>Ana María Pérez Carrillo</strong>, investigadora principal, grupo coordinador.</p>
+                <p><strong>Fabián Rodríguez</strong>, residente investigador</p>
+                <p><strong>Geraldín Rubio</strong>, residente investigadora, grupo coordinador.</p>
+                <p><strong>Gina Paola Rojas</strong>, residente investigadora</p>
+                <p><strong>Jonathan Velasquez</strong>, residente investigador</p>
+                <p><strong>Johana Carrillo</strong>, residente investigadora</p>
+                <p><strong>María del Pilar de la Hoz</strong>, residente investigadora</p>
+                <p><strong>María Isabel Montero</strong>, residente investigadora</p>
+                <p><strong>Marina Catives</strong>, residente investigadora</p>
+                <p><strong>Paula Rubio</strong>, residente investigadora</p>
+                <p><strong>Rafael Ospino</strong>, residente investigador</p>
+                <p><strong>Sandra Rodríguez</strong>, apoyo operativo</p>
+                <p><strong>Sebastián Forero</strong>, asistente de investigación, equipo coordinador.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -142,10 +155,10 @@ export default function AboutUs() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bebas text-cv-pink mb-2">
-                88
+                114
               </div>
               <p className="text-sm text-black/60">Residentes participantes</p>
             </div>
@@ -153,13 +166,19 @@ export default function AboutUs() {
               <div className="text-4xl lg:text-5xl font-bebas text-cv-purple mb-2">
                 8
               </div>
-              <p className="text-sm text-black/60">Temas principales</p>
+              <p className="text-sm text-black/60">Temas principales identificados</p>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bebas text-cv-green mb-2">
                 2
               </div>
-              <p className="text-sm text-black/60">Metodologías empleadas</p>
+              <p className="text-sm text-black/60">Metodologías cualitativas empleadas</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl lg:text-5xl font-bebas text-cv-blue mb-2">
+                110
+              </div>
+              <p className="text-sm text-black/60">Fotorelatos</p>
             </div>
             <div className="text-center">
               <div className="text-4xl lg:text-5xl font-bebas text-cv-orange mb-2">
@@ -170,7 +189,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-lg text-black/60 leading-relaxed">
-            88 residentes de Ciudad Verde centraron sus experiencias y
+            114 residentes de Ciudad Verde centraron sus experiencias y
             perspectivas en 8 temas principales, creando un rico tapiz de voces
             que documenta la experiencia vivida en esta comunidad única.
           </p>
@@ -188,40 +207,15 @@ export default function AboutUs() {
 
           <div className="space-y-6 text-lg text-black/60 leading-relaxed mb-12">
             <p>
-              Esta investigación fue posible gracias al compromiso y dedicación
-              de los residentes investigadores de Ciudad Verde, quienes no solo
-              participaron en el diseño de la metodología, sino que también
-              lideraron las conversaciones y la recolección de testimonios de
-              sus vecinos y amigos.
+              Esta investigación fue posible gracias al compromiso y dedicación de los residentes investigadores de Ciudad Verde, quienes no solo participaron en el diseño de la metodología, sino que también lideraron las conversaciones y la recolección de testimonios de sus vecinos y amigos. Su conocimiento íntimo de la comunidad, combinado con sus ganas de aprender y aportar a un futuro mejor, fueron fundamentales para el éxito de este proyecto de investigación participativa.
             </p>
 
             <p>
-              Su conocimiento íntimo de la comunidad, combinado con su pasión
-              por documentar y compartir las experiencias de vida en Ciudad
-              Verde, fue fundamental para el éxito de este proyecto de
-              investigación participativa.
+              Agradecemos también a las organizaciones, líderes y colaboradores que apoyaron este ejercicio y a quienes apuesten, en el futuro, por co-crear, financiar y apoyar proyectos como el nuestro.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-white rounded-lg shadow-sm">
-              <div className="w-20 h-20 bg-cv-pink/20 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <svg
-                  className="w-10 h-10 text-cv-pink"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </div>
-              <h3 className="font-bebas text-lg text-black/70 mb-2">
-                Liderazgo Comunitario
-              </h3>
-              <p className="text-sm text-black/50">
-                Residentes que conocen profundamente su comunidad
-              </p>
-            </div>
-
             <div className="text-center p-6 bg-white rounded-lg shadow-sm">
               <div className="w-20 h-20 bg-cv-green/20 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <svg
@@ -255,6 +249,24 @@ export default function AboutUs() {
               </h3>
               <p className="text-sm text-black/50">
                 Testimonios reales de quienes viven la experiencia
+              </p>
+            </div>
+
+            <div className="text-center p-6 bg-white rounded-lg shadow-sm">
+              <div className="w-20 h-20 bg-cv-blue/20 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <svg
+                  className="w-10 h-10 text-cv-blue"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 className="font-bebas text-lg text-black/70 mb-2">
+                Análisis cualitativo colectivo
+              </h3>
+              <p className="text-sm text-black/50">
+                Trabajo conjunto para hacer sentido de la diversidad de voces y encontrar tendencias y hallazgos
               </p>
             </div>
           </div>
@@ -603,6 +615,49 @@ export default function AboutUs() {
             >
               Volver al Inicio
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors Section */}
+      <section className="px-6 lg:px-16 py-12">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="bg-cv-orange/30 inline-block px-3 py-2 mb-8">
+            <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">
+              Con el apoyo de
+            </h2>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 lg:gap-12">
+            <div className="flex items-center justify-center">
+              <Image
+                src="/logos/Logo-azul25 (1).png"
+                alt="MIT Logo"
+                width={120}
+                height={80}
+                className="h-16 w-auto object-contain"
+              />
+            </div>
+
+            <div className="flex items-center justify-center">
+              <Image
+                src="/logos/CorporacionResponderLogoColor (1).png"
+                alt="Corporación Responder Logo"
+                width={120}
+                height={80}
+                className="h-16 w-auto object-contain"
+              />
+            </div>
+
+            <div className="flex items-center justify-center">
+              <Image
+                src="/logos/amarilo-logo.png"
+                alt="Amarilo Logo"
+                width={120}
+                height={80}
+                className="h-16 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </section>

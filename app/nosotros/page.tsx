@@ -703,9 +703,9 @@ export default function AboutUs() {
               <Image
                 src="/logos/CorporacionResponderLogoColor (1).png"
                 alt="Corporación Responder Logo"
-                width={120}
-                height={80}
-                className="h-16 w-auto object-contain"
+                width={140}
+                height={90}
+                className="h-12 w-auto object-contain"
               />
             </div>
 

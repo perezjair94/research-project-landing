@@ -186,7 +186,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="px-6 lg:px-10">
         <div className="lg:pt-12">
           <div className="bg-cv-orange/30 inline-block rounded mb-8">
             <h3 className="text-2xl lg:text-3xl font-bebas text-cv-purple/50">

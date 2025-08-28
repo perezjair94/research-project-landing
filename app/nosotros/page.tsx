@@ -23,7 +23,7 @@ export default function AboutUs() {
         </div>
 
         {/* Main Image */}
-        <div className="relative max-w-4xl mx-auto mb-16">
+        <div className="relative max-w-4xl mx-auto lg:mb-16">
           <div className="aspect-video rounded-lg overflow-hidden relative">
             <Image
               src="/images/quienes-somos.jpeg"

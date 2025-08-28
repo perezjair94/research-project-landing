@@ -1020,6 +1020,7 @@ export default async function ThemeDetail({ params }: PageProps) {
         subThemes={theme.content.subThemes}
         testimonials={theme.content.testimonials}
         themeOverlayColor={theme.overlayColor}
+        themeId={theme.id}
       />
 
       {/* Navigation Section */}

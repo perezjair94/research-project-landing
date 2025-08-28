@@ -19,12 +19,14 @@ interface SubthemesSectionProps {
   subThemes: SubTheme[];
   testimonials: Testimonial[];
   themeOverlayColor: string;
+  themeId: string;
 }
 
 export default function SubthemesSection({
   subThemes,
   testimonials,
   themeOverlayColor,
+  themeId,
 }: SubthemesSectionProps) {
   // Estado para manejar el subtema activo
   const [activeSubthemeIndex, setActiveSubthemeIndex] = useState<number>(0);
@@ -39,37 +41,75 @@ export default function SubthemesSection({
   const defaultIframe = testimonials[0]?.link || null;
 
   // Función para asociar testimonios con subtemas basándose en el contenido y contexto
-  const getTestimonialSubthemeAssociation = (testimonial: Testimonial): string | null => {
+  const getTestimonialSubthemeAssociation = (
+    testimonial: Testimonial,
+  ): string | null => {
     const quote = testimonial.quote.toLowerCase();
-    
+
     // Mapeo basado en palabras clave específicas y contexto del testimonio
-    if (quote.includes('ruta') || quote.includes('conectividad') || quote.includes('terreros') && quote.includes('tiempo')) {
-      return 'oferta-rutas';
+    if (
+      quote.includes("ruta") ||
+      quote.includes("conectividad") ||
+      (quote.includes("terreros") && quote.includes("tiempo"))
+    ) {
+      return "oferta-rutas";
     }
-    if (quote.includes('pagar') || quote.includes('doble transporte') || quote.includes('subsidiar') || quote.includes('alcaldía')) {
-      return 'costos';
+    if (
+      quote.includes("pagar") ||
+      quote.includes("doble transporte") ||
+      quote.includes("subsidiar") ||
+      quote.includes("alcaldía")
+    ) {
+      return "costos";
     }
-    if (quote.includes('pirata') || quote.includes('insultaron') || quote.includes('asustara') || quote.includes('conductor')) {
-      return 'transporte-pirata';
+    if (
+      quote.includes("pirata") ||
+      quote.includes("insultaron") ||
+      quote.includes("asustara") ||
+      quote.includes("conductor")
+    ) {
+      return "transporte-pirata";
     }
-    if (quote.includes('conexi') || quote.includes('vial') || quote.includes('malla') || 
-        quote.includes('trayecto') || quote.includes('oportunidad') || quote.includes('transmilenio') || 
-        quote.includes('más vías') || quote.includes('rutas alternas')) {
-      return 'conectividad';
+    if (
+      quote.includes("conexi") ||
+      quote.includes("vial") ||
+      quote.includes("malla") ||
+      quote.includes("trayecto") ||
+      quote.includes("oportunidad") ||
+      quote.includes("transmilenio") ||
+      quote.includes("más vías") ||
+      quote.includes("rutas alternas")
+    ) {
+      return "conectividad";
     }
 
     // Mapeos específicos por contenido del subtema para otros temas
-    if (quote.includes('mascota') || quote.includes('perro') || quote.includes('vacunación')) {
-      return 'manejo-mascotas';
+    if (
+      quote.includes("mascota") ||
+      quote.includes("perro") ||
+      quote.includes("vacunación")
+    ) {
+      return "manejo-mascotas";
     }
-    if (quote.includes('ruido') || quote.includes('volumen') || quote.includes('multar')) {
-      return 'ruido-volumen';
+    if (
+      quote.includes("ruido") ||
+      quote.includes("volumen") ||
+      quote.includes("multar")
+    ) {
+      return "ruido-volumen";
     }
-    if (quote.includes('parque') || quote.includes('espacio') && quote.includes('común')) {
-      return 'espacios-comunes';
+    if (
+      quote.includes("parque") ||
+      (quote.includes("espacio") && quote.includes("común"))
+    ) {
+      return "espacios-comunes";
     }
-    if (quote.includes('conflicto') || quote.includes('comunicación') || quote.includes('amenaza')) {
-      return 'solucion-conflictos';
+    if (
+      quote.includes("conflicto") ||
+      quote.includes("comunicación") ||
+      quote.includes("amenaza")
+    ) {
+      return "solucion-conflictos";
     }
 
     return null;
@@ -80,26 +120,31 @@ export default function SubthemesSection({
     const currentSubtheme = subThemes[activeSubthemeIndex];
     if (!currentSubtheme) return [];
 
-    return testimonials.filter(t => 
-      t.name === authorName && 
-      getTestimonialSubthemeAssociation(t) === currentSubtheme.id
+    return testimonials.filter(
+      (t) =>
+        t.name === authorName &&
+        getTestimonialSubthemeAssociation(t) === currentSubtheme.id,
     );
   };
 
   // Función para obtener el testimonio correcto para un autor en el subtema actual
   const getTestimonialForAuthor = (authorName: string) => {
     // Primero intentar obtener testimonios del subtema actual
-    const subthemeTestimonials = getTestimonialsForAuthorInCurrentSubtheme(authorName);
-    
+    const subthemeTestimonials =
+      getTestimonialsForAuthorInCurrentSubtheme(authorName);
+
     if (subthemeTestimonials.length > 0) {
-      const currentIndex = selectedTestimonialIndex[`${authorName}_${subThemes[activeSubthemeIndex].id}`] || 0;
+      const currentIndex =
+        selectedTestimonialIndex[
+          `${authorName}_${subThemes[activeSubthemeIndex].id}`
+        ] || 0;
       return subthemeTestimonials[currentIndex] || subthemeTestimonials[0];
     }
-    
+
     // Si no hay testimonios específicos del subtema, usar todos los testimonios del autor
-    const allTestimonials = testimonials.filter(t => t.name === authorName);
+    const allTestimonials = testimonials.filter((t) => t.name === authorName);
     if (allTestimonials.length === 0) return null;
-    
+
     const currentIndex = selectedTestimonialIndex[authorName] || 0;
     return allTestimonials[currentIndex] || allTestimonials[0];
   };
@@ -193,33 +238,43 @@ export default function SubthemesSection({
             onClick={() => {
               if (testimonial?.link) {
                 // Obtener testimonios del autor en el subtema actual
-                const subthemeTestimonials = getTestimonialsForAuthorInCurrentSubtheme(name);
-                
+                const subthemeTestimonials =
+                  getTestimonialsForAuthorInCurrentSubtheme(name);
+
                 if (subthemeTestimonials.length > 1) {
                   // Rotar entre testimonios del subtema actual
                   const currentSubthemeKey = `${name}_${subThemes[activeSubthemeIndex].id}`;
-                  const currentIndex = selectedTestimonialIndex[currentSubthemeKey] || 0;
-                  const nextIndex = (currentIndex + 1) % subthemeTestimonials.length;
+                  const currentIndex =
+                    selectedTestimonialIndex[currentSubthemeKey] || 0;
+                  const nextIndex =
+                    (currentIndex + 1) % subthemeTestimonials.length;
                   setSelectedTestimonialIndex((prev) => ({
                     ...prev,
                     [currentSubthemeKey]: nextIndex,
                   }));
                 } else if (subthemeTestimonials.length === 0) {
                   // Si no hay testimonios en el subtema actual, buscar el subtema correcto
-                  const testimonialSubtheme = getTestimonialSubthemeAssociation(testimonial);
+                  const testimonialSubtheme =
+                    getTestimonialSubthemeAssociation(testimonial);
                   if (testimonialSubtheme) {
-                    const subthemeIndex = subThemes.findIndex(s => s.id === testimonialSubtheme);
+                    const subthemeIndex = subThemes.findIndex(
+                      (s) => s.id === testimonialSubtheme,
+                    );
                     if (subthemeIndex >= 0) {
                       setActiveSubthemeIndex(subthemeIndex);
                       // También rotar si hay múltiples en el nuevo subtema
-                      const newSubthemeTestimonials = testimonials.filter(t => 
-                        t.name === name && 
-                        getTestimonialSubthemeAssociation(t) === testimonialSubtheme
+                      const newSubthemeTestimonials = testimonials.filter(
+                        (t) =>
+                          t.name === name &&
+                          getTestimonialSubthemeAssociation(t) ===
+                            testimonialSubtheme,
                       );
                       if (newSubthemeTestimonials.length > 1) {
                         const currentSubthemeKey = `${name}_${testimonialSubtheme}`;
-                        const currentIndex = selectedTestimonialIndex[currentSubthemeKey] || 0;
-                        const nextIndex = (currentIndex + 1) % newSubthemeTestimonials.length;
+                        const currentIndex =
+                          selectedTestimonialIndex[currentSubthemeKey] || 0;
+                        const nextIndex =
+                          (currentIndex + 1) % newSubthemeTestimonials.length;
                         setSelectedTestimonialIndex((prev) => ({
                           ...prev,
                           [currentSubthemeKey]: nextIndex,
@@ -228,7 +283,7 @@ export default function SubthemesSection({
                     }
                   }
                 }
-                
+
                 // Establecer el iframe específico de la persona clickeada
                 setActiveIframe(testimonial.link);
               }
@@ -242,8 +297,6 @@ export default function SubthemesSection({
       return part;
     });
   };
-
-  console.log(getCurrentIframe());
 
   return (
     <section className="px-6 lg:px-16 py-12 bg-gray-50/30">
@@ -284,7 +337,7 @@ export default function SubthemesSection({
             ))}
           </div>
 
-          {/* Columna derecha - Iframe fijo */}
+          {/* Columna derecha - Iframe fijo e Ilustraciones */}
           <div className="lg:sticky lg:top-8 space-y-4">
             {/* Iframe del subtema activo */}
             {getCurrentIframe() && (
@@ -309,6 +362,23 @@ export default function SubthemesSection({
                 ></iframe>
               </div>
             )}
+
+            {/* Ilustraciones */}
+            <div className="space-y-4 mt-8">
+              {[1, 2, 3].map((num) => (
+                <div key={num} className="flex justify-center">
+                  <img 
+                    src={`/images/illustrations/${themeId}/illustration-${num}.png`} 
+                    alt={`Ilustración ${num}`} 
+                    className="max-w-full h-auto rounded-lg shadow-md"
+                    style={{ maxWidth: "250px" }}
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

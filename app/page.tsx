@@ -414,37 +414,32 @@ export default function Home() {
         <div className="space-y-5 lg:space-y-7 max-w-4xl mx-auto flex flex-col justify-center text-center items-center mb-6 lg:mb-0">
           <div className="bg-cv-green/30 p-2 lg:p-3 rounded-lg">
             <p className="text-sm lg:text-md text-black/60">
-              Una experiencia positiva que hayan tenido en su vida en Ciudad
-              Verde que relacionen con elementos de Ciudad Verde que consideres
-              que deben resaltarse sobre la urbanización&rdquo;
+              Una experiencia positiva que hayan tenido en su vida en Ciudad Verde que relacionen con elementos de Ciudad Verde que consideres que deben resaltarse sobre la urbanización.
             </p>
           </div>
 
           <div className="bg-cv-orange/30 p-2 lg:p-3 rounded-lg">
             <p className="text-sm lg:text-md text-black/60">
-              &ldquo;Una experiencia difícil, en las que vivir en Ciudad Verde
-              haya sido una fuente de tensión, conflicto o malestar.&rdquo;
+              Una experiencia difícil, en las que vivir en Ciudad Verde haya sido una fuente de tensión, conflicto o malestar.
             </p>
           </div>
 
           <div className="bg-cv-pink/30 p-2 lg:p-3 rounded-lg">
             <p className="text-sm lg:text-md text-black/60">
-              Una pregunta que harías sobre el futuro de Ciudad Verde y tu rol
-              en ese futuro&rdquo;
+              Una pregunta que harías sobre el futuro de Ciudad Verde y tu rol en ese futuro.
             </p>
           </div>
 
           <div className="flex flex-col lg:flex-row gap-5 lg:gap-8 items-center justify-center">
             <div className="bg-cv-yellow/30 p-2 lg:p-3 rounded-lg">
               <p className="text-sm lg:text-md text-black/60">
-                &ldquo;¿Qué experiencia compartida por alguien te resonó, y por
-                qué&rdquo;?
+                ¿Qué experiencia compartida por alguien te resonó, y por qué?
               </p>
             </div>
 
             <div className="bg-cv-blue/30 p-2 lg:p-3 rounded-lg">
               <p className="text-sm lg:text-md text-black/60">
-                qué se lleva de esta conversación.
+                ¿Qué te llevas de esta conversación?
               </p>
             </div>
           </div>

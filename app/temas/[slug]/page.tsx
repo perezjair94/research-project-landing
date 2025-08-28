@@ -844,7 +844,7 @@ export default async function ThemeDetail({ params }: PageProps) {
       </section>
 
       {/* Overview Section */}
-      <section className="px-6 lg:px-16 py-12">
+      <section className="px-6 lg:px-16 py-12 pb-0">
         <div className="max-w-4xl">
           <div className="bg-cv-orange/30 inline-block rounded mb-6">
             <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/70">

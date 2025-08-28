@@ -24,15 +24,15 @@ export default function AboutUs() {
 
         {/* Main Image */}
         <div className="relative max-w-4xl mx-auto lg:mb-16">
-          <div className="aspect-video rounded-lg overflow-hidden relative">
+          <div className="aspect-video rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/quienes-somos.jpeg"
               alt="Residentes investigadores de Ciudad Verde"
               width={1200}
               height={675}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover contrast-110 brightness-110"
             />
-            <div className="absolute inset-0 bg-cv-orange/20 rounded-lg"></div>
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
           </div>
         </div>
       </section>
@@ -128,13 +128,13 @@ export default function AboutUs() {
                 equipo coordinador.
               </p>
             </div>
-            <div className="relative h-80">
+            <div className="relative h-80 opacity-80">
               <Image
                 src="/images/el-proyecto.jpeg"
                 alt="El proyecto de investigación participativa"
                 width={800}
                 height={600}
-                className="w-full h-full object-cover rounded-lg"
+                className="w-full h-full object-cover rounded-lg contrast-110 brightness-110"
               />
               <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
             </div>
@@ -178,15 +178,15 @@ export default function AboutUs() {
               </div>
             </div>
 
-            <div className="relative">
+            <div className="relative opacity-80">
               <Image
                 src="/images/photo4.jpg"
                 alt="Metodología de investigación participativa"
                 width={500}
                 height={400}
-                className="w-full h-80 object-cover rounded-lg"
+                className="w-full h-80 object-cover rounded-lg contrast-110 brightness-110"
               />
-              <div className="absolute inset-0 bg-cv-orange/20 rounded-lg"></div>
+              <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
             </div>
           </div>
         </div>

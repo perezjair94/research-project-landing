@@ -13,7 +13,7 @@ export default function AboutUs() {
         <div className="text-center mb-12">
           <div className="bg-cv-orange/30 inline-block px-4 py-2 mb-6">
             <h1 className="text-4xl lg:text-6xl font-bebas text-cv-purple/70">
-              Nosotros
+              ¿Quiénes somos?
             </h1>
           </div>
           <p className="text-xl lg:text-2xl text-black/60 max-w-2xl mx-auto leading-relaxed">

@@ -92,37 +92,18 @@ export default function ThemeSelector() {
             </h3>
           </div>
 
-          {/* Subtopics arranged in a circle around the main theme */}
-          <div className={`relative ${selectedTheme.subthemes.length > 4 
-            ? 'w-80 h-80 md:w-96 md:h-96 lg:w-[420px] lg:h-[420px]' 
-            : 'w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80'}`}>
-            {selectedTheme.subthemes.map((subtheme, index) => {
-              const angle =
-                (index / selectedTheme.subthemes.length) * 2 * Math.PI;
-              // Aumentar radio para temas con más de 4 subtemas
-              const radius = selectedTheme.subthemes.length > 4 ? 120 : 80;
-              const x = Math.cos(angle) * radius;
-              const y = Math.sin(angle) * radius;
-
-              return (
-                <div
-                  key={subtheme.id}
-                  className="absolute bg-white rounded-full w-24 h-24 sm:w-24 sm:h-24 md:w-24 md:h-24 lg:w-28 lg:h-28 flex flex-col items-center justify-center"
-                  style={{
-                    left: "50%",
-                    top: "50%",
-                    transform: `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`,
-                  }}
-                >
-                  <span className="text-xs sm:text-xs md:text-xs lg:text-xs font-semibold text-center px-1 sm:px-1 md:px-2 text-black/30">
-                    {subtheme.title}
-                  </span>
-                  <span className="text-[10px] sm:text-[10px] md:text-[10px] lg:text-xs text-black/30 mt-1">
-                    ({subtheme.highlights} testimonios)
-                  </span>
-                </div>
-              );
-            })}
+          {/* Subtopics displayed as a simple list */}
+          <div className="max-w-md mx-auto space-y-3">
+            {selectedTheme.subthemes.map((subtheme, index) => (
+              <div
+                key={subtheme.id}
+                className="bg-white/80 backdrop-blur-sm rounded-lg px-4 py-3 shadow-sm"
+              >
+                <h4 className="text-sm font-semibold text-black/70 text-center">
+                  {subtheme.title}
+                </h4>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -10,14 +10,46 @@ interface Theme {
 }
 
 const themes: Theme[] = [
-  { id: "convivencia", title: "Convivencia", description: "Vida en comunidad y relaciones vecinales" },
-  { id: "transporte", title: "Transporte", description: "Movilidad y conectividad" },
-  { id: "espacio-publico", title: "Espacio Público", description: "Parques, plazas y áreas comunes" },
-  { id: "seguridad", title: "Seguridad", description: "Percepción de seguridad" },
-  { id: "grupos-poblacionales", title: "Grupos poblacionales", description: "Diversidad demográfica" },
-  { id: "calidad-de-vida", title: "Calidad de Vida", description: "Bienestar general" },
-  { id: "gobernanza", title: "Gobernanza", description: "Participación ciudadana" },
-  { id: "infraestructura", title: "Infraestructura", description: "Servicios públicos" },
+  {
+    id: "convivencia",
+    title: "Convivencia",
+    description: "Vida en comunidad y relaciones vecinales",
+  },
+  {
+    id: "transporte",
+    title: "Transporte",
+    description: "Movilidad y conectividad",
+  },
+  {
+    id: "espacio-publico",
+    title: "Espacio Público",
+    description: "Parques, plazas y áreas comunes",
+  },
+  {
+    id: "seguridad",
+    title: "Seguridad",
+    description: "Percepción de seguridad",
+  },
+  {
+    id: "grupos-poblacionales",
+    title: "Grupos poblacionales",
+    description: "Diversidad demográfica",
+  },
+  {
+    id: "calidad-de-vida",
+    title: "Calidad de Vida",
+    description: "Bienestar general",
+  },
+  {
+    id: "gobernanza",
+    title: "Gobernanza",
+    description: "Participación ciudadana",
+  },
+  {
+    id: "infraestructura",
+    title: "Infraestructura",
+    description: "Servicios públicos",
+  },
 ];
 
 interface NavigationProps {
@@ -89,7 +121,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
           >
             Inicio
           </Link>
-          
+
           <div
             className="relative"
             onMouseEnter={handleMouseEnter}
@@ -124,7 +156,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
                     8 temas principales identificados por los residentes
                   </p>
                 </div>
-                
+
                 <div className="grid grid-cols-1 gap-2">
                   {themes.map((theme) => (
                     <Link
@@ -143,7 +175,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
                     </Link>
                   ))}
                 </div>
-                
+
                 <div className="mt-3 pt-3 border-t border-gray-100">
                   <Link
                     href="/temas"
@@ -155,7 +187,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
               </div>
             </div>
           </div>
-          
+
           <Link
             href="/nosotros"
             className={`font-bold text-lg lg:text-xl transition-colors ${
@@ -164,7 +196,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
                 : "text-black/30 hover:text-cv-pink/80"
             }`}
           >
-            Nosotros
+            ¿Quiénes somos?
           </Link>
         </nav>
 
@@ -194,7 +226,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="lg:hidden fixed inset-0 bg-black/50 z-40"
           onClick={closeMobileMenu}
         />
@@ -285,7 +317,9 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
               {/* Themes Submenu */}
               <div
                 className={`overflow-hidden transition-all duration-300 ${
-                  isThemesExpanded ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  isThemesExpanded
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
                 }`}
               >
                 <div className="ml-4 mt-2 space-y-2">
@@ -317,7 +351,7 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
                   : "text-black/70 hover:text-cv-pink hover:bg-cv-pink/5"
               }`}
             >
-              Nosotros
+              ¿Quiénes somos?
             </Link>
           </div>
         </div>
@@ -325,3 +359,4 @@ export default function Navigation({ currentPage = "home" }: NavigationProps) {
     </>
   );
 }
+

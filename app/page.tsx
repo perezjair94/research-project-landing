@@ -145,7 +145,8 @@ export default function Home() {
         {/* Methodology Subtitle */}
         <div className="text-center mb-8">
           <p className="text-lg lg:text-xl text-black/70 font-medium leading-relaxed max-w-3xl mx-auto">
-            El diseño de investigación se enfocó en dos metodologías de recolección de datos cualitativos.
+            El diseño de investigación se enfocó en dos metodologías de
+            recolección de datos cualitativos.
           </p>
         </div>
       </section>
@@ -185,66 +186,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Photo Gallery Section */}
-      <section className="px-6 lg:px-10 lg:py-12">
-        <div className="grid lg:grid-cols-2 gap-8 mb-8">
-          <div className="w-full h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
-            <Image
-              src="/images/photo1.jpg"
-              alt="Ciudad Verde photo 1"
-              width={1600}
-              height={900}
-              className="w-full h-full object-cover contrast-125 brightness-125"
-            />
-            <div className="absolute inset-0 bg-cv-yellow/20 rounded-lg"></div>
-          </div>
-
-          <div className="w-full h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
-            <Image
-              src="/images/photo4.jpg"
-              alt="Ciudad Verde photo 5"
-              width={2016}
-              height={1512}
-              className="w-full h-full object-cover contrast-125 brightness-125"
-            />
-            <div className="absolute inset-0 bg-cv-blue/20 rounded-lg"></div>
-          </div>
-        </div>
-
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
-          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
-            <Image
-              src="/images/photo2.jpg"
-              alt="Ciudad Verde photo 2"
-              width={2016}
-              height={1134}
-              className="w-full h-full object-cover contrast-125 brightness-125"
-            />
-            <div className="absolute inset-0 bg-cv-pink/20 rounded-lg"></div>
-          </div>
-          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-70 relative">
-            <Image
-              src="/images/photo1.jpg"
-              alt="Ciudad Verde photo 3"
-              width={1600}
-              height={900}
-              className="w-full h-full object-cover contrast-125 brightness-125"
-            />
-            <div className="absolute inset-0 bg-cv-purple/20 rounded-lg"></div>
-          </div>
-          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
-            <Image
-              src="/images/photo5.jpg"
-              alt="Ciudad Verde photo 4"
-              width={1824}
-              height={1368}
-              className="w-full h-full object-cover contrast-125 brightness-125"
-            />
-            <div className="absolute inset-0 bg-cv-orange/20 rounded-lg"></div>
-          </div>
-        </div>
-
+      <section>
         <div className="lg:pt-12">
           <div className="bg-cv-orange/30 inline-block rounded mb-8">
             <h3 className="text-2xl lg:text-3xl font-bebas text-cv-purple/50">
@@ -262,6 +204,64 @@ export default function Home() {
             los habitantes a la hora de reflexionar sobre la experiencia de vida
             que han tenido en Ciudad Verde.
           </p>
+        </div>
+
+        {/* Fotorelatos Examples */}
+        <div className="grid lg:grid-cols-2 gap-8 mb-8 mt-8">
+          <div className="w-full h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
+            <Image
+              src="/images/Fotografia1_Geraldin_rafael (1).jpeg"
+              alt="Fotorelato por Geraldín y Rafael"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover contrast-110 brightness-110"
+            />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+          </div>
+
+          <div className="w-full h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
+            <Image
+              src="/images/Fotografia2_Geovanny_Rafael.jpeg"
+              alt="Fotorelato por Geovanny y Rafael"
+              width={600}
+              height={400}
+              className="w-full h-full object-cover contrast-110 brightness-110"
+            />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+          </div>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
+            <Image
+              src="/images/Fotografia3_Esmeralda_Rafael.jpeg"
+              alt="Fotorelato por Esmeralda y Rafael"
+              width={400}
+              height={400}
+              className="w-full h-full object-cover contrast-110 brightness-110"
+            />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+          </div>
+          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-70 relative">
+            <Image
+              src="/images/Fotografia5_Geraldin_rafael.jpeg"
+              alt="Fotorelato por Geraldín y Rafael"
+              width={400}
+              height={400}
+              className="w-full h-full object-cover contrast-110 brightness-110"
+            />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+          </div>
+          <div className="h-60 lg:h-80 rounded-lg overflow-hidden opacity-80 relative">
+            <Image
+              src="/images/Fotografia1_Oscar Rodriguez_Geral Rubio.jpg"
+              alt="Fotorelato por Oscar Rodríguez y Geral Rubio"
+              width={400}
+              height={400}
+              className="w-full h-full object-cover contrast-110 brightness-110"
+            />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
+          </div>
         </div>
       </section>
 

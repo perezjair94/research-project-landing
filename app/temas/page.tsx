@@ -83,8 +83,8 @@ export default function Themes() {
 
       {/* Hero Section with background */}
       <section className="relative">
-        <div className="bg-neutral-50 px-6 py-10 lg:px-16 lg:py-2 flex gap-20 items-center justify-between">
-          <div className="relative z-10">
+        <div className="bg-neutral-50 px-6 py-10 lg:px-16 lg:py-12 flex flex-col lg:flex-row gap-8 lg:gap-20 items-center justify-between">
+          <div className="relative z-10 flex-1">
             <h1 className="text-4xl lg:text-5xl font-bebas text-cv-purple/80 mb-6">
               Temas
             </h1>
@@ -98,7 +98,7 @@ export default function Themes() {
             </p>
           </div>
           {/* Decorative Image */}
-          <div className="w-[346px] h-[346px] hidden lg:block">
+          <div className="w-[250px] h-[250px] lg:w-[346px] lg:h-[346px] flex-shrink-0">
             <Image
               src="/images/themes-hero-image.png"
               alt="Decorative illustration"

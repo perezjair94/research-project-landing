@@ -104,41 +104,45 @@ export default function Home() {
       {/* Workshop Photos */}
       <section className="px-6 lg:px-10 py-8">
         <div className="grid grid-cols-2 gap-4 mb-8">
-          <div className="aspect-[16/9] rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/taller1.jpg"
               alt="Taller de investigación participativa 1"
               width={500}
               height={300}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover contrast-110 brightness-110"
             />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
           </div>
-          <div className="aspect-[16/9] rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/taller2.jpg"
               alt="Taller de investigación participativa 2"
               width={500}
               height={300}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover contrast-110 brightness-110"
             />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
           </div>
-          <div className="aspect-[16/9] rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/taller3.jpg"
               alt="Taller de investigación participativa 3"
               width={500}
               height={300}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover contrast-110 brightness-110"
             />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
           </div>
-          <div className="aspect-[16/9] rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden opacity-80 relative">
             <Image
               src="/images/taller4.jpg"
               alt="Taller de investigación participativa 4"
               width={500}
               height={300}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover contrast-110 brightness-110"
             />
+            <div className="absolute inset-0 bg-cv-orange/10 rounded-lg"></div>
           </div>
         </div>
 

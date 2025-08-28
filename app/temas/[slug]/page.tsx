@@ -789,9 +789,6 @@ export default async function ThemeDetail({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Graphics Section */}
-      <GraphicsSection themeId={theme.id} />
-
       {/* Overview Section */}
       <section className="px-6 lg:px-16 py-12">
         <div className="max-w-4xl">
@@ -808,6 +805,9 @@ export default async function ThemeDetail({ params }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Graphics Section */}
+      <GraphicsSection themeId={theme.id} />
 
       {/* Subtemas Section */}
       <SubthemesSection

@@ -36,7 +36,7 @@ export default function Footer() {
         {/* Methodology Rights */}
         <div className="text-center">
           <p>
-            Los derechos de la metodología de "conversaciones cívicas" le
+            Los derechos de la metodología de &ldquo;conversaciones cívicas&rdquo; le
             pertenecen al <strong>Real Talk Network</strong>.
           </p>
         </div>

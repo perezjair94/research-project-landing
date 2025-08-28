@@ -142,17 +142,17 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Methodology Subtitle */}
-        <div className="text-center mb-8">
-          <p className="text-lg lg:text-xl text-black/70 font-medium leading-relaxed max-w-3xl mx-auto">
-            El diseño de investigación se enfocó en dos metodologías de
-            recolección de datos cualitativos.
-          </p>
-        </div>
       </section>
 
       {/* Content Sections */}
       <section className="px-6 lg:px-10 lg:py-12">
+        {/* Methodology Title */}
+        <div className="mb-8">
+          <h2 className="text-3xl lg:text-4xl font-bebas text-cv-purple/80 max-w-3xl">
+            El diseño de investigación se enfocó en dos metodologías de
+            recolección de datos cualitativos.
+          </h2>
+        </div>
         <div className="grid lg:grid-cols-5 lg:gap-20 items-center mb-12 lg:mb-0">
           <div className="space-y-6 lg:col-span-3 order-2">
             <div className="bg-cv-orange/30 inline-block p-1 rounded">

@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="px-6 lg:px-10 py-8 border-t border-neutral-100">
       <div className="max-w-5xl mx-auto">
         {/* Main Content Grid */}
-        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 text-xs text-black/50 leading-relaxed">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-24 text-xs text-black/50 leading-relaxed">
           {/* Left Column - Main Information */}
           <div className="space-y-6">
             {/* Copyright Notice */}

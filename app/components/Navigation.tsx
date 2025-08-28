@@ -28,12 +28,12 @@ const themes: Theme[] = [
   {
     id: "seguridad",
     title: "Seguridad",
-    description: "Percepción de seguridad",
+    description: "Experiencias y percepciones de seguridad",
   },
   {
     id: "grupos-poblacionales",
     title: "Grupos poblacionales",
-    description: "Diversidad demográfica",
+    description: "Necesidades y prioridades de diferentes grupos de residentes",
   },
   {
     id: "calidad-de-vida",
@@ -43,7 +43,7 @@ const themes: Theme[] = [
   {
     id: "gobernanza",
     title: "Gobernanza",
-    description: "Participación ciudadana",
+    description: "Responsabilidad, articulación y gerencia del territorio",
   },
   {
     id: "infraestructura",

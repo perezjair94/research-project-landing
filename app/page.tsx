@@ -103,39 +103,39 @@ export default function Home() {
 
       {/* Workshop Photos */}
       <section className="px-6 lg:px-10 py-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <div className="aspect-square rounded-lg overflow-hidden">
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden">
             <Image
               src="/images/taller1.jpg"
               alt="Taller de investigación participativa 1"
-              width={300}
+              width={500}
               height={300}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="aspect-square rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden">
             <Image
               src="/images/taller2.jpg"
               alt="Taller de investigación participativa 2"
-              width={300}
+              width={500}
               height={300}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="aspect-square rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden">
             <Image
               src="/images/taller3.jpg"
               alt="Taller de investigación participativa 3"
-              width={300}
+              width={500}
               height={300}
               className="w-full h-full object-cover"
             />
           </div>
-          <div className="aspect-square rounded-lg overflow-hidden">
+          <div className="aspect-[16/9] rounded-lg overflow-hidden">
             <Image
               src="/images/taller4.jpg"
               alt="Taller de investigación participativa 4"
-              width={300}
+              width={500}
               height={300}
               className="w-full h-full object-cover"
             />

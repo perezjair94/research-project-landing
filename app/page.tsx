@@ -95,7 +95,7 @@ export default function Home() {
             muted
             playsInline
           >
-            <source src="/Video CV.mp4" type="video/mp4" />
+            <source src="https://tzhr4fusfxfwak0i.public.blob.vercel-storage.com/Video%20CV.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
         </div>

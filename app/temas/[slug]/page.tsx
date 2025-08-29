@@ -617,84 +617,309 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
   },
   {
     id: "grupos-poblacionales",
-    title: "Grupos Poblacionales",
+    title: "Poblaciones",
     description:
-      "Diversidad demográfica y necesidades específicas de diferentes grupos",
+      "Experiencias, expectativas y sueños de los diferentes grupos poblacionales dentro de la comunidad citaverdina",
     image: "/images/photo1.jpg",
     bgColor: "bg-cv-orange/10",
     overlayColor: "bg-cv-orange/10",
     content: {
       overview:
-        "Ciudad Verde alberga una gran diversidad de grupos poblacionales, cada uno con necesidades y perspectivas únicas sobre la vida en la ciudadela.",
+        "La población de Ciudad Verde es una amalgama de personas de diversas edades, regiones de orígen, e incluso nacionalidades. Las experiencias, expectativas y sueños en torno a la ciudadela de estos diferentes grupos poblacionales son igualmente diversas. Este tema busca acoger los testimonios, preocupaciones y sueños relacionados con poblaciones específicas dentro de la comunidad citaverdina. De esta manera se puede entender de manera más profunda el impacto que tiene, o puede llegar a tener, hacer la vida en Ciudad Verde para las infancias, los jóvenes, los adultos mayores y las familias.\n\nLos testimonios en torno a este tema evidencian la falta de infraestructura, equipamientos, espacios, programación y oportunidades enfocadas de manera intencional y estratégica en la niñez, los jóvenes, los adultos mayores, y el apoyo a las familias en sus labores de cuidado y sueños de vida. En general, los participantes contribuyeron con ideas y propuestas de equipamientos, programas y programación en sus reflexiones.",
       highlights: [
-        "Niños y jóvenes",
-        "Adultos mayores",
-        "Familias monoparentales",
-        "Personas con discapacidad",
+        "Acceso a educación y oportunidades para jóvenes",
+        "Espacios familiares y de encuentro",
+        "Programación para la tercera edad",
+        "Cuidado y desarrollo infantil",
       ],
       subThemes: [
         {
           id: "jovenes",
           title: "Jóvenes",
           content:
-            "La educación es uno de los principales temas de interés para este grupo poblacional. Los padres de familia mencionan la preocupación por el consumo de sustancias psicoactivas.",
+            "El acceso a educación, oportunidades laborales y espacios de orientación vocacional surgen como los principales temas de interés para este grupo poblacional. Al respecto, Marina menciona el interés de que sus hijos ingresen a la universidad; sin embargo la oferta pública en el municipio es limitada y la privada es costosa en relación con los ingresos de las familias. Por su parte, Maria Fernanda, Ricardo y Lidia, todos padres de familia, fueron enfáticos en expresar su preocupación por lo que perciben como una situación creciente de consumo problemático de sustancias por parte de muchos jóvenes en la ciudadela. Ricardo añade que los programas que busquen contrarrestar dicha problemática deben enfocarse en ofrecer a los jóvenes formación y herramientas útiles para su futuro, tanto económica, como personalmente.",
           image: "/images/photo1.jpg",
         },
         {
-          id: "familias",
-          title: "Familias",
+          id: "familia",
+          title: "Familia",
           content:
-            "El cerro de la Chucuita es uno de los lugares más emblemáticos de la ciudadela. Las familias ven en este ambiente natural un punto de encuentro desde donde se logra divisar la ciudadela.",
+            "Las nociones y significados en torno al concepto de la familia son centrales en las narrativas de los residentes de Ciudad Verde. La mayoría de las experiencias y reflexiones compartidas entorno a lo familiar estuvieron relacionadas con el disfrute–en familia– de los espacios comunes de la ciudadela en los días de descanso. El cerro de la Chucuita aparece como el epicentro del compartir familiar en la ciudadela. Blanca y su hija, Paola, por ejemplo, ven en este ambiente natural un punto de encuentro desde donde se logra divisar la ciudadela y tener experiencias familiares de primer nivel. Para Patricia, este espacio permite que la actividad física en familia también se promueva. Sin duda las zonas verdes de la ciudadela, en general, han sido escenarios de celebraciones, momentos especiales y construcción de memorias entorno a lo familiar, tal como lo afirma Maria Fernanda.",
           image: "/images/photo2.jpg",
+        },
+        {
+          id: "tercera-edad",
+          title: "Tercera edad",
+          content:
+            "Más del 30% de los participantes de este ejercicio son adultos mayores. Algunas personas como Patricia desean contar con un espacio cultural para la tercera edad que les permita aprender, encontrarse con sus pares y no tener que desplazarse lejos. En el caso de Teresa la mayor felicidad es quedarse en casa en su cuarto de oración. Por otro lado, a Rosa le encanta salir y participar en las actividades deportivas que ocurren en diversos sitios y compartir con grupos de la tercera edad. Finalmente, Armando siente que sus caminatas son interrumpidas por vendedores ambulantes y diversas personas que impiden continuar las actividades.",
+          image: "/images/photo3.jpg",
+        },
+        {
+          id: "ninos",
+          title: "Niños",
+          content:
+            "En la ciudadela en su gran mayoría viven familias con niños, se cuenta con Centros de Desarrollo Infantil - CDI del Bienestar Familiar que les permiten a las familias optimizar sus tiempos. Por ejemplo, July pudo emprender confeccionando uniformes para otros niños por la ayuda de los centros a sus labores cotidianas de cuidado. Otra habitante piensa con preocupación en este espacio, la foto de Liliana muestra su descontento por los graffities de la fachada.\n\nSin embargo, la capacidad de este Jardín y la de los privados no da abasto, por tal motivo Anyila le gustaría tener un rol de cuidadora con apoyo de la Alcaldía y colocar un jardín. Alternativa que para Andrea Paola es favorable al saber que generaría empleo a las mujeres.\n\nPor otro lado, los habitantes hablan de las oportunidades para la niñez. Cecilia ha tenido que pagar un 'platal' para inscribir al niño en un colegio privado. Otra mirada es la de Rebeca, quién está contenta con las actividades que realiza su hija. Estas actividades permiten reducir el sedentarismo y mejorar su estado anímico.",
+          image: "/images/photo4.jpg",
         },
       ],
       testimonials: [
         {
-          name: "Roberto Díaz",
+          name: "Marina",
           quote:
-            "La diversidad de nuestra comunidad es nuestra fortaleza. Aquí conviven personas de todas las edades y backgrounds.",
-          link: "https://embed.lvn.org/?hid=5259895",
+            "Menciona el interés de que sus hijos ingresen a la universidad; sin embargo la oferta pública en el municipio es limitada y la privada es costosa en relación con los ingresos de las familias.",
+          link: "https://embed.lvn.org/?hid=5259956",
+        },
+        {
+          name: "Maria Fernanda",
+          quote:
+            "Fue enfática en expresar su preocupación por lo que percibe como una situación creciente de consumo problemático de sustancias por parte de muchos jóvenes en la ciudadela.",
+          link: "https://embed.lvn.org/?hid=5259961",
+        },
+        {
+          name: "Ricardo",
+          quote:
+            "Fue enfático en expresar su preocupación por el consumo problemático de sustancias. Añade que los programas deben enfocarse en ofrecer a los jóvenes formación y herramientas útiles para su futuro.",
+          link: "https://embed.lvn.org/?hid=5259931",
+        },
+        {
+          name: "Lidia",
+          quote:
+            "Fue enfática en expresar su preocupación por lo que percibe como una situación creciente de consumo problemático de sustancias por parte de muchos jóvenes en la ciudadela.",
+          link: "https://embed.lvn.org/?hid=5259896",
+        },
+        {
+          name: "Blanca",
+          quote:
+            "Ve en el cerro de la Chucuita un ambiente natural y punto de encuentro desde donde se logra divisar la ciudadela y tener experiencias familiares de primer nivel.",
+          link: "https://embed.lvn.org/?hid=5259777",
+        },
+        {
+          name: "Paola",
+          quote:
+            "Ve en el cerro de la Chucuita un ambiente natural y punto de encuentro desde donde se logra divisar la ciudadela y tener experiencias familiares de primer nivel.",
+          link: "https://embed.lvn.org/?hid=5260878",
+        },
+        {
+          name: "Patricia",
+          quote:
+            "Para ella, el cerro de la Chucuita permite que la actividad física en familia también se promueva.",
+          link: "https://embed.lvn.org/?hid=5260895",
+        },
+        {
+          name: "Maria Fernanda",
+          quote:
+            "Afirma que las zonas verdes de la ciudadela han sido escenarios de celebraciones, momentos especiales y construcción de memorias entorno a lo familiar.",
+          link: "https://embed.lvn.org/?hid=5259943",
+        },
+        {
+          name: "Patricia",
+          quote:
+            "Desea contar con un espacio cultural para la tercera edad que les permita aprender, encontrarse con sus pares y no tener que desplazarse lejos.",
+          link: "https://embed.lvn.org/?hid=5261148",
+        },
+        {
+          name: "Teresa",
+          quote:
+            "La mayor felicidad es quedarse en casa en su cuarto de oración.",
+          photoStoryUrl: "https://drive.google.com/file/d/1luuJnsQz8vPrTsGfmgLEbYWBivWlzVRP/view?usp=drive_link",
+          photoStoryContent: "En el caso de Teresa la mayor felicidad es quedarse en casa en su cuarto de oración como se ve en la foto."
+        },
+        {
+          name: "Rosa",
+          quote:
+            "Le encanta salir y participar en las actividades deportivas que ocurren en diversos sitios y compartir con grupos de la tercera edad.",
+          link: "https://embed.lvn.org/?hid=5263831",
+        },
+        {
+          name: "July",
+          quote:
+            "Pudo emprender confeccionando uniformes para otros niños por la ayuda de los centros a sus labores cotidianas de cuidado.",
+          link: "https://embed.lvn.org/?hid=5259801",
+        },
+        {
+          name: "Liliana",
+          quote:
+            "Muestra su descontento por los graffities de la fachada del CDI.",
+          photoStoryUrl: "https://drive.google.com/file/d/1akMttjLPr5EDf495-gxER0mpIWFFQLU0/view?usp=drive_link",
+          photoStoryContent: "La foto de Liliana muestra su descontento por los graffities de la fachada del Centro de Desarrollo Infantil."
+        },
+        {
+          name: "Anyila",
+          quote:
+            "Le gustaría tener un rol de cuidadora con apoyo de la Alcaldía y colocar un jardín.",
+          link: "https://embed.lvn.org/?hid=5263852",
+        },
+        {
+          name: "Andrea Paola",
+          quote:
+            "Ve favorable la alternativa de jardines privados al saber que generaría empleo a las mujeres.",
+          link: "https://embed.lvn.org/?hid=5263859",
+        },
+        {
+          name: "Cecilia",
+          quote:
+            "Ha tenido que pagar un 'platal' para inscribir al niño en un colegio privado.",
+          link: "https://embed.lvn.org/?hid=5263878",
+        },
+        {
+          name: "Rebeca",
+          quote:
+            "Está contenta con las actividades que realiza su hija. Estas actividades permiten reducir el sedentarismo y mejorar su estado anímico.",
+          link: "https://embed.lvn.org/?hid=5259927",
         },
       ],
     },
   },
   {
     id: "calidad-de-vida",
-    title: "Calidad de Vida",
-    description: "Bienestar general y satisfacción con la vida en Ciudad Verde",
+    title: "Calidad de vida",
+    description: "Engloba las percepciones y experiencias de los residentes sobre su bienestar general, satisfacción con la vida en Ciudad Verde, oportunidades de desarrollo personal y comunitario, y aspectos que contribuyen a una vida plena en la ciudadela.",
     image: "/images/photo5.jpg",
     bgColor: "bg-cv-yellow/10",
     overlayColor: "bg-cv-yellow/10",
     content: {
       overview:
-        "La calidad de vida en Ciudad Verde abarca múltiples aspectos del bienestar de los residentes, desde la salud y educación hasta las oportunidades de desarrollo personal y comunitario.",
+        "Venir a vivir en Ciudad Verde ha significado desde el inicio transformaciones de todo tipo para sus habitantes. Los testimonios y experiencias catalogados bajo este tema están relacionados con el impacto que esos cambios han tenido para la calidad de vida de las personas, para bien y para mal. Ahora bien, es fundamental anotar que la mayoría de estas reflexiones son positivas; el 74% de los relatos asociados a la calidad de vida son experiencias positivas. En este mismo sentido, el 23% de los relatos positivos en las conversaciones tuvieron que ver con la calidad de vida.\n\nEste tema recoge los testimonios que se refieren al impacto para el hogar de transicionar a vivir en Ciudad Verde, los beneficios y retos de obtener una vivienda propia, las ventajas y dificultades en torno a hacer comunidad que conlleva este tipo de vivienda, y las nociones generales de bienestar que compartieron los participantes. El principal factor de bienestar que se evidencia está relacionado con una mejora significativa en las condiciones urbanísticas, arquitectónicas y de servicios a la que accedieron los hogares al pasarse a vivir a la ciudadela. Sin embargo, acceder a estas condiciones mejoradas también ha significado una serie de costos económicos, sociales y de tiempo para los hogares que pueden afectar su calidad de vida y en definitiva producir presiones tales que cuestionen su capacidad de continuar habitando Ciudad Verde en el futuro.",
       highlights: [
-        "Acceso a servicios de salud",
-        "Oportunidades educativas",
-        "Calidad del aire y ambiente",
-        "Bienestar emocional y social",
+        "Transición a Ciudad Verde desde el lugar de origen",
+        "Costos de bienes y servicios públicos",
+        "Desarrollo del sentido de comunidad",
+        "Logro de vivienda propia y estabilidad habitacional",
+        "Bienestar general y oportunidades económicas",
       ],
       subThemes: [
         {
           id: "transicion-lugar-origen",
-          title: "Transición ciudad verde - antiguo lugar de origen",
+          title: "Transición a Ciudad Verde - antiguo lugar de origen",
           content:
-            "Llegar a Ciudad Verde para los residentes implicó un cambio en las condiciones de las viviendas, vecindarios y diario vivir. Adriana manifiesta sentirse a gusto por el acceso a infraestructura pública y nuevas oportunidades.",
+            "Llegar a Ciudad Verde para los residentes implicó un cambio en las condiciones de las viviendas, vecindarios y diario vivir. Por ejemplo, Adriana manifiesta sentirse a gusto por el acceso a infraestructura pública y nuevas oportunidades con mejor calidad para ella y su familia. Nidia comparte esta opinión; incluso, compara las condiciones de limpieza y uso del espacio público en Bogotá; en su perspectiva, a la ciudadela le va mucho mejor que a la gran ciudad. Estela comenta que para ella su relación con Ciudad Verde fue casi un flechazo, apenas vio un video de lo que ofrecía la ciudadela, quiso ir a hacer su vida allí.",
           image: "/images/photo1.jpg",
         },
         {
           id: "costos-bienes-servicios",
           title: "Costos de bienes y servicios",
           content:
-            "Las personas manifiestan que Ciudad Verde es un gran lugar para vivir, sin embargo los costos de los servicios y los alimentos ponen en aprieto a las familias, las cuales en su mayoría cuentan con recursos muy limitados.",
+            "Hay consenso entre los participantes en que Ciudad Verde es un gran lugar en donde vivir; sin embargo, los costos de los servicios y los alimentos ponen en aprieto a las familias, las cuales en su mayoría cuentan con recursos muy limitados, aún cuando en sus recibos figure que su estrato socioeconómico es 3. Samuel, Cecilia, Estela y Laura concuerdan en lo anterior. Laura por ejemplo menciona que el alza constante de los alimentos es una realidad constante y Cecilia indica que en Bogotá los alimentos son más baratos. Samuel también afirma que pese a ser pocos en su hogar el recibo del agua o el gas llegan con tarifas altas.",
+          image: "/images/photo2.jpg",
+        },
+        {
+          id: "sentido-comunidad",
+          title: "Sentido de comunidad",
+          content:
+            "Como ocurre en cualquier vecindario, y más en un lugar en el que todos llegan como nuevos, la construcción del sentido de comunidad es un proceso. En el caso de Ciudad Verde, Nathaly afirma que trabajar con el Comité de Convivencia y en el Consejo de Administración le ha permitido conocer a más personas y acercarse a la oferta de actividades de la ciudadela y todas las situaciones cotidianas. El espacio público, en especial las zonas verdes como la montaña es otro componente de la ciudadela que permite construir lazos y es un punto de encuentro y recarga de energía para todas y todos tal como lo dice Katherine. En contraste, para Luz Marina las basuras y las mascotas pueden ser un punto débil, alejando a vecinos y generando conflictos.",
+          image: "/images/photo3.jpg",
+        },
+        {
+          id: "vivienda-propia",
+          title: "Vivienda propia - estabilidad en vivienda",
+          content:
+            "Para muchos llegar a Ciudad Verde representa cumplir el sueño de tener una casita propia. Marina resalta el número de habitaciones, la vista y luminosidad de su hogar. Otras personas, como Ruby, afirman que la alegría por tener vivienda propia es incomparable. En torno a este subtema Samuel propone una idea interesante: Por qué no pensar en estrategias para apoyar a quienes viven en la ciudadela en arriendo para comprar el apartamento en el que viven; 'al final todos queremos eso, ¿no? Tener casita propia,' afirma.",
+          image: "/images/photo4.jpg",
+        },
+        {
+          id: "bienestar",
+          title: "Bienestar",
+          content:
+            "La mayoría de las reflexiones en cuanto al bienestar tienen que ver con las oportunidades económicas y laborales que la ciudadela ofrecer, o no ha logrado aún ofrecer a sus residentes. Luis afirma que se deben diversificar las actividades económicas, pues pareciera que Ciudad Verde fuera una ciudad dormitorio o un lugar con infraestructura buena pero con pocas oportunidades. Por su parte, Marta menciona que los precios de arrendamiento en la Galería son muy altos, por esta razón no alquilan y se fomentan las ventas ambulantes. July complementa que la vida de los vendedores ambulantes es compleja, más cuando no hay oportunidades y los vecinos se molestan por usar el espacio público sin tener en cuenta una mirada macro de la situación.",
+          image: "/images/photo5.jpg",
         },
       ],
       testimonials: [
         {
-          name: "Elena Vargas",
+          name: "Adriana",
           quote:
-            "Vivir aquí ha significado una mejora en nuestra calidad de vida. Tenemos acceso a servicios que antes no teníamos.",
-          link: "https://embed.lvn.org/?hid=5259896",
+            "Manifiesta sentirse a gusto por el acceso a infraestructura pública y nuevas oportunidades con mejor calidad para ella y su familia.",
+          link: "https://embed.lvn.org/?hid=5260880",
+        },
+        {
+          name: "Nidia",
+          quote:
+            "Compara las condiciones de limpieza y uso del espacio público en Bogotá; en su perspectiva, a la ciudadela le va mucho mejor que a la gran ciudad.",
+          link: "https://embed.lvn.org/?hid=5259911",
+        },
+        {
+          name: "Estela",
+          quote:
+            "Para ella su relación con Ciudad Verde fue casi un flechazo, apenas vio un video de lo que ofrecía la ciudadela, quiso ir a hacer su vida allí.",
+          link: "https://embed.lvn.org/?hid=5263872",
+        },
+        {
+          name: "Estela",
+          quote:
+            "Los costos de los servicios y los alimentos ponen en aprieto a las familias.",
+          link: "https://embed.lvn.org/?hid=5263880",
+        },
+        {
+          name: "Laura",
+          quote:
+            "El alza constante de los alimentos es una realidad constante.",
+          link: "https://embed.lvn.org/?hid=5263923",
+        },
+        {
+          name: "Cecilia",
+          quote:
+            "En Bogotá los alimentos son más baratos.",
+          link: "https://embed.lvn.org/?hid=5263876",
+        },
+        {
+          name: "Samuel",
+          quote:
+            "Pese a ser pocos en su hogar el recibo del agua o el gas llegan con tarifas altas.",
+          link: "https://embed.lvn.org/?hid=5263875",
+        },
+        {
+          name: "Nathaly",
+          quote:
+            "Trabajar con el Comité de Convivencia y en el Consejo de Administración le ha permitido conocer a más personas y acercarse a la oferta de actividades de la ciudadela.",
+          link: "https://embed.lvn.org/?hid=5260911",
+        },
+        {
+          name: "Katherine",
+          quote:
+            "El espacio público, en especial las zonas verdes como la montaña es un punto de encuentro y recarga de energía.",
+          link: "https://embed.lvn.org/?hid=5259778",
+        },
+        {
+          name: "Luz Marina",
+          quote:
+            "Las basuras y las mascotas pueden ser un punto débil, alejando a vecinos y generando conflictos.",
+          link: "https://embed.lvn.org/?hid=5259784",
+        },
+        {
+          name: "Marina",
+          quote:
+            "Resalta el número de habitaciones, la vista y luminosidad de su hogar.",
+          link: "https://embed.lvn.org/?hid=5263839",
+        },
+        {
+          name: "Ruby",
+          quote:
+            "La alegría por tener vivienda propia es incomparable.",
+          link: "https://embed.lvn.org/?hid=5259742",
+        },
+        {
+          name: "Samuel",
+          quote:
+            "Por qué no pensar en estrategias para apoyar a quienes viven en la ciudadela en arriendo para comprar el apartamento en el que viven; 'al final todos queremos eso, ¿no? Tener casita propia'.",
+          link: "https://embed.lvn.org/?hid=5263883",
+        },
+        {
+          name: "Luis",
+          quote:
+            "Se deben diversificar las actividades económicas, pues pareciera que Ciudad Verde fuera una ciudad dormitorio o un lugar con infraestructura buena pero con pocas oportunidades.",
+          link: "https://embed.lvn.org/?hid=5260919",
+        },
+        {
+          name: "Marta",
+          quote:
+            "Los precios de arrendamiento en la Galería son muy altos, por esta razón no alquilan y se fomentan las ventas ambulantes.",
+          link: "https://embed.lvn.org/?hid=5261144",
+        },
+        {
+          name: "July",
+          quote:
+            "La vida de los vendedores ambulantes es compleja, más cuando no hay oportunidades y los vecinos se molestan por usar el espacio público sin tener en cuenta una mirada macro de la situación.",
+          link: "https://embed.lvn.org/?hid=5259804",
         },
       ],
     },

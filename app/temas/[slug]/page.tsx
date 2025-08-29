@@ -29,6 +29,8 @@ interface ThemeData {
       quote: string;
       audio?: string;
       link?: string;
+      photoStoryUrl?: string;
+      photoStoryContent?: string;
     }[];
   };
 }

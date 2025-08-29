@@ -118,8 +118,10 @@ const themesData: ThemeData[] = [
           name: "Andrea",
           quote:
             "Comparte la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde.",
-          photoStoryUrl: "/images/fotorelatos/convivencia/Manejo de mascotas y animales de compañía/su fotorelato.jpg",
-          photoStoryContent: "Andrea comparte en su fotorelato la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde, evidenciando cómo las mascotas facilitan el encuentro e integración con la comunidad."
+          photoStoryUrl:
+            "/images/fotorelatos/convivencia/Manejo de mascotas y animales de compañía/su fotorelato.jpg",
+          photoStoryContent:
+            "Andrea comparte en su fotorelato la alegría que le da caminar en compañía de su perro mientras observa las actividades deportivas que se realizan en los parques de Ciudad Verde, evidenciando cómo las mascotas facilitan el encuentro e integración con la comunidad.",
         },
         {
           name: "John",
@@ -183,8 +185,8 @@ const themesData: ThemeData[] = [
           name: "María",
           quote:
             "Muestra espacios que la comunidad adecúa para los animales que habitan la calle con casas, comida y agua para ellos.",
-          photoStoryUrl: "**",
-          photoStoryContent: "María muestra en su fotorelato cómo la comunidad adecúa espacios para los animales que habitan la calle, proporcionándoles casas, comida y agua, evidenciando el compromiso comunitario con el bienestar animal. **"
+
+          link: "https://embed.lvn.org/?hid=5264016",
         },
         {
           name: "Elsa",
@@ -215,7 +217,8 @@ const themesData: ThemeData[] = [
           quote:
             "Opina que falta capacitar a los habitantes en Planes de Emergencias y Contingencias con la finalidad de prevenir incendios en espacios comunes.",
           photoStoryUrl: "**",
-          photoStoryContent: "Diana opina en su fotorelato que falta capacitar a los habitantes en Planes de Emergencias y Contingencias con la finalidad de prevenir incendios en espacios comunes, destacando la importancia de la preparación comunitaria ante emergencias. **"
+          photoStoryContent:
+            "Diana opina en su fotorelato que falta capacitar a los habitantes en Planes de Emergencias y Contingencias con la finalidad de prevenir incendios en espacios comunes, destacando la importancia de la preparación comunitaria ante emergencias. **",
         },
         {
           name: "Luz Marina",
@@ -341,7 +344,8 @@ const themesData: ThemeData[] = [
           quote:
             "Los habitantes pagan entre dos o más pasajes para cada trayecto, generando presiones muy altas en la economía de los hogares.",
           photoStoryUrl: "/images/fotorelatos/transporte/costos/María.jpeg",
-          photoStoryContent: "María documenta en su fotorelato la problemática de los costos de transporte, mostrando cómo los habitantes deben pagar múltiples pasajes para cada trayecto desde Ciudad Verde, generando presiones económicas significativas en los hogares."
+          photoStoryContent:
+            "María documenta en su fotorelato la problemática de los costos de transporte, mostrando cómo los habitantes deben pagar múltiples pasajes para cada trayecto desde Ciudad Verde, generando presiones económicas significativas en los hogares.",
         },
         {
           name: "Nubia",
@@ -377,8 +381,10 @@ const themesData: ThemeData[] = [
           name: "Oscar",
           quote:
             "Participó ante las autoridades municipales y del distrito capital impulsando procesos de mejora de la malla vial del tramo que conecta con Bosa.",
-          photoStoryUrl: "/images/fotorelatos/transporte/falta de conectividad/Oscar.jpg",
-          photoStoryContent: "Oscar participó ante las autoridades municipales y del distrito capital impulsando procesos de mejora de la malla vial del tramo que conecta con Bosa, tal como se puede observar en la foto, evidenciando la importancia de mejorar la conectividad vial para los residentes."
+          photoStoryUrl:
+            "/images/fotorelatos/transporte/falta de conectividad/Oscar.jpg",
+          photoStoryContent:
+            "Oscar participó ante las autoridades municipales y del distrito capital impulsando procesos de mejora de la malla vial del tramo que conecta con Bosa, tal como se puede observar en la foto, evidenciando la importancia de mejorar la conectividad vial para los residentes.",
         },
         {
           name: "Sandra",
@@ -476,41 +482,46 @@ const themesData: ThemeData[] = [
             "El parque de la lectura es mi lugar favorito, allí comparto un helado con mis hijos y juego con mi mascota.",
           audio: "espacio-publico-vicente.mp3",
           link: "https://embed.lvn.org/?hid=5259893",
-          photoStoryUrl: "/images/fotorelatos/ Espacio Público/Áreas verdes - parques/Vicente.jpg",
-          photoStoryContent: "Vicente comparte en su fotorelato que el parque de la lectura es su lugar favorito, donde disfruta compartiendo un helado con sus hijos y jugando con su mascota."
+          photoStoryUrl:
+            "/images/fotorelatos/ Espacio Público/Áreas verdes - parques/Vicente.jpg",
+          photoStoryContent:
+            "Vicente comparte en su fotorelato que el parque de la lectura es su lugar favorito, donde disfruta compartiendo un helado con sus hijos y jugando con su mascota.",
         },
         {
           name: "Jeovanny",
           quote:
             "Refuerza esta percepción a través de una fotografía tomada frente al Centro Comercial Prado Verde, en donde se observa cómo las macetas que fueron introducidas para disuadir a los vendedores son usadas, irónicamente, para ubicar productos de venta.",
-          photoStoryUrl: "/images/fotorelatos/ Espacio Público/Comercio Informal\n/Jeovanny.jpeg",
+          photoStoryUrl:
+            "/images/fotorelatos/ Espacio Público/Comercio Informal\n/Jeovanny.jpeg",
           photoStoryContent: `Subtema: Comercio Informal
 
 La presencia de vendedores informales en la ciudadela despierta distintas emociones entre los residentes. July manifiesta su preocupación al ver cómo este oficio es estigmatizado; cuenta que ha intentado conseguir un local formal, pero los altos costos la han llevado a continuar vendiendo en los andenes. Sandra coincide con esta apreciación y agrega que, ante la alta demanda, los centros comerciales no logran cubrir todas las necesidades de la comunidad, lo que hace que vender en el espacio público siga siendo una alternativa atractiva para muchos hogares.
 
-Otros habitantes, en cambio, expresan inconformidad frente a los impactos negativos que perciben que esta actividad genera en el espacio urbano. Edward menciona las dificultades que enfrenta al transitar con el coche de su bebé por andenes y ciclovías ocupadas, mientras que Jeovanny refuerza esta percepción a través de una fotografía tomada frente al Centro Comercial Prado Verde, en donde se observa cómo las macetas que fueron introducidas para disuadir a los vendedores son usadas, irónicamente, para ubicar productos de venta.`
+Otros habitantes, en cambio, expresan inconformidad frente a los impactos negativos que perciben que esta actividad genera en el espacio urbano. Edward menciona las dificultades que enfrenta al transitar con el coche de su bebé por andenes y ciclovías ocupadas, mientras que Jeovanny refuerza esta percepción a través de una fotografía tomada frente al Centro Comercial Prado Verde, en donde se observa cómo las macetas que fueron introducidas para disuadir a los vendedores son usadas, irónicamente, para ubicar productos de venta.`,
         },
         {
           name: "Liliana",
           quote:
             "Captura a un operador de aseo barriendo una calle, y nos comparte su emoción por ver que la limpieza es una prioridad en la ciudadela.",
-          photoStoryUrl: "/images/fotorelatos/ Espacio Público/Basuras/Liliana.jpg",
+          photoStoryUrl:
+            "/images/fotorelatos/ Espacio Público/Basuras/Liliana.jpg",
           photoStoryContent: `Subtema: Basuras
 
 La mayoría de participantes destacan las buenas condiciones de aseo de la ciudadela. Por ejemplo, en su fotorelato Liliana captura a un operador de aseo barriendo una calle, y nos comparte su emoción por ver que la limpieza es una prioridad en la ciudadela. Sin embargo, se destacan algunos retos importantes en esta materia.
 
-El fotorelato de Gilbert nos presenta la problemática de la disposición incorrecta de residuos y escombros que se generan en las obras de acabados y remodelaciones de los apartamentos. Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de basura que ve en las zonas comunes y la falta de cultura cívica de algunos de sus vecinos a la hora de arrojar basura a la calle.`
+El fotorelato de Gilbert nos presenta la problemática de la disposición incorrecta de residuos y escombros que se generan en las obras de acabados y remodelaciones de los apartamentos. Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de basura que ve en las zonas comunes y la falta de cultura cívica de algunos de sus vecinos a la hora de arrojar basura a la calle.`,
         },
         {
           name: "Gilbert",
           quote:
             "Nos presenta la problemática de la disposición incorrecta de residuos y escombros que se generan en las obras de acabados y remodelaciones de los apartamentos.",
-          photoStoryUrl: "/images/fotorelatos/ Espacio Público/Basuras/Gilbert.jpeg",
+          photoStoryUrl:
+            "/images/fotorelatos/ Espacio Público/Basuras/Gilbert.jpeg",
           photoStoryContent: `Subtema: Basuras
 
 El fotorelato de Gilbert nos presenta la problemática de la disposición incorrecta de residuos y escombros que se generan en las obras de acabados y remodelaciones de los apartamentos. Esta situación evidencia uno de los retos importantes que enfrenta la ciudadela en materia de aseo y manejo de residuos.
 
-Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de basura que ve en las zonas comunes y la falta de cultura cívica de algunos de sus vecinos a la hora de arrojar basura a la calle. Al ser preguntados por el futuro, muchos participantes arrojaron ideas relacionadas con mejorar esta problemática, como Conor, quien quisiera liderar la conformación de una dependencia de medio ambiente para dar talleres sobre separación en la fuente y educación ambiental.`
+Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de basura que ve en las zonas comunes y la falta de cultura cívica de algunos de sus vecinos a la hora de arrojar basura a la calle. Al ser preguntados por el futuro, muchos participantes arrojaron ideas relacionadas con mejorar esta problemática, como Conor, quien quisiera liderar la conformación de una dependencia de medio ambiente para dar talleres sobre separación en la fuente y educación ambiental.`,
         },
         {
           name: "July",
@@ -534,22 +545,28 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           name: "Julián",
           quote:
             "El solo caminar por los alrededores de la montaña y ver un show de motorizados lo hace visualizarse estudiando ingeniería mecánica.",
-          photoStoryUrl: "/images/fotorelatos/ Espacio Público/Áreas verdes - parques/Julián.jpeg",
-          photoStoryContent: "Julián comparte en su fotorelato cómo caminar por los alrededores de la montaña y ver un show de motorizados lo hace visualizarse estudiando ingeniería mecánica."
+          photoStoryUrl:
+            "/images/fotorelatos/ Espacio Público/Áreas verdes - parques/Julián.jpeg",
+          photoStoryContent:
+            "Julián comparte en su fotorelato cómo caminar por los alrededores de la montaña y ver un show de motorizados lo hace visualizarse estudiando ingeniería mecánica.",
         },
         {
           name: "Yeison",
           quote:
             "Le encanta participar en las actividades lúdicas que hacen las escuelas deportivas para las familias.",
-          photoStoryUrl: "/images/fotorelatos/ Espacio Público/Recreación, deporte, actividad física/Yeison.jpeg",
-          photoStoryContent: "Yeison documenta en su fotorelato su participación en las actividades lúdicas que realizan las escuelas deportivas para las familias en Ciudad Verde."
+          photoStoryUrl:
+            "/images/fotorelatos/ Espacio Público/Recreación, deporte, actividad física/Yeison.jpeg",
+          photoStoryContent:
+            "Yeison documenta en su fotorelato su participación en las actividades lúdicas que realizan las escuelas deportivas para las familias en Ciudad Verde.",
         },
         {
           name: "Karen",
           quote:
             "Su foto muestra el contraste entre urbanismo planificado y la naturaleza rural adyacente.",
-          photoStoryUrl: "/images/fotorelatos/ Espacio Público/Naturaleza/Karen.jpeg",
-          photoStoryContent: "Karen captura en su fotorelato el contraste entre el urbanismo planificado de Ciudad Verde y la naturaleza rural adyacente, mostrando la importancia del acceso a la naturaleza para los citoverdinos."
+          photoStoryUrl:
+            "/images/fotorelatos/ Espacio Público/Naturaleza/Karen.jpeg",
+          photoStoryContent:
+            "Karen captura en su fotorelato el contraste entre el urbanismo planificado de Ciudad Verde y la naturaleza rural adyacente, mostrando la importancia del acceso a la naturaleza para los citoverdinos.",
         },
         {
           name: "Rosa",
@@ -638,8 +655,10 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           name: "Teresa",
           quote:
             "Le genera dolor ver a niños y adolescentes de muy corta edad consumiendo en los parques de la ciudadela.",
-          photoStoryUrl: "/images/fotorelatos/Seguridad/Consumo problemático de sustancias/Teresa.jpeg",
-          photoStoryContent: "Teresa comparte en su fotorelato que le genera dolor ver a niños y adolescentes de muy corta edad consumiendo en los parques de la ciudadela."
+          photoStoryUrl:
+            "/images/fotorelatos/Seguridad/Consumo problemático de sustancias/Teresa.jpeg",
+          photoStoryContent:
+            "Teresa comparte en su fotorelato que le genera dolor ver a niños y adolescentes de muy corta edad consumiendo en los parques de la ciudadela.",
         },
         {
           name: "Rosa",
@@ -676,12 +695,12 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           quote:
             "Comparte cómo un vecino suyo fue robado al lado de su conjunto.",
           photoStoryUrl: "/images/fotorelatos/Seguridad/Robos/Julián.jpeg",
-          photoStoryContent: "Julián comparte en su fotorelato cómo un vecino suyo fue robado al lado de su conjunto, evidenciando los problemas de seguridad en las inmediaciones de los conjuntos residenciales."
+          photoStoryContent:
+            "Julián comparte en su fotorelato cómo un vecino suyo fue robado al lado de su conjunto, evidenciando los problemas de seguridad en las inmediaciones de los conjuntos residenciales.",
         },
         {
           name: "John",
-          quote:
-            "Manifiesta que desocupan los apartamentos y nadie dice nada.",
+          quote: "Manifiesta que desocupan los apartamentos y nadie dice nada.",
           link: "https://embed.lvn.org/?hid=5263922",
         },
         {
@@ -707,7 +726,8 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           quote:
             "Fue retenida violentamente junto con sus compañeros por un grupo de vendedores informales que pensaban que estaban vendiendo drogas.",
           photoStoryUrl: "/images/fotorelatos/Seguridad/Riñas/Nicol.jpg",
-          photoStoryContent: "Nicol comparte una foto del lugar en el que fue retenida violentamente junto con sus compañeros por un grupo de vendedores informales, quienes pensaban que estaban vendiendo drogas; luego de aclarar la confusión pudieron irse. Desde ese día procura no pasar por este parque."
+          photoStoryContent:
+            "Nicol comparte una foto del lugar en el que fue retenida violentamente junto con sus compañeros por un grupo de vendedores informales, quienes pensaban que estaban vendiendo drogas; luego de aclarar la confusión pudieron irse. Desde ese día procura no pasar por este parque.",
         },
         {
           name: "Conor",
@@ -720,7 +740,8 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           quote:
             "Expresa su angustia al pensar que sus hijos deben transitar por lugares fronterizos para llegar al conjunto sin acompañamiento policial.",
           photoStoryUrl: "/images/fotorelatos/Seguridad/Policía/Diana.jpg",
-          photoStoryContent: "Diana expresa por medio de su fotorelato su angustia al pensar que sus hijos deben transitar por estos lugares para llegar al conjunto sin un acompañamiento de la fuerza pública, lo cual le genera temor en ciertos horarios."
+          photoStoryContent:
+            "Diana expresa por medio de su fotorelato su angustia al pensar que sus hijos deben transitar por estos lugares para llegar al conjunto sin un acompañamiento de la fuerza pública, lo cual le genera temor en ciertos horarios.",
         },
         {
           name: "Jairo",
@@ -844,7 +865,8 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           quote:
             "Muestra el cuarto de oración de Teresa donde encuentra su mayor felicidad.",
           photoStoryUrl: "/images/fotorelatos/Poblaciones/Familia/foto.jpeg",
-          photoStoryContent: "En el caso de Teresa la mayor felicidad es quedarse en casa en su cuarto de oración como se ve en la foto."
+          photoStoryContent:
+            "En el caso de Teresa la mayor felicidad es quedarse en casa en su cuarto de oración como se ve en la foto.",
         },
         {
           name: "Rosa",
@@ -862,8 +884,10 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           name: "Liliana",
           quote:
             "Muestra su descontento por los graffities de la fachada del CDI.",
-          photoStoryUrl: "/images/fotorelatos/Poblaciones/Niños/la foto de Liliana.jpg",
-          photoStoryContent: "La foto de Liliana muestra su descontento por los graffities de la fachada del Centro de Desarrollo Infantil."
+          photoStoryUrl:
+            "/images/fotorelatos/Poblaciones/Niños/la foto de Liliana.jpg",
+          photoStoryContent:
+            "La foto de Liliana muestra su descontento por los graffities de la fachada del Centro de Desarrollo Infantil.",
         },
         {
           name: "Anyila",
@@ -895,7 +919,8 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
   {
     id: "calidad-de-vida",
     title: "Calidad de vida",
-    description: "Engloba las percepciones y experiencias de los residentes sobre su bienestar general, satisfacción con la vida en Ciudad Verde, oportunidades de desarrollo personal y comunitario, y aspectos que contribuyen a una vida plena en la ciudadela.",
+    description:
+      "Engloba las percepciones y experiencias de los residentes sobre su bienestar general, satisfacción con la vida en Ciudad Verde, oportunidades de desarrollo personal y comunitario, y aspectos que contribuyen a una vida plena en la ciudadela.",
     image: "/images/photo5.jpg",
     bgColor: "bg-cv-yellow/10",
     overlayColor: "bg-cv-yellow/10",
@@ -979,8 +1004,7 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
         },
         {
           name: "Cecilia",
-          quote:
-            "En Bogotá los alimentos son más baratos.",
+          quote: "En Bogotá los alimentos son más baratos.",
           link: "https://embed.lvn.org/?hid=5263876",
         },
         {
@@ -1015,8 +1039,7 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
         },
         {
           name: "Ruby",
-          quote:
-            "La alegría por tener vivienda propia es incomparable.",
+          quote: "La alegría por tener vivienda propia es incomparable.",
           link: "https://embed.lvn.org/?hid=5259742",
         },
         {
@@ -1068,7 +1091,8 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           title: "Gestión Institucional",
           content:
             "Los cambios que han percibido Katherine y July en la ciudadela los califican como un sentir de empoderamiento al ver las nuevas construcciones: el hospital Avidanti, la sede del Sena y la posible universidad. Este comportamiento hace que July se cuestione ¿Cuándo Amarilo entregue los conjuntos quien va dirigir la ciudadela? Y Oscar lo complementa con la foto y la pregunta ¿Cuál va ser el papel de la Agrupación Social Ciudad Verde en el futuro? Lo dice por los nuevos actores que quieren desempeñar esa figura, probablemente en el marco de la aparición de la JAC.\n\nOtros habitantes solicitan que las autoridades del municipio estén más presentes, como es el caso de Karen que quiere saber quien administra las bibliotecas que están junto al colegio Ciudad Verde, en varias ocasiones ha ido pero ha estado cerrado, tal como se aprecia en la foto. Ella tiene la esperanza que al abrirla Ciudad Verde se convierta en el referente cultural de Soacha y la zona metropolitana de Bogotá.\n\nA su vez, Marta y Conor desean tener la posibilidad de hablar con los funcionarios para llegar acuerdos; ella trataría el tema de bajar el valor de los arriendos de la galería y él indagaría sobre la forma de colocar una dependencia de medio ambiente con la finalidad de capacitar y ser una guía en el cuidado del territorio. Por el lado de Maria del Pilar les solicitaría que generarán un mecanismo para controlar la gestión de los Administradores de los conjuntos y Samuel hablaría para replicar esta actividad 'Investigación participativa de Ciudad Verde' con más actores del municipio.",
-          image: "/images/fotorelatos/Gobernanza/Gestión Institucional/Karen.png",
+          image:
+            "/images/fotorelatos/Gobernanza/Gestión Institucional/Karen.png",
         },
       ],
       testimonials: [
@@ -1100,8 +1124,10 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           name: "Karen",
           quote:
             "Quiero saber quien administra las bibliotecas que están junto al colegio Ciudad Verde, en varias ocasiones he ido pero ha estado cerrado. Tengo la esperanza que al abrirla Ciudad Verde se convierta en el referente cultural de Soacha.",
-          photoStoryUrl: "/images/fotorelatos/Gobernanza/Gestión Institucional/Karen.png",
-          photoStoryContent: "Karen documenta las bibliotecas cerradas junto al colegio Ciudad Verde, esperando que se conviertan en un referente cultural para la zona.",
+          photoStoryUrl:
+            "/images/fotorelatos/Gobernanza/Gestión Institucional/Karen.png",
+          photoStoryContent:
+            "Karen documenta las bibliotecas cerradas junto al colegio Ciudad Verde, esperando que se conviertan en un referente cultural para la zona.",
         },
         {
           name: "Marta",
@@ -1200,107 +1226,137 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
         },
         {
           name: "Argemiro",
-          quote: "Un participante con discapacidad y movilidad reducida, dice sentirse contento por poder moverse fácilmente por toda la ciudadela gracias a las rampas que le son de gran ayuda.",
+          quote:
+            "Un participante con discapacidad y movilidad reducida, dice sentirse contento por poder moverse fácilmente por toda la ciudadela gracias a las rampas que le son de gran ayuda.",
           link: "https://embed.lvn.org/?hid=5260879",
         },
         {
           name: "Luz Helena",
-          quote: "Ha llegado tarde a su trabajo por el tráfico generado por la gran cantidad de carros parqueados sobre las vías ya que los parqueaderos de los conjuntos son insuficientes.",
-          photoStoryUrl: "/images/fotorelatos/Infraestructura/Vías/Luz Helena.jpg",
-          photoStoryContent: "Luz Helena comparte su experiencia sobre el tráfico generado por carros parqueados en las vías debido a la insuficiencia de parqueaderos en los conjuntos."
+          quote:
+            "Ha llegado tarde a su trabajo por el tráfico generado por la gran cantidad de carros parqueados sobre las vías ya que los parqueaderos de los conjuntos son insuficientes.",
+          photoStoryUrl:
+            "/images/fotorelatos/Infraestructura/Vías/Luz Helena.jpg",
+          photoStoryContent:
+            "Luz Helena comparte su experiencia sobre el tráfico generado por carros parqueados en las vías debido a la insuficiencia de parqueaderos en los conjuntos.",
         },
         {
           name: "Adriana",
-          quote: "Se pregunta si en un futuro serán construidas más vías de acceso porque identifica que buena parte de los problemas de congestión están relacionados con la existencia de sólo dos puntos de entrada.",
+          quote:
+            "Se pregunta si en un futuro serán construidas más vías de acceso porque identifica que buena parte de los problemas de congestión están relacionados con la existencia de sólo dos puntos de entrada.",
           link: "https://embed.lvn.org/?hid=5260907",
         },
         {
           name: "Marina",
-          quote: "Comparten su preocupación por el creciente deterioro de las vías, en gran medida por el creciente tráfico pesado.",
+          quote:
+            "Comparten su preocupación por el creciente deterioro de las vías, en gran medida por el creciente tráfico pesado.",
           link: "https://embed.lvn.org/?hid=5263860",
         },
         {
           name: "July",
-          quote: "Comparten su preocupación por el creciente deterioro de las vías, en gran medida por el creciente tráfico pesado.",
+          quote:
+            "Comparten su preocupación por el creciente deterioro de las vías, en gran medida por el creciente tráfico pesado.",
           link: "https://embed.lvn.org/?hid=5259812",
         },
         {
           name: "Gilbert",
-          quote: "Captura el estado de la entrada principal de la ciudadela, donde las grietas comienzan a convertirse en huecos.",
-          photoStoryUrl: "/images/fotorelatos/Infraestructura/Vías/Gilbert.jpeg",
-          photoStoryContent: "Gilbert documenta en su fotorelato el deterioro de la entrada principal de la ciudadela, donde las grietas comienzan a convertirse en huecos, evidenciando la preocupación por el mantenimiento vial."
+          quote:
+            "Captura el estado de la entrada principal de la ciudadela, donde las grietas comienzan a convertirse en huecos.",
+          photoStoryUrl:
+            "/images/fotorelatos/Infraestructura/Vías/Gilbert.jpeg",
+          photoStoryContent:
+            "Gilbert documenta en su fotorelato el deterioro de la entrada principal de la ciudadela, donde las grietas comienzan a convertirse en huecos, evidenciando la preocupación por el mantenimiento vial.",
         },
         {
           name: "Yeison",
-          quote: "Le emociona saber que tiene acceso a servicios médicos a pocos metros de su casa.",
-          photoStoryUrl: "/images/fotorelatos/Infraestructura/Servicios de salud/Yeison.jpeg",
-          photoStoryContent: "Yeison comparte en su fotorelato su emoción por la llegada del Hospital Avidanti, destacando la importancia de tener servicios médicos a pocos metros de su casa."
+          quote:
+            "Le emociona saber que tiene acceso a servicios médicos a pocos metros de su casa.",
+          photoStoryUrl:
+            "/images/fotorelatos/Infraestructura/Servicios de salud/Yeison.jpeg",
+          photoStoryContent:
+            "Yeison comparte en su fotorelato su emoción por la llegada del Hospital Avidanti, destacando la importancia de tener servicios médicos a pocos metros de su casa.",
         },
         {
           name: "Ricardo",
-          quote: "Ve el beneficio de la calidad de vida para la comunidad; asimismo, comenta esperar que los servicios que se presenten allí sean tanto públicos como privados.",
+          quote:
+            "Ve el beneficio de la calidad de vida para la comunidad; asimismo, comenta esperar que los servicios que se presenten allí sean tanto públicos como privados.",
           link: "https://embed.lvn.org/?hid=5259932",
         },
         {
           name: "Luis",
-          quote: "Propone que se realicen jornadas de salud y sensibilización en los espacios públicos de la comunidad.",
+          quote:
+            "Propone que se realicen jornadas de salud y sensibilización en los espacios públicos de la comunidad.",
           link: "https://embed.lvn.org/?hid=5259896",
         },
         {
           name: "Cecilia",
-          quote: "Se ha visto obligada a pagar altos costos de matrícula para su nieto en un colegio privado. Comenta, también, que muchos niños se ven obligados a estudiar en colegios en otras zonas de Soacha y en la localidad de Bosa.",
+          quote:
+            "Se ha visto obligada a pagar altos costos de matrícula para su nieto en un colegio privado. Comenta, también, que muchos niños se ven obligados a estudiar en colegios en otras zonas de Soacha y en la localidad de Bosa.",
           link: "https://embed.lvn.org/?hid=5263878",
         },
         {
           name: "Lidia",
-          quote: "Aboga por la apertura de matrícula escolar para adultos, pues ha identificado que muchos de sus vecinos y conocidos quisieran terminar sus estudios.",
+          quote:
+            "Aboga por la apertura de matrícula escolar para adultos, pues ha identificado que muchos de sus vecinos y conocidos quisieran terminar sus estudios.",
           link: "https://embed.lvn.org/?hid=5259897",
         },
         {
           name: "Dairy",
-          quote: "La emociona la construcción de la sede del SENA pues afirma que los jóvenes de la ciudadela necesitan más oportunidades para salir adelante.",
-          photoStoryUrl: "/images/fotorelatos/Infraestructura/Educación/Dairy.jpeg",
-          photoStoryContent: "Dairy expresa en su fotorelato su emoción por la construcción de la sede del SENA, destacando la importancia de que los jóvenes de la ciudadela tengan más oportunidades para salir adelante."
+          quote:
+            "La emociona la construcción de la sede del SENA pues afirma que los jóvenes de la ciudadela necesitan más oportunidades para salir adelante.",
+          photoStoryUrl:
+            "/images/fotorelatos/Infraestructura/Educación/Dairy.jpeg",
+          photoStoryContent:
+            "Dairy expresa en su fotorelato su emoción por la construcción de la sede del SENA, destacando la importancia de que los jóvenes de la ciudadela tengan más oportunidades para salir adelante.",
         },
         {
           name: "Maria Fernanda",
-          quote: "Quien es docente, sueña con algún día ver tres o más universidades, ojalá públicas.",
+          quote:
+            "Quien es docente, sueña con algún día ver tres o más universidades, ojalá públicas.",
           link: "https://embed.lvn.org/?hid=5259957",
         },
         {
           name: "Mercedes",
-          quote: "Discute la importancia de una oferta educativa para personas con discapacidades.",
+          quote:
+            "Discute la importancia de una oferta educativa para personas con discapacidades.",
           link: "https://embed.lvn.org/?hid=5261146",
         },
         {
           name: "Lady",
-          quote: "Compartió la importancia de la buena iluminación en sus primeras impresiones positivas de la ciudadela.",
+          quote:
+            "Compartió la importancia de la buena iluminación en sus primeras impresiones positivas de la ciudadela.",
           link: "https://embed.lvn.org/?hid=5259802",
         },
         {
           name: "Gilbert",
-          quote: "Lo que más le gusta de vivir en Ciudad Verde es contar con una buena iluminación y farolas en buen estado, lo cual brinda seguridad a las personas que trabajan en la noche o llegan tarde a sus hogares.",
-          photoStoryUrl: "/images/fotorelatos/Infraestructura/Educación/Gilbert.jpeg",
-          photoStoryContent: "Gilbert comparte en su fotorelato una toma de la entrada a Ciudad Verde en la noche, destacando la buena iluminación y farolas en buen estado que brindan seguridad a las personas que trabajan en la noche o llegan tarde a sus hogares."
+          quote:
+            "Lo que más le gusta de vivir en Ciudad Verde es contar con una buena iluminación y farolas en buen estado, lo cual brinda seguridad a las personas que trabajan en la noche o llegan tarde a sus hogares.",
+          photoStoryUrl:
+            "/images/fotorelatos/Infraestructura/Educación/Gilbert.jpeg",
+          photoStoryContent:
+            "Gilbert comparte en su fotorelato una toma de la entrada a Ciudad Verde en la noche, destacando la buena iluminación y farolas en buen estado que brindan seguridad a las personas que trabajan en la noche o llegan tarde a sus hogares.",
         },
         {
           name: "Blanca",
-          quote: "Considera que falta iluminación en la ciudadela, pues las situaciones de inseguridad suelen suceder en zonas oscuras de parques y ciclorutas.",
+          quote:
+            "Considera que falta iluminación en la ciudadela, pues las situaciones de inseguridad suelen suceder en zonas oscuras de parques y ciclorutas.",
           link: "https://embed.lvn.org/?hid=5259781",
         },
         {
           name: "John",
-          quote: "Comparte su deseo de articularse con las entidades competentes para señalarles los lugares dentro de la ciudadela donde considera se debe aumentar la iluminación.",
+          quote:
+            "Comparte su deseo de articularse con las entidades competentes para señalarles los lugares dentro de la ciudadela donde considera se debe aumentar la iluminación.",
           link: "https://embed.lvn.org/?hid=5263851",
         },
         {
           name: "Samuel",
-          quote: "Afirma que él y las personas que conoce en la ciudadela son trabajadores que ganan un salario mínimo; al tener sus viviendas asignadas al estrato 3 los servicios llegan muy caros. En un mes puede llegar a pagar 95 mil por el gas y más de 100 mil por el agua.",
+          quote:
+            "Afirma que él y las personas que conoce en la ciudadela son trabajadores que ganan un salario mínimo; al tener sus viviendas asignadas al estrato 3 los servicios llegan muy caros. En un mes puede llegar a pagar 95 mil por el gas y más de 100 mil por el agua.",
           link: "https://embed.lvn.org/?hid=5263875",
         },
         {
           name: "Estela",
-          quote: "Hace una comparación con los costos de servicios en su antigua vivienda en Bogotá, afirma que aunque en la ciudadela 'se vive bonito' pagar los servicios es difícil.",
+          quote:
+            "Hace una comparación con los costos de servicios en su antigua vivienda en Bogotá, afirma que aunque en la ciudadela 'se vive bonito' pagar los servicios es difícil.",
           link: "https://embed.lvn.org/?hid=5328763",
         },
         {
@@ -1310,30 +1366,39 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
         },
         {
           name: "Liliana",
-          quote: "Considera que los servicios de aseo en la ciudadela son muy buenos y comparte el agrado que le produce ver que los operarios cuidan la ciudadela.",
-          photoStoryUrl: "/images/fotorelatos/Infraestructura/Servicios públicos domiciliarios/Liliana.jpg",
-          photoStoryContent: "Liliana comparte en su fotorelato el agrado que le produce ver que los operarios cuidan la ciudadela como si fuera de ellos, capturando a un operador de aseo trabajando en las calles."
+          quote:
+            "Considera que los servicios de aseo en la ciudadela son muy buenos y comparte el agrado que le produce ver que los operarios cuidan la ciudadela.",
+          photoStoryUrl:
+            "/images/fotorelatos/Infraestructura/Servicios públicos domiciliarios/Liliana.jpg",
+          photoStoryContent:
+            "Liliana comparte en su fotorelato el agrado que le produce ver que los operarios cuidan la ciudadela como si fuera de ellos, capturando a un operador de aseo trabajando en las calles.",
         },
         {
           name: "Sandra",
-          quote: "Quisiera ver una mayor cantidad y tipos de espacios comerciales en donde se pudieran encontrar supermercados de más bajos precios como un D1.",
+          quote:
+            "Quisiera ver una mayor cantidad y tipos de espacios comerciales en donde se pudieran encontrar supermercados de más bajos precios como un D1.",
           link: "https://embed.lvn.org/?hid=5259763",
         },
         {
           name: "Cecilia",
-          quote: "Quisiera ver una mayor cantidad y tipos de espacios comerciales.",
+          quote:
+            "Quisiera ver una mayor cantidad y tipos de espacios comerciales.",
           link: "https://embed.lvn.org/?hid=5263876",
         },
         {
           name: "Marta",
-          quote: "Realizan ventas en el espacio público como mecanismo de sustento para sus hogares y aseguran que los arriendos de la galería de comercio son muy elevados.",
+          quote:
+            "Realizan ventas en el espacio público como mecanismo de sustento para sus hogares y aseguran que los arriendos de la galería de comercio son muy elevados.",
           link: "https://embed.lvn.org/?hid=5261136",
         },
         {
           name: "Luz Mery",
-          quote: "En su fotorelato se retrata un espacio de comercio formal en desuso.",
-          photoStoryUrl: "/images/fotorelatos/Infraestructura/Comercio formal/Luz Mery.jpeg",
-          photoStoryContent: "El fotorelato de Luz Mery retrata un espacio de comercio formal en desuso, lo que podría explicarse por los sobrecostos de los arriendos."
+          quote:
+            "En su fotorelato se retrata un espacio de comercio formal en desuso.",
+          photoStoryUrl:
+            "/images/fotorelatos/Infraestructura/Comercio formal/Luz Mery.jpeg",
+          photoStoryContent:
+            "El fotorelato de Luz Mery retrata un espacio de comercio formal en desuso, lo que podría explicarse por los sobrecostos de los arriendos.",
         },
       ],
     },
@@ -1383,59 +1448,89 @@ export default async function ThemeDetail({ params }: PageProps) {
           >
             {/* Decorative Background Element */}
             <div className={`absolute inset-0 ${theme.bgColor} rounded-lg`}>
-              <div className="absolute inset-0" style={{ width: "783px", height: "174px", left: "192px", top: "24px" }}>
+              <div
+                className="absolute inset-0"
+                style={{
+                  width: "783px",
+                  height: "174px",
+                  left: "192px",
+                  top: "24px",
+                }}
+              >
                 {/* Circle 1 */}
-                <div 
+                <div
                   className="absolute"
-                  style={{ left: "148px", top: "0px", width: "75px", height: "75px" }}
+                  style={{
+                    left: "148px",
+                    top: "0px",
+                    width: "75px",
+                    height: "75px",
+                  }}
                 >
-                  <img 
-                    src="/images/decorative/decor-circle-1.png" 
-                    alt="" 
+                  <img
+                    src="/images/decorative/decor-circle-1.png"
+                    alt=""
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                
+
                 {/* Circle 2 */}
-                <div 
+                <div
                   className="absolute"
-                  style={{ left: "0px", top: "83px", width: "91px", height: "91px" }}
+                  style={{
+                    left: "0px",
+                    top: "83px",
+                    width: "91px",
+                    height: "91px",
+                  }}
                 >
-                  <img 
-                    src="/images/decorative/decor-circle-2.png" 
-                    alt="" 
+                  <img
+                    src="/images/decorative/decor-circle-2.png"
+                    alt=""
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                
+
                 {/* Circle 3 */}
-                <div 
+                <div
                   className="absolute"
-                  style={{ left: "611px", top: "92px", width: "74px", height: "74px" }}
+                  style={{
+                    left: "611px",
+                    top: "92px",
+                    width: "74px",
+                    height: "74px",
+                  }}
                 >
-                  <img 
-                    src="/images/decorative/decor-circle-3.png" 
-                    alt="" 
+                  <img
+                    src="/images/decorative/decor-circle-3.png"
+                    alt=""
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                
+
                 {/* Circle 4 */}
-                <div 
+                <div
                   className="absolute"
-                  style={{ left: "708px", top: "0px", width: "75px", height: "75px" }}
+                  style={{
+                    left: "708px",
+                    top: "0px",
+                    width: "75px",
+                    height: "75px",
+                  }}
                 >
-                  <img 
-                    src="/images/decorative/decor-circle-4.png" 
-                    alt="" 
+                  <img
+                    src="/images/decorative/decor-circle-4.png"
+                    alt=""
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
               </div>
             </div>
-            
+
             {/* Title */}
-            <h2 className="text-5xl font-bebas text-black/50 relative z-10">{theme.title}</h2>
+            <h2 className="text-5xl font-bebas text-black/50 relative z-10">
+              {theme.title}
+            </h2>
           </div>
         </div>
       </section>

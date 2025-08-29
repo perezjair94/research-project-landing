@@ -54,7 +54,7 @@ export default function PhotoStoryModal({
             <img
               src={imageUrl}
               alt={`Fotorelato de ${author}`}
-              className="w-full rounded-lg object-cover shadow-lg max-h-[400px]"
+              className="w-full rounded-lg object-cover shadow-lg max-h-[500px]"
             />
           </div>
         </div>

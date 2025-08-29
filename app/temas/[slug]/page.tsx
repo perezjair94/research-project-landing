@@ -651,7 +651,7 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           id: "tercera-edad",
           title: "Tercera edad",
           content:
-            "Más del 30% de los participantes de este ejercicio son adultos mayores. Algunas personas como Patricia desean contar con un espacio cultural para la tercera edad que les permita aprender, encontrarse con sus pares y no tener que desplazarse lejos. En el caso de Teresa la mayor felicidad es quedarse en casa en su cuarto de oración. Por otro lado, a Rosa le encanta salir y participar en las actividades deportivas que ocurren en diversos sitios y compartir con grupos de la tercera edad. Finalmente, Armando siente que sus caminatas son interrumpidas por vendedores ambulantes y diversas personas que impiden continuar las actividades.",
+            "Más del 30% de los participantes de este ejercicio son adultos mayores. Algunas personas como Patricia desean contar con un espacio cultural para la tercera edad que les permita aprender, encontrarse con sus pares y no tener que desplazarse lejos. En el caso de Teresa la mayor felicidad es quedarse en casa en su cuarto de oración como se ve en la foto. Por otro lado, a Rosa le encanta salir y participar en las actividades deportivas que ocurren en diversos sitios y compartir con grupos de la tercera edad. Finalmente, Armando siente que sus caminatas son interrumpidas por vendedores ambulantes y diversas personas que impiden continuar las actividades.",
           image: "/images/photo3.jpg",
         },
         {
@@ -718,10 +718,10 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           link: "https://embed.lvn.org/?hid=5261148",
         },
         {
-          name: "Teresa",
+          name: "foto",
           quote:
-            "La mayor felicidad es quedarse en casa en su cuarto de oración.",
-          photoStoryUrl: "https://drive.google.com/file/d/1luuJnsQz8vPrTsGfmgLEbYWBivWlzVRP/view?usp=drive_link",
+            "Muestra el cuarto de oración de Teresa donde encuentra su mayor felicidad.",
+          photoStoryUrl: "/images/fotorelatos/Poblaciones/Familia/foto.jpeg",
           photoStoryContent: "En el caso de Teresa la mayor felicidad es quedarse en casa en su cuarto de oración como se ve en la foto."
         },
         {
@@ -740,7 +740,7 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           name: "Liliana",
           quote:
             "Muestra su descontento por los graffities de la fachada del CDI.",
-          photoStoryUrl: "https://drive.google.com/file/d/1akMttjLPr5EDf495-gxER0mpIWFFQLU0/view?usp=drive_link",
+          photoStoryUrl: "/images/fotorelatos/Poblaciones/Niños/la foto de Liliana.jpg",
           photoStoryContent: "La foto de Liliana muestra su descontento por los graffities de la fachada del Centro de Desarrollo Infantil."
         },
         {
@@ -933,7 +933,7 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
     overlayColor: "bg-cv-teal/10",
     content: {
       overview:
-        "La gobernanza en Ciudad Verde involucra la participación activa de los residentes en las decisiones que afectan su comunidad y su relación con las instituciones locales.",
+        "La gobernanza hace referencia a los mecanismos formales e informales de gestión y organización del territorio por parte de los diversos actores presentes en el mismo entorno a la vida comunitaria y la resolución de problemáticas locales. Los testimonios y reflexiones agrupados en este tema comentan sobre la ambigüedad de responsables de las actividades administrativas del día a día de la ciudadela, así como la falta de capacidad o presencia de entidades del gobierno municipal, la policía, bomberos, entre otros.",
       highlights: [
         "Participación en juntas de acción comunal",
         "Relación con la administración local",
@@ -945,8 +945,8 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           id: "gestion-institucional",
           title: "Gestión Institucional",
           content:
-            "Ciudad Verde en la actualidad cuenta con dos figuras que protegen los intereses de los habitantes: la Corporación Agrupación Social Ciudad Verde y la Junta de Acción Comunal.",
-          image: "/images/photo1.jpg",
+            "Los cambios que han percibido Katherine y July en la ciudadela los califican como un sentir de empoderamiento al ver las nuevas construcciones: el hospital Avidanti, la sede del Sena y la posible universidad. Este comportamiento hace que July se cuestione ¿Cuándo Amarilo entregue los conjuntos quien va dirigir la ciudadela? Y Oscar lo complementa con la foto y la pregunta ¿Cuál va ser el papel de la Agrupación Social Ciudad Verde en el futuro? Lo dice por los nuevos actores que quieren desempeñar esa figura, probablemente en el marco de la aparición de la JAC.\n\nOtros habitantes solicitan que las autoridades del municipio estén más presentes, como es el caso de Karen que quiere saber quien administra las bibliotecas que están junto al colegio Ciudad Verde, en varias ocasiones ha ido pero ha estado cerrado, tal como se aprecia en la foto. Ella tiene la esperanza que al abrirla Ciudad Verde se convierta en el referente cultural de Soacha y la zona metropolitana de Bogotá.\n\nA su vez, Marta y Conor desean tener la posibilidad de hablar con los funcionarios para llegar acuerdos; ella trataría el tema de bajar el valor de los arriendos de la galería y él indagaría sobre la forma de colocar una dependencia de medio ambiente con la finalidad de capacitar y ser una guía en el cuidado del territorio. Por el lado de Maria del Pilar les solicitaría que generarán un mecanismo para controlar la gestión de los Administradores de los conjuntos y Samuel hablaría para replicar esta actividad 'Investigación participativa de Ciudad Verde' con más actores del municipio.",
+          image: "/images/fotorelatos/Gobernanza/Gestión Institucional/Karen.png",
         },
       ],
       testimonials: [
@@ -955,6 +955,55 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
           quote:
             "Es importante que nuestra voz sea escuchada. Participamos activamente en las decisiones que afectan nuestro barrio.",
           link: "https://embed.lvn.org/?hid=5259897",
+        },
+        {
+          name: "Katherine",
+          quote:
+            "Los cambios en la ciudadela los califico como un sentir de empoderamiento al ver las nuevas construcciones: el hospital Avidanti, la sede del Sena y la posible universidad.",
+          link: "https://app.lvn.org/highlight/5259787",
+        },
+        {
+          name: "July",
+          quote:
+            "¿Cuándo Amarilo entregue los conjuntos quien va dirigir la ciudadela?",
+          link: "https://app.lvn.org/highlight/5259809",
+        },
+        {
+          name: "Oscar",
+          quote:
+            "¿Cuál va ser el papel de la Agrupación Social Ciudad Verde en el futuro? Lo digo por los nuevos actores que quieren desempeñar esa figura, probablemente en el marco de la aparición de la JAC.",
+          link: "https://app.lvn.org/highlight/5259809",
+        },
+        {
+          name: "Karen",
+          quote:
+            "Quiero saber quien administra las bibliotecas que están junto al colegio Ciudad Verde, en varias ocasiones he ido pero ha estado cerrado. Tengo la esperanza que al abrirla Ciudad Verde se convierta en el referente cultural de Soacha.",
+          photoStoryUrl: "/images/fotorelatos/Gobernanza/Gestión Institucional/Karen.png",
+          photoStoryContent: "Karen documenta las bibliotecas cerradas junto al colegio Ciudad Verde, esperando que se conviertan en un referente cultural para la zona.",
+        },
+        {
+          name: "Marta",
+          quote:
+            "Deseo tener la posibilidad de hablar con los funcionarios para llegar a acuerdos sobre bajar el valor de los arriendos de la galería.",
+          link: "https://app.lvn.org/highlight/5261144",
+        },
+        {
+          name: "Conor",
+          quote:
+            "Me gustaría hablar con funcionarios sobre la forma de colocar una dependencia de medio ambiente con la finalidad de capacitar y ser una guía en el cuidado del territorio.",
+          link: "https://app.lvn.org/highlight/5259761",
+        },
+        {
+          name: "María del Pilar",
+          quote:
+            "Les solicitaría que generarán un mecanismo para controlar la gestión de los Administradores de los conjuntos.",
+          link: "https://app.lvn.org/highlight/5259960",
+        },
+        {
+          name: "Samuel",
+          quote:
+            "Hablaría para replicar esta actividad 'Investigación participativa de Ciudad Verde' with más actores del municipio.",
+          link: "https://app.lvn.org/highlight/5263889",
         },
       ],
     },

@@ -1,7 +1,17 @@
+export interface PhotoStory {
+  id: string;
+  imageUrl: string;
+  content: string;
+  subtopic?: string;
+}
+
 export interface Testimonial {
   name: string;
   quote: string;
   audio?: string;
+  link?: string;
+  subtopic?: string;
+  photoStories?: PhotoStory[];
 }
 
 export interface ThemeContent {

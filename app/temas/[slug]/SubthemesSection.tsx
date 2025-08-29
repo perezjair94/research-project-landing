@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import PhotoStoryModal from "../../components/PhotoStoryModal";
+import TestimonialsContainer from "../../components/TestimonialsContainer";
 
 interface SubTheme {
   id: string;
@@ -416,6 +417,35 @@ export default function SubthemesSection({
             </div>
           </div>
         </div>
+        
+        {/* Sección de testimonios individuales - OCULTA TEMPORALMENTE 
+        <div className="mt-16 pt-8 border-t border-gray-200">
+          <h2 className="text-2xl lg:text-3xl font-bebas text-cv-purple mb-8 text-center">
+            Testimonios Individuales con Fotorelatos
+          </h2>
+          
+          <TestimonialsContainer
+            testimonials={testimonials.map(testimonial => ({
+              name: testimonial.name,
+              quote: testimonial.quote,
+              audio: testimonial.audio,
+              link: testimonial.link,
+              subtopic: getTestimonialSubthemeAssociation(testimonial) || undefined,
+              photoStories: testimonial.photoStoryUrl && testimonial.photoStoryContent
+                ? [{
+                    id: `${testimonial.name}-main`,
+                    imageUrl: testimonial.photoStoryUrl,
+                    content: testimonial.photoStoryContent,
+                    subtopic: getTestimonialSubthemeAssociation(testimonial) || undefined
+                  }]
+                : undefined
+            }))}
+            activeSubtopic={subThemes[activeSubthemeIndex]?.id}
+            themeOverlayColor={themeOverlayColor}
+            onIframeChange={(iframeUrl) => setActiveIframe(iframeUrl)}
+          />
+        </div>
+        */}
       </div>
     </section>
   );

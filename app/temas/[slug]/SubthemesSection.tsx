@@ -48,9 +48,9 @@ export default function SubthemesSection({
     content: string;
   }>({
     isOpen: false,
-    author: '',
-    imageUrl: '',
-    content: ''
+    author: "",
+    imageUrl: "",
+    content: "",
   });
 
   // Iframe por defecto (el primero disponible)
@@ -253,12 +253,15 @@ export default function SubthemesSection({
             key={index}
             onClick={() => {
               // Si el testimonio tiene fotorelato, abrir modal
-              if (testimonial?.photoStoryUrl && testimonial?.photoStoryContent) {
+              if (
+                testimonial?.photoStoryUrl &&
+                testimonial?.photoStoryContent
+              ) {
                 setModalState({
                   isOpen: true,
                   author: name,
                   imageUrl: testimonial.photoStoryUrl,
-                  content: testimonial.photoStoryContent
+                  content: testimonial.photoStoryContent,
                 });
                 return;
               }
@@ -332,7 +335,14 @@ export default function SubthemesSection({
         {/* Modal de fotorelatos */}
         <PhotoStoryModal
           isOpen={modalState.isOpen}
-          onClose={() => setModalState({ isOpen: false, author: '', imageUrl: '', content: '' })}
+          onClose={() =>
+            setModalState({
+              isOpen: false,
+              author: "",
+              imageUrl: "",
+              content: "",
+            })
+          }
           author={modalState.author}
           imageUrl={modalState.imageUrl}
           content={modalState.content}
@@ -403,13 +413,13 @@ export default function SubthemesSection({
             <div className="space-y-4 mt-8">
               {[1, 2, 3].map((num) => (
                 <div key={num} className="flex justify-center">
-                  <img 
-                    src={`/images/illustrations/${themeId}/illustration-${num}.png`} 
-                    alt={`Ilustración ${num}`} 
+                  <img
+                    src={`/images/illustrations/${themeId}/illustration-${num}.png`}
+                    alt={`Ilustración ${num}`}
                     className="max-w-full h-auto rounded-lg shadow-md"
                     style={{ maxWidth: "250px" }}
                     onError={(e) => {
-                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.style.display = "none";
                     }}
                   />
                 </div>
@@ -417,35 +427,6 @@ export default function SubthemesSection({
             </div>
           </div>
         </div>
-        
-        {/* Sección de testimonios individuales - OCULTA TEMPORALMENTE 
-        <div className="mt-16 pt-8 border-t border-gray-200">
-          <h2 className="text-2xl lg:text-3xl font-bebas text-cv-purple mb-8 text-center">
-            Testimonios Individuales con Fotorelatos
-          </h2>
-          
-          <TestimonialsContainer
-            testimonials={testimonials.map(testimonial => ({
-              name: testimonial.name,
-              quote: testimonial.quote,
-              audio: testimonial.audio,
-              link: testimonial.link,
-              subtopic: getTestimonialSubthemeAssociation(testimonial) || undefined,
-              photoStories: testimonial.photoStoryUrl && testimonial.photoStoryContent
-                ? [{
-                    id: `${testimonial.name}-main`,
-                    imageUrl: testimonial.photoStoryUrl,
-                    content: testimonial.photoStoryContent,
-                    subtopic: getTestimonialSubthemeAssociation(testimonial) || undefined
-                  }]
-                : undefined
-            }))}
-            activeSubtopic={subThemes[activeSubthemeIndex]?.id}
-            themeOverlayColor={themeOverlayColor}
-            onIframeChange={(iframeUrl) => setActiveIframe(iframeUrl)}
-          />
-        </div>
-        */}
       </div>
     </section>
   );

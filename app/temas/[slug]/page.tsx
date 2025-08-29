@@ -643,13 +643,6 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
       ],
       testimonials: [
         {
-          name: "Mercedes",
-          quote:
-            "Vi un robo cerca de donde tomo el SITP a las 4:00 am. Huyé y corrí. Quedé con la sensación de estar predispuesta a vivir algo similar.",
-          audio: "seguridad-mercedes.mp3",
-          link: "https://embed.lvn.org/?hid=5259894",
-        },
-        {
           name: "Teresa",
           quote:
             "Le genera dolor ver a niños y adolescentes de muy corta edad consumiendo en los parques de la ciudadela.",

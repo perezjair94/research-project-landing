@@ -79,7 +79,15 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                Ilustraciones hechas por <strong>Camila González</strong>
+                Ilustraciones hechas por{" "}
+                <a
+                  href="https://www.behance.net/camilagr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-cv-purple/70 transition-colors"
+                >
+                  <strong>Camila González</strong>
+                </a>
               </p>
             </div>
           </div>

@@ -52,7 +52,7 @@ export default function Home() {
 
               <div className="bg-cv-orange/30 inline-block px-2 py-1 rounded">
                 <h2 className="text-xl lg:text-2xl font-bold text-black/35  tracking-tight leading-tight">
-                  Centrando las voces de los residentes a través
+                  Centrando las voces de los residentes a través{" "}
                   <br className="hidden md:block" />
                   de la investigación participativa
                 </h2>

@@ -584,6 +584,48 @@ Alejandra, por su parte, afirma sentirse preocupada por la creciente cantidad de
             "Compara a Ciudad Verde con su antiguo lugar de vivienda, el barrio Cazuca; dice sentirse feliz de poder salir con sus hijos a los parques y a la montaña.",
           link: "https://embed.lvn.org/?hid=5259945",
         },
+        {
+          name: "Fanny",
+          quote:
+            "Es importante que ayuden a organizar el uso que les están dando los vendedores informales a las zonas peatonales y ciclovías ya que desplazarse con el coche de su bebe es difícil.",
+          link: "https://embed.lvn.org/?hid=5261141",
+        },
+        {
+          name: "Armando",
+          quote:
+            "Es importante que ayuden a organizar el uso que les están dando los vendedores informales a las zonas peatonales y ciclovías ya que desplazarse con el coche de su bebe es difícil.",
+          link: "https://embed.lvn.org/?hid=5263780",
+        },
+        {
+          name: "Ana Elsa",
+          quote:
+            "Es importante que ayuden a organizar el uso que les están dando los vendedores informales a las zonas peatonales y ciclovías ya que desplazarse con el coche de su bebe es difícil.",
+          link: "https://embed.lvn.org/?hid=5263794",
+        },
+        {
+          name: "Ricardo",
+          quote:
+            "Es importante que ayuden a organizar el uso que les están dando los vendedores informales a las zonas peatonales y ciclovías ya que desplazarse con el coche de su bebe es difícil.",
+          link: "https://embed.lvn.org/?hid=5259925",
+        },
+        {
+          name: "Andrea Paola",
+          quote:
+            "Es importante que ayuden a organizar el uso que les están dando los vendedores informales a las zonas peatonales y ciclovías ya que desplazarse con el coche de su bebe es difícil.",
+          link: "https://embed.lvn.org/?hid=5263853",
+        },
+        {
+          name: "Jhon",
+          quote:
+            "Es importante que ayuden a organizar el uso que les están dando los vendedores informales a las zonas peatonales y ciclovías ya que desplazarse con el coche de su bebe es difícil.",
+          link: "https://embed.lvn.org/?hid=5263926",
+        },
+        {
+          name: "Jenny",
+          quote:
+            "Es importante que ayuden a organizar el uso que les están dando los vendedores informales a las zonas peatonales y ciclovías ya que desplazarse con el coche de su bebe es difícil.",
+          link: "https://embed.lvn.org/?hid=5263932",
+        },
       ],
     },
   },

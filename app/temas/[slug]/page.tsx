@@ -216,9 +216,7 @@ const themesData: ThemeData[] = [
           name: "Diana",
           quote:
             "Opina que falta capacitar a los habitantes en Planes de Emergencias y Contingencias con la finalidad de prevenir incendios en espacios comunes.",
-          photoStoryUrl: "**",
-          photoStoryContent:
-            "Diana opina en su fotorelato que falta capacitar a los habitantes en Planes de Emergencias y Contingencias con la finalidad de prevenir incendios en espacios comunes, destacando la importancia de la preparación comunitaria ante emergencias. **",
+          link: "https://embed.lvn.org/?hid=5328685",
         },
         {
           name: "Luz Marina",

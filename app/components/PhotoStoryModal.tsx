@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React from 'react';
+import React from "react";
 
 interface PhotoStoryModalProps {
   isOpen: boolean;
@@ -10,14 +10,20 @@ interface PhotoStoryModalProps {
   content: string;
 }
 
-export default function PhotoStoryModal({ isOpen, onClose, author, imageUrl, content }: PhotoStoryModalProps) {
+export default function PhotoStoryModal({
+  isOpen,
+  onClose,
+  author,
+  imageUrl,
+  content,
+}: PhotoStoryModalProps) {
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-lg max-w-4xl max-h-[90vh] overflow-hidden shadow-2xl">
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b">
+        <div className="flex items-center justify-between p-3 px-6 border-b border-neutral-200">
           <h2 className="text-2xl font-bebas text-cv-purple">
             Fotorelato - {author}
           </h2>
@@ -48,14 +54,12 @@ export default function PhotoStoryModal({ isOpen, onClose, author, imageUrl, con
             <img
               src={imageUrl}
               alt={`Fotorelato de ${author}`}
-              className="w-full rounded-lg object-cover shadow-lg"
+              className="w-full rounded-lg object-cover shadow-lg max-h-[400px]"
             />
-            <p className="text-sm text-gray-600 text-center">
-              Fotografía: {author}
-            </p>
           </div>
         </div>
       </div>
     </div>
   );
 }
+

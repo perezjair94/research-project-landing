@@ -304,7 +304,7 @@ const themesData: ThemeData[] = [
           quote:
             "Debo pagar doble transporte: carro pirata para salir de la ciudadela y luego Transmilenio para llegar al trabajo.",
           audio: "transporte-nubia.mp3",
-          link: "https://embed.lvn.org/?hid=5259890",
+          link: "https://embed.lvn.org/?hid=5259915",
         },
         {
           name: "Linda",

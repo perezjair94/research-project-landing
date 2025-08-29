@@ -490,7 +490,7 @@ const themesData: ThemeData[] = [
           quote:
             "Refuerza esta percepción a través de una fotografía tomada frente al Centro Comercial Prado Verde, en donde se observa cómo las macetas que fueron introducidas para disuadir a los vendedores son usadas, irónicamente, para ubicar productos de venta.",
           photoStoryUrl:
-            "/images/fotorelatos/ Espacio Público/Comercio Informal\n/Jeovanny.jpeg",
+            "/images/fotorelatos/ Espacio Público/Comercio Informal/Jeovanny.jpeg",
           photoStoryContent: `Subtema: Comercio Informal
 
 La presencia de vendedores informales en la ciudadela despierta distintas emociones entre los residentes. July manifiesta su preocupación al ver cómo este oficio es estigmatizado; cuenta que ha intentado conseguir un local formal, pero los altos costos la han llevado a continuar vendiendo en los andenes. Sandra coincide con esta apreciación y agrega que, ante la alta demanda, los centros comerciales no logran cubrir todas las necesidades de la comunidad, lo que hace que vender en el espacio público siga siendo una alternativa atractiva para muchos hogares.
